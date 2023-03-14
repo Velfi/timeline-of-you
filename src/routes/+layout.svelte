@@ -1,53 +1,66 @@
-<script>
-  import Header from './Header.svelte';
+<script lang="ts">
   import './styles.css';
+  import { now } from '$lib/stores';
+  import FloatingNotifications from '$lib/components/FloatingNotifications.svelte';
+  import { page } from '$app/stores';
+  import AboutBurger from '$lib/components/AboutBurger.svelte';
+
+  const intlDateTimeFormat = new Intl.DateTimeFormat(undefined, {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    weekday: 'long',
+    timeZoneName: 'short',
+  });
+
+  let path: string = '';
+  page.subscribe((p) => {
+    path = p.url.pathname;
+  });
 </script>
 
-<div class="app">
-  <Header />
+<div class="container">
+  <FloatingNotifications />
+  <AboutBurger />
 
   <main>
     <slot />
   </main>
 
   <footer>
-    <p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+    <p>It is currently {intlDateTimeFormat.format($now)}.</p>
+    <p class="italic">Make sure this is correct or else your timeline might get out of whack.</p>
   </footer>
 </div>
 
-<style>
-  .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
+<style lang="scss">
   main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     padding: 1rem;
-    width: 100%;
-    max-width: 64rem;
+    max-width: 80rem;
     margin: 0 auto;
-    box-sizing: border-box;
   }
 
   footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-  }
+    align-self: flex-end;
+    padding: 1rem;
+    text-align: right;
+    z-index: 1;
 
-  footer a {
-    font-weight: bold;
-  }
-
-  @media (min-width: 480px) {
-    footer {
-      padding: 12px 0;
+    & > p {
+      margin: 0;
+      font-size: 80%;
     }
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+    min-height: 100vh;
+  }
+
+  .italic {
+    font-style: italic;
   }
 </style>
