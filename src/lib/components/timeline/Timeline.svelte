@@ -1,15 +1,15 @@
 <script lang="ts">
   import { DateTime } from '$lib/types/date';
-  import type { Timeline, Event } from '$lib/db';
+  import type { Metadata, Event } from '$lib/db';
   import { range } from 'lodash';
   import Year from './Year.svelte';
 
-  export let timeline: Timeline | undefined;
+  export let metadata: Metadata | undefined;
   export let events: Event[] = [];
 
   let yearsBetweenStartAndEnd: Year[] = [];
-  $: if (timeline) {
-    yearsBetweenStartAndEnd = buildYears(timeline);
+  $: if (metadata) {
+    yearsBetweenStartAndEnd = buildYears(metadata);
   }
 
   interface Year {
@@ -17,7 +17,7 @@
     events: Event[];
   }
 
-  function buildYears(timeline: Timeline): Year[] {
+  function buildYears(timeline: Metadata): Year[] {
     let startDate = DateTime.fromJSON(timeline.start);
     let endDate = DateTime.fromJSON(timeline.end);
 

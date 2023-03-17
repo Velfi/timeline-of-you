@@ -13,6 +13,8 @@
   --color-text: var(--color-theme-1);
   --border-radius: 3px;
   --border: 1px solid var(--color-theme-1);
+  --input-height: 2.5rem;
+  --input-padding: 0.5rem;
   font-family: var(--font-body);
   color: var(--color-text);
 }
@@ -26,7 +28,7 @@ h1,
 .h1 {
   font-size: 2.3888889rem;
   line-height: 3rem;
-  margin-top: 1.5rem;
+  margin-top: 1.42rem;
   margin-bottom: 2rem;
 }
 
@@ -34,7 +36,7 @@ h2,
 .h2 {
   font-size: 1.7777778rem;
   line-height: 3rem;
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 
@@ -42,7 +44,7 @@ h3,
 .h3 {
   font-size: 1.3333333rem;
   line-height: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -50,7 +52,7 @@ h4,
 .h4 {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -58,7 +60,7 @@ h5,
 .h5 {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -88,19 +90,18 @@ button {
   background-color: unset;
   border-radius: var(--border-radius);
   border: var(--border);
+  box-sizing: border-box;
   color: inherit;
-  font-size: inherit;
-  padding: 5px;
   cursor: pointer;
+  font-size: inherit;
+  height: var(--input-height);
+  margin: 0;
+  padding: var(--input-padding);
 }
 
 form {
   display: flex;
   flex-direction: column;
-}
-
-form > button {
-  height: 3rem;
 }
 
 button:hover:not(:disabled) {
@@ -113,16 +114,21 @@ button:disabled {
   cursor: not-allowed;
 }
 
+label {
+  display: flex;
+  margin-bottom: 0.4rem;
+}
+
 input,
 textarea {
-  font-size: inherit;
-  font-family: inherit;
   background: none;
-  border: var(--border);
   border-radius: var(--border-radius);
+  border: var(--border);
   color: inherit;
-  padding: 5px;
-  margin: 3px 0;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: var(--input-padding);
 }
 
 input:focus {
@@ -147,6 +153,10 @@ input:focus {
   top: 0;
   right: 0;
   bottom: 0;
+}
+
+.indent {
+  margin-left: 1rem;
 }
 
 button.hide-pane {

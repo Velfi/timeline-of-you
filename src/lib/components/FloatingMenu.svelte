@@ -16,13 +16,22 @@
   });
 
   function toggle() {
+    // TODO actually make this accessible. Right now, it'll lose focus on the button whenever toggled.
     open = !open;
   }
 
+  function keyboardToggle(e: KeyboardEvent) {
+    if (e.key === 'Escape' || e.key === 'Esc') {
+      toggle();
+    }
+  }
+
   async function saveTimeline() {
+    console.log('Saving timeline');
     isSaving = true;
     await timeline.saveToDb();
     isSaving = false;
+    console.log('Saved timeline');
   }
 </script>
 
@@ -32,10 +41,11 @@
   {#if open}
     <div class="content">
       <div class="header">
-        <button type="button" on:click={toggle} class="open" title="Open the hamburger menu"
+        <button type="button" on:click={toggle} class="close" title="Close the hamburger menu"
           ><Icon font-size="3rem" icon="mdi:robot-confused-outline" /></button
         >
         <h1>A Timeline of You</h1>
+        <p class="visually-hidden">Press escape to close this menu.</p>
       </div>
 
       <details class="menu-pane">
@@ -83,39 +93,44 @@
           Select an event and click the "delete" button. Then, confirm you want to delete the event.
         </p>
       </details>
-      <details class="menu-pane">
+      <details open class="menu-pane">
         <summary>Menu</summary>
         {#if hasChanges}
           <p>Your timeline has changes! Save them if you don't want to lose them.</p>
+          <button type="button" disabled={isSaving} on:click={saveTimeline}
+            >{#if isSaving}Now Saving...{:else}Save Active Timeline{/if}</button
+          >
         {/if}
         <ul>
           <li><a href="/manage/timelines">Manage Timelines</a></li>
+
           {#if timelineId}
-            <li><a href="/timeline/{timelineId}/quick-add-events">Quickly Add Events</a></li>
+            <li><a href="/timeline">View Current Timeline</a></li>
+            <li><a href="/timeline/quick-add-events">Quickly Add Events</a></li>
           {/if}
           <li><a href="/new/timeline">Create New Timeline</a></li>
-          <li>
-            <button type="button" disabled={isSaving} on:click={saveTimeline}
-              >{#if isSaving}Now Saving...{:else}Save Active Timeline{/if}</button
-            >
-          </li>
+          <li><a href="/import/json">Import a timeline from a JSON file</a></li>
         </ul>
       </details>
     </div>
   {:else}
-    <button type="button" on:click={toggle} class="close" title="Close the hamburger menu"
+    <button type="button" on:click={toggle} class="open" title="Open the hamburger menu"
       ><Icon font-size="3rem" icon="mdi:robot-confused" /></button
     >
   {/if}
 </div>
+{#if open}
+  <div class="overlay" on:click={toggle} on:keypress={keyboardToggle} />
+{/if}
 
 <style lang="scss">
   button {
     cursor: pointer;
     padding: 0.5rem;
+    height: 4rem !important;
   }
 
-  .close {
+  .open {
     margin: 1rem;
     background-color: var(--color-theme-1);
     color: var(--color-bg-1);
@@ -131,6 +146,17 @@
     max-height: calc(100vh - 2rem);
     box-sizing: border-box;
     overflow: auto;
+    border-radius: var(--border-radius);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   }
 
   .header {

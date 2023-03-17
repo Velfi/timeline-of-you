@@ -1,3 +1,5 @@
+import { isDate, isNumber, isString, isFinite } from 'lodash';
+
 export function downloadJSONFile(data: unknown, filename: string, pretty = true) {
   const blob = new Blob([JSON.stringify(data, null, pretty ? 2 : undefined)], {
     type: 'application/json',
@@ -14,4 +16,8 @@ export function downloadJSONFile(data: unknown, filename: string, pretty = true)
     URL.revokeObjectURL(url);
     document.body.removeChild(a);
   }, 0);
+}
+
+export function isProbablyADate(it: unknown): it is string | Date | number {
+  return isString(it) || isDate(it) || (isNumber(it) && isFinite(it));
 }

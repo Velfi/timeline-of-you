@@ -13,7 +13,12 @@
     />
   {/if}
   {#each $notifications as n}
-    <div class="notification" class:success={n.type === 'success'} class:error={n.type === 'error'}>
+    <div
+      class="notification"
+      class:success={n.type === 'success'}
+      class:error={n.type === 'error'}
+      class:warn={n.type === 'warn'}
+    >
       <p class="message">
         {n.message}
       </p>
@@ -63,5 +68,9 @@
 
   .error {
     border-color: crimson;
+  }
+
+  .warn {
+    border-color: coral;
   }
 </style>

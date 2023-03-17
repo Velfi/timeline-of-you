@@ -1,6 +1,6 @@
 import { readable } from 'svelte/store';
 
-export { timeline } from './timeline';
+export { timeline, preferredEventTimezone } from './timeline';
 export { notifications } from './notifications';
 
 export const now = readable(new Date(), function start(set) {

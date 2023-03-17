@@ -5,4 +5,4 @@ export interface Notification {
   timestamp: Date;
 }
 
-export type NotificationType = 'success' | 'error' | 'info';
+export type NotificationType = 'success' | 'error' | 'warn' | 'info';

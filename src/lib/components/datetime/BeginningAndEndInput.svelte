@@ -1,10 +1,18 @@
 <script lang="ts">
   import { DateTime, tryToConstructDateTimeFromStrings } from '$lib/types/date';
   import * as dateFns from 'date-fns';
+  import {
+    DAY_INPUT_PROPS,
+    HOUR_INPUT_PROPS,
+    MINUTE_INPUT_PROPS,
+    MONTH_INPUT_PROPS,
+    YEAR_INPUT_PROPS,
+    TZ_INPUT_PROPS,
+  } from './inputProps';
 
   export let start: DateTime | undefined;
   export let end: DateTime | undefined;
-  export let required: boolean = false;
+  export let required = false;
   const localTimeZone = dateFns.format(new Date(), 'XXX');
 
   let startYear = '';
@@ -20,7 +28,8 @@
       startMonth,
       startDay,
       startHour,
-      startMinute
+      startMinute,
+      startTimeZone
     );
   }
 
@@ -41,55 +50,6 @@
       endTimeZone
     );
   }
-
-  const yearInputProps = {
-    required,
-    type: 'text',
-    size: 4,
-    pattern: String.raw`\d{1,4}`,
-    placeholder: 'YYYY',
-    title: '1 to 4 digit year, B.C.E. years are unsupported',
-  };
-
-  const twoDigitInputProps = {
-    type: 'text',
-    maxlength: 2,
-    size: 2,
-  };
-
-  const monthInputProps = {
-    ...twoDigitInputProps,
-    pattern: String.raw`(0?\d|1[1-2])`,
-    placeholder: 'MM',
-    title: '1-2 digit month',
-  };
-  const dayInputProps = {
-    ...twoDigitInputProps,
-    pattern: String.raw`([0-2]?\d|3[0-1])`,
-    placeholder: 'DD',
-    title: '1-2 digit day',
-  };
-  const hourInputProps = {
-    ...twoDigitInputProps,
-    placeholder: 'HH',
-    pattern: String.raw`([0-1]?\d|2[0-3])`,
-    title: '1-2 digit hour',
-  };
-  const minuteInputProps = {
-    ...twoDigitInputProps,
-    placeholder: 'MM',
-    pattern: String.raw`([0-5]?\d)`,
-    title: '1-2 digit minute',
-  };
-  const timeZoneInputProps = {
-    maxlength: 6,
-    size: 6,
-    type: 'text',
-    pattern: String.raw`[+-]\d\d?(:\d\d)?`,
-    class: 'four-digit',
-    placeholder: localTimeZone,
-    title: 'GMT-relative time zone offset',
-  };
 </script>
 
 <div class="container">
@@ -97,32 +57,32 @@
     <p class="start">The Beginning</p>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startYear">Year</label>
-      <input name="startYear" {...yearInputProps} bind:value={startYear} />
+      <input name="startYear" {required} {...YEAR_INPUT_PROPS} bind:value={startYear} />
       <span aria-hidden class="visual-only-label">Year</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startMonth">Month</label>
-      <input name="startMonth" {...monthInputProps} bind:value={startMonth} />
+      <input name="startMonth" {...MONTH_INPUT_PROPS} bind:value={startMonth} />
       <span aria-hidden class="visual-only-label">Mo.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startDay">Day</label>
-      <input name="startDay" {...dayInputProps} bind:value={startDay} />
+      <input name="startDay" {...DAY_INPUT_PROPS} bind:value={startDay} />
       <span aria-hidden class="visual-only-label">Day</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startHour">Hour</label>
-      <input name="startHour" {...hourInputProps} bind:value={startHour} />
+      <input name="startHour" {...HOUR_INPUT_PROPS} bind:value={startHour} />
       <span aria-hidden class="visual-only-label">Hr.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startMinute">Minute</label>
-      <input name="startMinute" {...minuteInputProps} bind:value={startMinute} />
+      <input name="startMinute" {...MINUTE_INPUT_PROPS} bind:value={startMinute} />
       <span aria-hidden class="visual-only-label">Min.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startTimeZone">Time Zone</label>
-      <input name="startTimeZone" {...timeZoneInputProps} bind:value={startTimeZone} />
+      <input name="startTimeZone" {...TZ_INPUT_PROPS} bind:value={startTimeZone} />
       <span aria-hidden class="visual-only-label">TZ</span>
     </div>
   </div>
@@ -130,32 +90,32 @@
   <div class="datetime-input-wrapper">
     <div class="input-wrapper">
       <label class="visually-hidden" for="endYear">Year</label>
-      <input name="endYear" {...yearInputProps} bind:value={endYear} />
+      <input name="endYear" {required} {...YEAR_INPUT_PROPS} bind:value={endYear} />
       <span aria-hidden class="visual-only-label">Year</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endMonth">Month</label>
-      <input name="endMonth" {...monthInputProps} bind:value={endMonth} />
+      <input name="endMonth" {...MONTH_INPUT_PROPS} bind:value={endMonth} />
       <span aria-hidden class="visual-only-label">Mo.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endDay">Day</label>
-      <input name="endDay" {...dayInputProps} bind:value={endDay} />
+      <input name="endDay" {...DAY_INPUT_PROPS} bind:value={endDay} />
       <span aria-hidden class="visual-only-label">Day</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endHour">Hour</label>
-      <input name="endHour" {...hourInputProps} bind:value={endHour} />
+      <input name="endHour" {...HOUR_INPUT_PROPS} bind:value={endHour} />
       <span aria-hidden class="visual-only-label">Hr.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endMinute">Minute</label>
-      <input name="endMinute" {...minuteInputProps} bind:value={endMinute} />
+      <input name="endMinute" {...MINUTE_INPUT_PROPS} bind:value={endMinute} />
       <span aria-hidden class="visual-only-label">Min.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endTimeZone">Time Zone</label>
-      <input name="endTimeZone" {...timeZoneInputProps} bind:value={endTimeZone} />
+      <input name="endTimeZone" {...TZ_INPUT_PROPS} bind:value={endTimeZone} />
       <span aria-hidden class="visual-only-label">TZ</span>
     </div>
     <p class="end">The End</p>

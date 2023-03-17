@@ -1,6 +1,6 @@
 <script lang="ts">
   import TextInput from '$lib/components/TextInput.svelte';
-  import BeginningAndEndInput from '$lib/components/BeginningAndEndInput.svelte';
+  import BeginningAndEndInput from '$lib/components/datetime/BeginningAndEndInput.svelte';
   import type { DateTime } from '$lib/types/date';
   import { db } from '$lib/db';
   import { goto } from '$app/navigation';

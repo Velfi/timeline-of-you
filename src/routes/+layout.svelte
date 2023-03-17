@@ -2,8 +2,7 @@
   import './styles.css';
   import { now } from '$lib/stores';
   import FloatingNotifications from '$lib/components/FloatingNotifications.svelte';
-  import { page } from '$app/stores';
-  import AboutBurger from '$lib/components/AboutBurger.svelte';
+  import FloatingMenu from '$lib/components/FloatingMenu.svelte';
 
   const intlDateTimeFormat = new Intl.DateTimeFormat(undefined, {
     year: 'numeric',
@@ -14,18 +13,14 @@
     weekday: 'long',
     timeZoneName: 'short',
   });
-
-  let path: string = '';
-  page.subscribe((p) => {
-    path = p.url.pathname;
-  });
 </script>
 
 <div class="container">
   <FloatingNotifications />
-  <AboutBurger />
+  <FloatingMenu />
 
   <main>
+    <div class="floating-menu-spacer">&nbsp;</div>
     <slot />
   </main>
 
@@ -40,6 +35,12 @@
     padding: 1rem;
     max-width: 80rem;
     margin: 0 auto;
+
+    .floating-menu-spacer {
+      float: left;
+      width: 7rem;
+      height: 6rem;
+    }
   }
 
   footer {

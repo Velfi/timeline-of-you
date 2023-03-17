@@ -1,4 +1,28 @@
+import { TZ_REGEX } from '$lib/regex';
 import { isObject } from 'lodash';
+
+const MONTHS = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December',
+];
+
+function formatTimezone(timezone: string): string {
+  if (timezone.startsWith("+") || timezone.startsWith("-")) {
+    return "GMT" + timezone;
+  } else {
+    return `GMT +${timezone}`;
+  }
+}
 
 export class DateTime {
   year: number;
@@ -23,6 +47,41 @@ export class DateTime {
     this.hour = hour;
     this.minute = minute;
     this.timeZone = timeZone;
+  }
+
+  toString(): string {
+    let str = this.year.toString();
+
+    if (this.month) {
+      str += ', ' + MONTHS[this.month - 1];
+    }
+    if (this.day) {
+      str += ' ' + this.day.toString();
+    }
+
+    if (this.hour) {
+
+      if (this.hour < 10) {
+        str += ', 0' + this.hour.toString();
+      } else {
+        str += ', ' + this.hour.toString();
+      }
+      if (this.minute) {
+        if (this.minute < 10) {
+          str += ':0' + this.minute.toString();
+        } else {
+          str += ':' + this.minute.toString();
+        }
+      } else {
+        str += ':00';
+      }
+    }
+
+    if (this.timeZone) {
+      str += ', ' + formatTimezone(this.timeZone);
+    }
+
+    return str;
   }
 
   static fromJSON(json: unknown): DateTime {
@@ -69,18 +128,15 @@ export function isProbablyTimelineDateTime(json: unknown): json is DateTime {
   return isObject(json) && 'year' in json && typeof json.year === 'number';
 }
 
-const TIMEZONE_REGEX = /^([+-])([0-2]\d|\d)(:\d\d)?$/;
-
 export function isPossibleToConstructValidDateTime(
   year: number,
   month?: number,
   day?: number,
   hour?: number,
   minute?: number,
-  timeZone?: string
+  timeZone = ''
 ): boolean {
-  return (
-    year >= 0 &&
+  return year >= 0 &&
     // month is optional, but if it's present, it must be between 1 and 12
     (!month || (month >= 1 && month <= 12)) &&
     // day is optional, but if it's present, it must be between 1 and 31
@@ -90,23 +146,45 @@ export function isPossibleToConstructValidDateTime(
     // minute is optional, but if it's present, it must be between 0 and 59
     (!minute || (minute >= 0 && minute <= 59)) &&
     // timeZone is optional, but if it's present, it must be in the format +/-hh:mm
-    (!timeZone || TIMEZONE_REGEX.test(timeZone))
-  );
+    timeZone
+    ? TZ_REGEX.test(timeZone)
+    : true;
 }
 
 export function tryToConstructDateTimeFromStrings(
   year: string,
-  month?: string,
-  day?: string,
-  hour?: string,
-  minute?: string,
-  timeZone?: string
+  month: string,
+  day: string,
+  hour: string,
+  minute: string,
+  timeZone: string
 ): DateTime | undefined {
   const yearNumber = parseInt(year, 10);
-  const monthNumber = month ? parseInt(month, 10) : undefined;
-  const dayNumber = day ? parseInt(day, 10) : undefined;
-  const hourNumber = hour ? parseInt(hour, 10) : undefined;
-  const minuteNumber = minute ? parseInt(minute, 10) : undefined;
+
+  if (isNaN(yearNumber)) {
+    return undefined;
+  }
+
+  // parseInt returns NaN if the string can't be parsed as a number
+  let monthNumber: number | undefined = parseInt(month, 10);
+  if (isNaN(monthNumber)) {
+    monthNumber = undefined;
+  }
+
+  let dayNumber: number | undefined = parseInt(day, 10);
+  if (isNaN(dayNumber)) {
+    dayNumber = undefined;
+  }
+
+  let hourNumber: number | undefined = parseInt(hour, 10);
+  if (isNaN(hourNumber)) {
+    hourNumber = undefined;
+  }
+
+  let minuteNumber: number | undefined = parseInt(minute, 10);
+  if (isNaN(minuteNumber)) {
+    minuteNumber = undefined;
+  }
 
   if (
     isPossibleToConstructValidDateTime(
