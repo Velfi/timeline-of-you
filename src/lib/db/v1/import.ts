@@ -7,7 +7,7 @@ import {
   TagFromJSON,
   type V1Timeline,
 } from './';
-import { isObject } from 'lodash';
+import { isObject } from 'lodash-es';
 
 export function importV1Timeline(obj: object): V1Timeline {
   if (!('metadata' in obj && isObject(obj.metadata))) {

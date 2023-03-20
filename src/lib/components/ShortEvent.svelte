@@ -9,4 +9,4 @@
 <i>
   ({event.start.toString()}{#if event.end}&nbsp;&mdash;&nbsp;{event.end.toString()}{/if})
 </i>
-{event.name}{#if event.description}&nbsp;&mdash;&nbsp;{event.description}{/if}
+<b>{event.name}</b>{#if event.description}&nbsp;&mdash;&nbsp;{event.description}{/if}

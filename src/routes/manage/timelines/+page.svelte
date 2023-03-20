@@ -29,7 +29,7 @@
       const t = await exportTimelineToJSON(parseInt(id, 10));
       const fileName = `${name ?? 'timeline'}.json`;
 
-      downloadJSONFile(t, fileName, true);
+      downloadJSONFile(t, fileName);
     }
   }
 

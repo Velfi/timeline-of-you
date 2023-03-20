@@ -1,5 +1,5 @@
 import { TZ_REGEX } from '$lib/regex';
-import { isObject } from 'lodash';
+import { isObject } from 'lodash-es';
 
 const MONTHS = [
   'January',

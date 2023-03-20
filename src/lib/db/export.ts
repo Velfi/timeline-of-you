@@ -1,4 +1,4 @@
-import { uniq } from 'lodash';
+import { uniq } from 'lodash-es';
 import type { Event, Tag } from './v1';
 import { SCHEMA_VERSION, type TimelineDexie } from './';
 

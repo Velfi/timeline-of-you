@@ -1,7 +1,7 @@
 <script lang="ts">
   import { DateTime } from '$lib/types/date';
   import type { Timeline, TimelineEvent } from '$lib/db';
-  import { range } from 'lodash';
+  import { range } from 'lodash-es';
   import Year from './Year.svelte';
   import type { YearProps } from './Year';
 

@@ -1,4 +1,4 @@
-import { isObject } from 'lodash';
+import { isObject } from 'lodash-es';
 import * as dateFns from 'date-fns';
 import { isProbablyADate } from '$lib/utils';
 

@@ -1,4 +1,4 @@
-import { isDate, isNumber, isString, isFinite } from 'lodash';
+import { isDate, isNumber, isString, isFinite } from 'lodash-es';
 
 export function downloadJSONFile(data: string, filename: string) {
   const blob = new Blob([data], {

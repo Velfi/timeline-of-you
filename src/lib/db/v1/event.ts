@@ -1,6 +1,6 @@
 import { DateTime } from '$lib/types/date';
 import { isProbablyADate } from '$lib/utils';
-import { isObject } from 'lodash';
+import { isObject } from 'lodash-es';
 import * as dateFns from 'date-fns';
 
 export interface Event {

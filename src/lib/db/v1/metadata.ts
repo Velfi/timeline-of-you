@@ -1,4 +1,4 @@
-import { isObject } from 'lodash';
+import { isObject } from 'lodash-es';
 import { DateTime } from '$lib/types/date';
 import * as dateFns from 'date-fns';
 

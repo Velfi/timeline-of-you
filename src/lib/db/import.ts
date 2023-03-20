@@ -1,6 +1,6 @@
 import { importEvents, importMetadata, importTags } from './';
 import { importV1Timeline } from './v1/import';
-import { isObject } from 'lodash';
+import { isObject } from 'lodash-es';
 import type { V1Timeline } from './v1';
 
 function isAnObjectWithAVersionField(obj: unknown): obj is { version: unknown } {

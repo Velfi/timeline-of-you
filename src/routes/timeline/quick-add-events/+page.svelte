@@ -144,7 +144,7 @@
     {:else}
       <ul>
         {#each $newEvents as event}
-          <li>
+          <li class="event">
             <ShortEvent {event} />
           </li>
         {/each}
@@ -155,7 +155,7 @@
       <h2>{timeline?.events.length} Existing Events</h2>
       <ul>
         {#each timeline?.events as event}
-          <li>
+          <li class="event">
             <ShortEvent {event} />
           </li>
         {/each}
@@ -210,5 +210,9 @@
 
   .events {
     grid-area: events;
+  }
+
+  .event {
+    line-height: 1.4;
   }
 </style>
