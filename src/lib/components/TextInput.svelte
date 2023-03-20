@@ -6,7 +6,7 @@
   export let explanation = '';
   export let value = '';
   export let placeholder = '';
-  export let textarea = false; 
+  export let textarea = false;
 
   const name = nanoid();
 </script>
@@ -15,9 +15,9 @@
   >{label}{#if required}*{:else}<span>&nbsp;(optional)</span>{/if}</label
 >
 {#if textarea}
-  <textarea name={name} {required} {placeholder} bind:value />
+  <textarea {name} {required} {placeholder} bind:value />
 {:else}
-  <input type="text" name={name} {required} {placeholder} bind:value />
+  <input type="text" {name} {required} {placeholder} bind:value />
 {/if}
 {#if explanation}
   <p>{explanation}</p>

@@ -2,9 +2,9 @@
   import TextInput from '$lib/components/TextInput.svelte';
   import BeginningAndEndInput from '$lib/components/datetime/BeginningAndEndInput.svelte';
   import type { DateTime } from '$lib/types/date';
-  import { db } from '$lib/db';
   import { goto } from '$app/navigation';
   import { notifications } from '$lib/stores';
+  import { createTimeline } from '$lib/db';
 
   let start: DateTime | undefined;
   let end: DateTime | undefined;
@@ -13,21 +13,13 @@
 
   $: formIsIncomplete = start === undefined || end === undefined || start.year > end.year;
 
-  function handleSubmit(e: SubmitEvent) {
+  async function handleSubmit(e: SubmitEvent) {
     e.preventDefault();
     if (start === undefined || end === undefined) {
       throw new Error('unreachable');
     }
 
-    db.timelines.add({
-      name,
-      description,
-      start,
-      end,
-      createdOn: new Date(),
-      lastModified: new Date(),
-      events: [],
-    });
+    await createTimeline(start, end, name, description);
 
     notifications.add(
       'success',

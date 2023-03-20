@@ -1,12 +1,13 @@
-import type { Timeline } from './';
+import { importEvents, importMetadata, importTags } from './';
 import { importV1Timeline } from './v1/import';
 import { isObject } from 'lodash';
+import type { V1Timeline } from './v1';
 
 function isAnObjectWithAVersionField(obj: unknown): obj is { version: unknown } {
   return isObject(obj) && !Array.isArray(obj) && 'version' in obj;
 }
 
-export function importJSON(input: string): Timeline {
+export async function importJSON(input: string): Promise<number> {
   const maybeTimeline = JSON.parse(input);
 
   if (!isAnObjectWithAVersionField(maybeTimeline)) {
@@ -15,15 +16,20 @@ export function importJSON(input: string): Timeline {
 
   const version = maybeTimeline.version;
 
-  let importedTimeline;
-
   switch (version) {
-    case 1:
-      importedTimeline = importV1Timeline(maybeTimeline);
-      break;
+    case 1: {
+      const v1Timeline = importV1Timeline(maybeTimeline);
+      return insertV1TimelineIntoDB(v1Timeline);
+    }
     default:
       throw new Error(`Unknown timeline version: ${version}`);
   }
+}
 
-  return importedTimeline;
+async function insertV1TimelineIntoDB(timeline: V1Timeline): Promise<number> {
+  const { metadata, events, tags } = timeline;
+
+  const tagIdMap = await importTags(tags);
+  metadata.eventIds = await importEvents(events, tagIdMap);
+  return importMetadata(metadata);
 }

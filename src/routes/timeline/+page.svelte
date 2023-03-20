@@ -1,28 +1,23 @@
 <script lang="ts">
   import * as stores from '$lib/stores';
-  import type { Metadata, Event } from '$lib/db';
   import TimelineElement from '$lib/components/timeline/Timeline.svelte';
   import { goto } from '$app/navigation';
   import { browser } from '$app/environment';
+  import type { Timeline } from '$lib/db';
 
-  let metadata: Metadata | undefined;
-  let events: Event[] | undefined;
+  let timeline: Timeline | undefined;
   let isLoading = true;
 
   stores.timeline.isLoading.subscribe((l) => {
     isLoading = l;
   });
 
-  stores.timeline.metadata.subscribe((t) => {
+  stores.timeline.timeline.subscribe((t) => {
     // When no timeline is loaded or loading, reroute to the timeline management page
     if (!t && !isLoading && browser) {
       goto('/manage/timelines');
     }
-    metadata = t;
-  });
-
-  stores.timeline.events.subscribe((e) => {
-    events = e;
+    timeline = t;
   });
 </script>
 
@@ -31,8 +26,8 @@
   <meta name="description" content="A timeline of you" />
 </svelte:head>
 
-{#if metadata}
-  <TimelineElement {metadata} {events} />
+{#if timeline}
+  <TimelineElement {timeline} />
 {:else}
   <p>
     It looks like you haven't loaded a timeline yet.

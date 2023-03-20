@@ -10,7 +10,7 @@ describe('isValidTagName', () => {
   });
 
   it('should return false for invalid names', () => {
-    const invalidTags = ['', 'foo bar', '#tag', "!@#$%^&*|'\""];
+    const invalidTags = ['', 'foo bar', '#tag', '!@#$%^&*|\'"'];
 
     invalidTags.forEach((tag) => {
       expect(tag).not.toMatch(VALID_TAG_NAME_REGEX);

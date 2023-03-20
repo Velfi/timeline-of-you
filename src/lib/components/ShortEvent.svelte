@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { Event } from '$lib/db';
+  import type { TimelineEvent } from '$lib/db';
 
-  export let event: Event;
+  export let event: TimelineEvent;
 </script>
 
 <i>

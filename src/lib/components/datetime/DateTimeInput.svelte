@@ -13,10 +13,10 @@
   import { onMount } from 'svelte/internal';
 
   export let value: DateTime | undefined;
-  export let label: string = '';
+  export let label = '';
   export let required = false;
   let isLoading = true;
-  
+
   // Form input state
   let year = '';
   let month = '';

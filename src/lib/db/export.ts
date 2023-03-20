@@ -1,12 +1,13 @@
 import { uniq } from 'lodash';
-import { db, TIMELINE_SCHEMA_VERSION, type Event, type Tag, type Timeline } from './';
+import type { Event, Tag } from './v1';
+import { SCHEMA_VERSION, type TimelineDexie } from './';
 
 /**
  * Given a timeline ID, find that timeline in the database, along with all related
  * events and tags. Then bundle them into a single object and return it.
  */
-export async function exportTimelineById(id: string): Promise<Timeline> {
-  const metadata = await db.timelines.get(parseInt(id, 10));
+export async function exportJSON(id: number, db: TimelineDexie): Promise<string> {
+  const metadata = await db.metadata.get(id);
 
   if (metadata === undefined) {
     throw new Error(
@@ -14,17 +15,17 @@ export async function exportTimelineById(id: string): Promise<Timeline> {
     );
   }
 
-  const events = (await db.events.bulkGet(metadata.events)).filter(
+  const events = (await db.events.bulkGet(metadata.eventIds)).filter(
     (e): e is Event => e !== undefined
   );
 
-  if (events.length !== metadata.events.length) {
+  if (events.length !== metadata.eventIds.length) {
     throw new Error(
-      `Timeline with ID ${metadata.id} has ${metadata.events.length} events but only ${events.length} were found in the database.`
+      `Timeline with ID ${metadata.id} has ${metadata.eventIds.length} events but only ${events.length} were found in the database.`
     );
   }
 
-  const tagIds = uniq(events.flatMap((e) => e.tags));
+  const tagIds = uniq(events.flatMap((e) => e.tagIds));
   const tags = (await db.tags.bulkGet(tagIds)).filter((t): t is Tag => t !== undefined);
 
   if (tags.length !== tagIds.length) {
@@ -33,10 +34,14 @@ export async function exportTimelineById(id: string): Promise<Timeline> {
     );
   }
 
-  return {
-    version: TIMELINE_SCHEMA_VERSION,
-    metadata,
-    events,
-    tags,
-  };
+  return JSON.stringify(
+    {
+      version: SCHEMA_VERSION,
+      metadata,
+      events,
+      tags,
+    },
+    null,
+    2
+  );
 }

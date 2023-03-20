@@ -11,9 +11,9 @@ export {
 } from './metadata';
 export { isProbablyTag, fromJSON as TagFromJSON, toJSON as TagToJSON } from './tag';
 
-export interface Timeline {
-  version: number;
+export type V1Timeline = {
+  version: 1;
   metadata: Metadata;
   events: Event[];
   tags: Tag[];
-}
+};

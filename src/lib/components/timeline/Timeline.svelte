@@ -1,29 +1,24 @@
 <script lang="ts">
   import { DateTime } from '$lib/types/date';
-  import type { Metadata, Event } from '$lib/db';
+  import type { Timeline, TimelineEvent } from '$lib/db';
   import { range } from 'lodash';
   import Year from './Year.svelte';
+  import type { YearProps } from './Year';
 
-  export let metadata: Metadata | undefined;
-  export let events: Event[] = [];
+  export let timeline: Timeline | undefined;
 
-  let yearsBetweenStartAndEnd: Year[] = [];
-  $: if (metadata) {
-    yearsBetweenStartAndEnd = buildYears(metadata);
+  let yearsBetweenStartAndEnd: YearProps[] = [];
+  $: if (timeline) {
+    yearsBetweenStartAndEnd = buildYears(timeline);
   }
 
-  interface Year {
-    isDecade: boolean;
-    events: Event[];
-  }
-
-  function buildYears(timeline: Metadata): Year[] {
+  function buildYears(timeline: Timeline): YearProps[] {
     let startDate = DateTime.fromJSON(timeline.start);
     let endDate = DateTime.fromJSON(timeline.end);
 
     return range(startDate.year, endDate.year).map((i) => ({
       isDecade: i % 10 === 0,
-      events: events.filter((e: Event) => e.start.year === i),
+      events: timeline.events.filter((e: TimelineEvent) => e.start.year === i),
     }));
   }
 </script>

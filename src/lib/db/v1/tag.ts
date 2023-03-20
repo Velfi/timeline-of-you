@@ -3,13 +3,12 @@ import * as dateFns from 'date-fns';
 import { isProbablyADate } from '$lib/utils';
 
 export interface Tag {
-  id?: string;
+  id?: number;
+  name: string;
+  description?: string;
 
   createdOn: Date;
   lastModified: Date;
-
-  name: string;
-  description?: string;
 }
 
 export function isProbablyTag(json: unknown): json is Tag {

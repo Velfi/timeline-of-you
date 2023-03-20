@@ -17,8 +17,8 @@ const MONTHS = [
 ];
 
 function formatTimezone(timezone: string): string {
-  if (timezone.startsWith("+") || timezone.startsWith("-")) {
-    return "GMT" + timezone;
+  if (timezone.startsWith('+') || timezone.startsWith('-')) {
+    return 'GMT' + timezone;
   } else {
     return `GMT +${timezone}`;
   }
@@ -60,7 +60,6 @@ export class DateTime {
     }
 
     if (this.hour) {
-
       if (this.hour < 10) {
         str += ', 0' + this.hour.toString();
       } else {

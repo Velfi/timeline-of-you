@@ -4,17 +4,16 @@ import { isObject } from 'lodash';
 import * as dateFns from 'date-fns';
 
 export interface Event {
-  id?: string;
-
-  createdOn: Date;
-  lastModified: Date;
+  id?: number;
 
   name: string;
   description?: string;
   start: DateTime;
   end?: DateTime;
-  // Tag IDs
-  tags: string[];
+  tagIds: number[];
+
+  createdOn: Date;
+  lastModified: Date;
 }
 
 export function isProbablyEvent(json: unknown): json is Event {
@@ -46,11 +45,14 @@ export function fromJSON(json: unknown): Event {
 
   return {
     id: json.id,
-    start: DateTime.fromJSON(json.start),
-    end: json.end ? DateTime.fromJSON(json.end) : undefined,
+
     name: json.name,
     description: json.description,
-    tags: json.tags,
+    start: DateTime.fromJSON(json.start),
+    end: json.end ? DateTime.fromJSON(json.end) : undefined,
+
+    tagIds: json.tagIds,
+
     createdOn: dateFns.parseJSON(json.createdOn),
     lastModified: dateFns.parseJSON(json.lastModified),
   };
@@ -60,11 +62,14 @@ export function toJSON(event: Event): string {
   return JSON.stringify(
     {
       id: event.id,
-      start: DateTime.toJSON(event.start),
-      end: event.end ? DateTime.toJSON(event.end) : undefined,
+
       name: event.name,
       description: event.description,
-      tags: event.tags,
+      start: DateTime.toJSON(event.start),
+      end: event.end ? DateTime.toJSON(event.end) : undefined,
+
+      tagIDs: event.tagIds,
+
       createdOn: dateFns.formatRFC7231(event.createdOn),
       lastModified: dateFns.formatRFC7231(event.lastModified),
     },

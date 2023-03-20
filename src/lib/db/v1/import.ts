@@ -5,11 +5,11 @@ import {
   MetadataFromJSON,
   EventFromJSON,
   TagFromJSON,
-  type Timeline,
+  type V1Timeline,
 } from './';
 import { isObject } from 'lodash';
 
-export function importV1Timeline(obj: object): Timeline {
+export function importV1Timeline(obj: object): V1Timeline {
   if (!('metadata' in obj && isObject(obj.metadata))) {
     throw new Error('metadata object is missing or invalid');
   }

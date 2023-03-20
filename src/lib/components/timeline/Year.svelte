@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { Timeline, Event } from '$lib/db';
+  import type { TimelineEvent } from '$lib/db';
 
-  export let events: Event[] = [];
+  export let events: TimelineEvent[] = [];
   export let isDecade = false;
 </script>
 

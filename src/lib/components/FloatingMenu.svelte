@@ -5,13 +5,13 @@
   export let open = false;
   $: isSaving = false;
   let hasChanges = false;
-  let timelineId: string | undefined = undefined;
+  let timelineId: number | undefined = undefined;
 
   timeline.hasChanges.subscribe((c) => {
     hasChanges = c;
   });
 
-  timeline.metadata.subscribe((t) => {
+  timeline.timeline.subscribe((t) => {
     timelineId = t?.id;
   });
 

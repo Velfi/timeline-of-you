@@ -5,7 +5,7 @@
 
   export let required = false;
   export let value: string[] = [];
-  let newTag: string = '';
+  let newTag = '';
   $: isValid = VALID_TAG_NAME_REGEX.test(formatTag(newTag));
 
   const clearTags = () => {

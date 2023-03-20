@@ -1,6 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import { db } from '$lib/db';
+  import { deleteDatabase } from '$lib/db';
   import { notifications } from '$lib/stores';
 
   async function handleDelete() {
@@ -10,14 +10,12 @@
         'Are you absolutely sure you want to delete your database? This action is irreversible.'
       )
     ) {
-      await db
-        .delete()
-        .then(() => {
-          notifications.add('success', 'Successfully deleted database');
-        })
-        .catch(() => {
-          notifications.add('error', 'Failed to delete database');
-        });
+      try {
+        await deleteDatabase();
+        notifications.add('success', 'Successfully deleted database');
+      } catch (e) {
+        notifications.add('error', 'Failed to delete database');
+      }
     }
   }
 

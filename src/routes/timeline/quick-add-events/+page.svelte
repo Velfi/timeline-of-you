@@ -2,27 +2,26 @@
   import DateTimeInput from '$lib/components/datetime/DateTimeInput.svelte';
   import TagInput from '$lib/components/TagInput.svelte';
   import TextInput from '$lib/components/TextInput.svelte';
-  import type { Event, Metadata } from '$lib/db';
+  import { addTags, type Timeline, type TimelineEvent } from '$lib/db';
   import { notifications } from '$lib/stores';
-  import { DateTime } from '$lib/types/date';
+  import type { DateTime } from '$lib/types/date';
   import * as stores from '$lib/stores';
   import { browser } from '$app/environment';
   import { goto } from '$app/navigation';
   import ShortEvent from '$lib/components/ShortEvent.svelte';
   import { get, writable } from 'svelte/store';
 
-  let metadata: Metadata | undefined;
-  let events: Event[] | undefined;
+  let timeline: Timeline | undefined;
 
   let start: DateTime | undefined;
   let end: DateTime | undefined;
   let name = '';
   let description = '';
-  let tags: string[] = [];
+  let tagNames: string[] = [];
   let isLoading = true;
   let saveButtonTitle = '';
   let saveButtonIsDisabled = false;
-  let newEvents = writable<Event[]>([]);
+  let newEvents = writable<TimelineEvent[]>([]);
 
   // TODO I feel like I shouldn't have to create a store to do this but I couldn't get it to work otherwise.
   newEvents.subscribe((e) => {
@@ -37,19 +36,15 @@
     isLoading = l;
   });
 
-  stores.timeline.metadata.subscribe((t) => {
+  stores.timeline.timeline.subscribe((t) => {
     // When no timeline is loaded or loading, reroute to the timeline management page
     if (!t && !isLoading && browser) {
       goto('/manage/timelines');
     }
-    metadata = t;
+    timeline = t;
   });
 
-  stores.timeline.events.subscribe((e) => {
-    events = e;
-  });
-
-  function handleSubmit(e: SubmitEvent) {
+  async function handleSubmit(e: SubmitEvent) {
     e.preventDefault();
 
     if (start === undefined || name.length === 0) {
@@ -57,6 +52,8 @@
 
       return;
     }
+
+    const tagIds = await addTags(tagNames);
 
     newEvents.update((it) => {
       // This can't happen but TS doesn't know that
@@ -66,7 +63,7 @@
           end,
           name,
           description: description.length > 0 ? description : undefined,
-          tags,
+          tagIds,
           createdOn: new Date(),
           lastModified: new Date(),
         };
@@ -82,7 +79,7 @@
     end = undefined;
     name = '';
     description = '';
-    tags = [];
+    tagNames = [];
   }
 
   async function handleSave() {
@@ -109,7 +106,7 @@
       />
     </div>
     <div>
-      <TagInput bind:value={tags} />
+      <TagInput bind:value={tagNames} />
     </div>
     <button class="add">Add</button>
   </form>
@@ -122,12 +119,12 @@
           >click here go see them in your timeline.</a
         >
       </p>
-      {#if metadata}
+      {#if timeline}
         <h2>Current Timeline</h2>
         <p><b>Name:</b></p>
-        <p class="indent">{metadata.name}</p>
+        <p class="indent">{timeline.name}</p>
         <p><b>Description:</b></p>
-        <p class="indent">{metadata.description}</p>
+        <p class="indent">{timeline.description}</p>
       {:else}
         No timeline is loaded.
       {/if}
@@ -154,10 +151,10 @@
       </ul>
     {/if}
 
-    {#if events !== undefined && events.length > 0}
-      <h2>{events.length} Existing Events</h2>
+    {#if timeline?.events !== undefined && timeline?.events.length > 0}
+      <h2>{timeline?.events.length} Existing Events</h2>
       <ul>
-        {#each events as event}
+        {#each timeline?.events as event}
           <li>
             <i>
               ({event.start}{#if event.end}-{event.end}{/if})

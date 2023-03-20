@@ -36,10 +36,12 @@
   "dependencies": {
     "@testing-library/svelte": "^3.2.2",
     "@types/lodash": "^4.14.191",
+    "@types/pouchdb": "^6.4.0",
     "date-fns": "^2.29.3",
     "dexie": "^3.2.3",
     "lodash": "^4.17.21",
     "nanoid": "^4.0.1",
+    "pouchdb": "^8.0.1",
     "sass": "^1.58.3"
   }
 }
