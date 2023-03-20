@@ -44,7 +44,7 @@
         <button type="button" on:click={toggle} class="close" title="Close the hamburger menu"
           ><Icon font-size="3rem" icon="mdi:robot-confused-outline" /></button
         >
-        <h1>A Timeline of You</h1>
+        <h1>A Timeline of Us</h1>
         <p class="visually-hidden">Press escape to close this menu.</p>
       </div>
 

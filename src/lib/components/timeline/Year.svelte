@@ -9,7 +9,7 @@
   {#each events as event}
     <div class="event">
       <p>{event.name}</p>
-      <p>{event.description}</p>
+      {#if event.description}<p>{event.description}</p>{/if}
     </div>
   {/each}
 </div>

@@ -2,12 +2,18 @@
   import Icon from '@iconify/svelte';
   import { notifications, timeline } from '$lib/stores';
   import { downloadJSONFile } from '$lib/utils';
-  import { deleteTimelineById, exportTimelineToJSON, type TimelineMetadata } from '$lib/db';
+  import {
+    deleteTimelineById,
+    exportTimelineToJSON,
+    getTimelineMetadataList,
+    type TimelineMetadata,
+  } from '$lib/db';
+  import { onMount } from 'svelte';
 
   let timelineList: TimelineMetadata[] = [];
 
-  timeline.timelines.subscribe((tls) => {
-    timelineList = tls;
+  onMount(async () => {
+    timelineList = await getTimelineMetadataList();
   });
 
   async function handleExport(e: MouseEvent) {
@@ -48,6 +54,8 @@
           name ?? message.concat(` "${name}"`);
           notifications.add('error', message);
         });
+
+      timelineList = await getTimelineMetadataList();
     }
   }
 
@@ -70,26 +78,24 @@
   </p>
 
   <ul>
-    {#if timelineList.length > 0}
-      {#each timelineList as t}
-        <li>
-          <div class="timeline">
-            <a href="/timeline" data-id={t.id} on:click={handleLoadTimeline}>{t.name}</a>
-            <div class="actions">
-              <a href="/timeline/quick-add-events" data-id={t.id} on:click={handleLoadTimeline}
-                >Add Events</a
-              >
-              <button data-id={t.id} data-name={t.name} on:click={handleExport} type="button"
-                >Export&nbsp;<Icon icon="mdi:file-export-outline" /></button
-              >
-              <button data-id={t.id} data-name={t.name} on:click={handleDelete} type="button"
-                >Delete&nbsp;<Icon icon="mdi:delete-forever-outline" /></button
-              >
-            </div>
+    {#each timelineList as t}
+      <li>
+        <div class="timeline">
+          <a href="/timeline" data-id={t.id} on:click={handleLoadTimeline}>{t.name}</a>
+          <div class="actions">
+            <a href="/timeline/quick-add-events" data-id={t.id} on:click={handleLoadTimeline}
+              >Add Events</a
+            >
+            <button data-id={t.id} data-name={t.name} on:click={handleExport} type="button"
+              >Export&nbsp;<Icon icon="mdi:file-export-outline" /></button
+            >
+            <button data-id={t.id} data-name={t.name} on:click={handleDelete} type="button"
+              >Delete&nbsp;<Icon icon="mdi:delete-forever-outline" /></button
+            >
           </div>
-        </li>
-      {/each}
-    {/if}
+        </div>
+      </li>
+    {/each}
     <li>
       <a href="/new/timeline">
         <span class="icon">+</span>

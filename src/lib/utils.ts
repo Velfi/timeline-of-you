@@ -1,7 +1,7 @@
 import { isDate, isNumber, isString, isFinite } from 'lodash';
 
-export function downloadJSONFile(data: unknown, filename: string, pretty = true) {
-  const blob = new Blob([JSON.stringify(data, null, pretty ? 2 : undefined)], {
+export function downloadJSONFile(data: string, filename: string) {
+  const blob = new Blob([data], {
     type: 'application/json',
   });
   const url = URL.createObjectURL(blob);

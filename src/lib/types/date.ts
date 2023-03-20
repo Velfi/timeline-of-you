@@ -76,9 +76,10 @@ export class DateTime {
       }
     }
 
-    if (this.timeZone) {
-      str += ', ' + formatTimezone(this.timeZone);
-    }
+    // This is too noisy IMO.
+    // if (this.timeZone) {
+    //   str += ', ' + formatTimezone(this.timeZone);
+    // }
 
     return str;
   }

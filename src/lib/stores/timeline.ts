@@ -6,7 +6,6 @@ import {
   saveTimelineToDb,
   type Timeline,
   type TimelineEvent,
-  type TimelineMetadata,
 } from '$lib/db';
 import type { DateTime } from '$lib/types/date';
 
@@ -22,12 +21,10 @@ export interface TimelineStore {
   loadFromJSON: (timelineString: string) => void;
   saveToDb: () => Promise<void>;
   timeline: Readable<Timeline | undefined>;
-  timelines: Readable<TimelineMetadata[]>;
 }
 
 function createTimelineStore(): TimelineStore {
   const timeline = writable<Timeline | undefined>();
-  const timelines = writable<TimelineMetadata[]>([]);
   const hasChanges = writable(false);
   const isLoading = writable(false);
 
@@ -134,6 +131,5 @@ function createTimelineStore(): TimelineStore {
     loadFromJSON,
     saveToDb,
     timeline: readonly(timeline),
-    timelines: readonly(timelines),
   };
 }

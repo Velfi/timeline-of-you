@@ -156,10 +156,7 @@
       <ul>
         {#each timeline?.events as event}
           <li>
-            <i>
-              ({event.start}{#if event.end}-{event.end}{/if})
-            </i>
-            {event.name}{#if event.description}&nbsp;&mdash;&nbsp;{event.description}{/if}
+            <ShortEvent {event} />
           </li>
         {/each}
       </ul>

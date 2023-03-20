@@ -21,10 +21,10 @@ export function isProbablyEvent(json: unknown): json is Event {
     isObject(json) &&
     'start' in json &&
     'name' in json &&
-    'tags' in json &&
+    'tagIds' in json &&
     'createdOn' in json &&
     'lastModified' in json &&
-    Array.isArray(json.tags)
+    Array.isArray(json.tagIds)
   );
 }
 

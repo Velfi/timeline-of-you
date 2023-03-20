@@ -3,7 +3,7 @@
   import BeginningAndEndInput from '$lib/components/datetime/BeginningAndEndInput.svelte';
   import type { DateTime } from '$lib/types/date';
   import { goto } from '$app/navigation';
-  import { notifications } from '$lib/stores';
+  import { notifications, timeline } from '$lib/stores';
   import { createTimeline } from '$lib/db';
 
   let start: DateTime | undefined;
@@ -19,14 +19,15 @@
       throw new Error('unreachable');
     }
 
-    await createTimeline(start, end, name, description);
+    const newTimelineId = await createTimeline(start, end, name, description);
+    await timeline.loadFromDb(newTimelineId);
 
     notifications.add(
       'success',
       `Timeline "${name === '' ? '(unnamed)' : name}" created successfully`
     );
     // After successfully saving the timeline, redirect to the manage page.
-    goto(`/manage/timelines?created=${name}`);
+    goto(`/manage/timelines`);
   }
 </script>
 

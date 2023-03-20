@@ -21,7 +21,7 @@
             timeline.loadFromJSON(result);
             notifications.add(
               'success',
-              'Successfully imported a timeline from JSON. Save this timeline to permanently store it in your browser.'
+              'Successfully imported a timeline from JSON. This timeline has been saved to your browser.'
             );
             goto('/timeline');
           } catch (e) {

@@ -1,4 +1,4 @@
-import type { DateTime } from '$lib/types/date';
+import { DateTime } from '$lib/types/date';
 import Dexie, { type Table } from 'dexie';
 import { exportJSON } from './export';
 import { importJSON } from './import';
@@ -33,9 +33,19 @@ export async function getTimelineById(id: number): Promise<Timeline> {
   if (!metadata) {
     throw new Error(`No timeline with ID ${id} found.`);
   }
+  metadata.start = DateTime.fromJSON(metadata.start);
+  if (metadata.end) {
+    metadata.end = DateTime.fromJSON(metadata.end);
+  }
   const { eventIds, ...rest } = metadata;
 
   const events = (await db.events.bulkGet(eventIds)).filter((e): e is Event => e !== undefined);
+  events.forEach((e) => {
+    e.start = DateTime.fromJSON(e.start);
+    if (e.end) {
+      e.end = DateTime.fromJSON(e.end);
+    }
+  });
   // TODO report IDs of events that weren't found
   console.assert(events.length === eventIds.length, 'Some events were not found!');
 
@@ -56,7 +66,13 @@ export async function getTimelineById(id: number): Promise<Timeline> {
 export async function getTimelineMetadataList(): Promise<TimelineMetadata[]> {
   console.log('Getting timeline metadata list...');
   const metadataList = (await db.metadata.toArray()).map(
-    ({ id, name, description, start, end }) => ({ id, name, description, start, end })
+    ({ id, name, description, start, end }) => ({
+      id,
+      name,
+      description,
+      start: DateTime.fromJSON(start),
+      end: DateTime.fromJSON(end),
+    })
   );
   console.log('Timeline metadata list retrieved.');
 
@@ -92,7 +108,7 @@ export async function createTimeline(
   end: DateTime,
   name?: string,
   description?: string
-): Promise<Timeline> {
+): Promise<number> {
   console.log('Creating timeline...');
   const createdOn = new Date();
   const lastModified = new Date();
@@ -113,20 +129,8 @@ export async function createTimeline(
     throw new Error('Failed to create timeline.');
   }
 
-  const timeline: Timeline = {
-    id: metadataId,
-    name,
-    description,
-    start,
-    end,
-    version: SCHEMA_VERSION,
-    events: [],
-    createdOn,
-    lastModified,
-  };
-
   console.log('Timeline created.');
-  return timeline;
+  return metadataId;
 }
 
 export async function addEventToTimelineWithId(
@@ -193,11 +197,12 @@ export async function saveTimelineToDb(timeline: Timeline): Promise<void> {
 
   if (timeline.id) {
     const { id, events, ...rest } = timeline;
-    const eventIds = events.map((e) => e.id).filter((e): e is number => e !== undefined);
-    await db.metadata.update(id, { ...rest, eventIds });
-
     // Tags should already have been saved so we don't need to re-save them.
-    db.events.bulkPut(events);
+    const eventIds = (await db.events.bulkPut(events, { allKeys: true })).filter(
+      (e): e is number => e !== undefined
+    );
+
+    await db.metadata.update(id, { ...rest, eventIds });
   } else {
     throw new Error('TODO: enable saving timelines with no ID');
   }
@@ -210,8 +215,8 @@ export async function importTimelineFromJSON(json: string): Promise<Timeline> {
   return getTimelineById(timelineId);
 }
 
-export function exportTimelineToJSON(id: number): Promise<string> {
-  return exportJSON(id, db);
+export function exportTimelineToJSON(id: number, pretty = true): Promise<string> {
+  return exportJSON(id, db, pretty);
 }
 
 export async function importTags(tags: Tag[]): Promise<Map<number, number>> {

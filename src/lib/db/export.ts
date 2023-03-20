@@ -6,7 +6,7 @@ import { SCHEMA_VERSION, type TimelineDexie } from './';
  * Given a timeline ID, find that timeline in the database, along with all related
  * events and tags. Then bundle them into a single object and return it.
  */
-export async function exportJSON(id: number, db: TimelineDexie): Promise<string> {
+export async function exportJSON(id: number, db: TimelineDexie, pretty = true): Promise<string> {
   const metadata = await db.metadata.get(id);
 
   if (metadata === undefined) {
@@ -42,6 +42,6 @@ export async function exportJSON(id: number, db: TimelineDexie): Promise<string>
       tags,
     },
     null,
-    2
+    pretty ? 2 : undefined
   );
 }
