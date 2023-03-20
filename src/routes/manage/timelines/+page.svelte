@@ -129,20 +129,20 @@
 
   .actions {
     display: flex;
+    align-items: center;
 
     button {
       display: flex;
+      align-items: center;
+      height: unset;
       border: none;
       border-radius: 0;
+      padding: 0 0 0 0.5rem;
     }
   }
 
   .icon {
     font-size: 1.5rem;
     margin-right: 0.5rem;
-  }
-
-  ul > li:not(:last-child) {
-    margin-bottom: 0.5rem;
   }
 </style>
