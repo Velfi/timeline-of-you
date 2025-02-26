@@ -61,7 +61,7 @@
 
   function handleLoadTimeline(
     event: MouseEvent & { currentTarget: EventTarget & HTMLAnchorElement }
-  ): any {
+  ) {
     const { id } = event.currentTarget.dataset;
     if (id) {
       timeline.loadFromDb(parseInt(id, 10));

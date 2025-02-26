@@ -16,13 +16,13 @@ const MONTHS = [
   'December',
 ];
 
-function formatTimezone(timezone: string): string {
-  if (timezone.startsWith('+') || timezone.startsWith('-')) {
-    return 'GMT' + timezone;
-  } else {
-    return `GMT +${timezone}`;
-  }
-}
+// function formatTimezone(timezone: string): string {
+//   if (timezone.startsWith('+') || timezone.startsWith('-')) {
+//     return 'GMT' + timezone;
+//   } else {
+//     return `GMT +${timezone}`;
+//   }
+// }
 
 export class DateTime {
   year: number;

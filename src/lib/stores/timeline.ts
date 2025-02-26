@@ -24,9 +24,9 @@ export interface TimelineStore {
 }
 
 function createTimelineStore(): TimelineStore {
-  const timeline = writable<Timeline | undefined>();
-  const hasChanges = writable(false);
-  const isLoading = writable(false);
+  const _timeline = writable<Timeline | undefined>();
+  const _hasChanges = writable(false);
+  const _isLoading = writable(false);
 
   function setPreferredTimezoneFromTimeline(tl: Timeline | undefined) {
     const tz = tl?.start.timeZone;
@@ -41,16 +41,16 @@ function createTimelineStore(): TimelineStore {
   }
 
   const loadFromDb = async (id: number) => {
-    isLoading.set(true);
+    _isLoading.set(true);
     const tl = await getTimelineById(id);
     setPreferredTimezoneFromTimeline(tl);
-    timeline.set(tl);
+    _timeline.set(tl);
 
-    isLoading.set(false);
+    _isLoading.set(false);
   };
 
   const loadFromJSON = async (timelineString: string) => {
-    isLoading.set(true);
+    _isLoading.set(true);
     const tl = await importTimelineFromJSON(timelineString);
 
     if (!tl) {
@@ -58,19 +58,19 @@ function createTimelineStore(): TimelineStore {
     }
 
     setPreferredTimezoneFromTimeline(tl);
-    timeline.set(tl);
+    _timeline.set(tl);
 
-    isLoading.set(false);
+    _isLoading.set(false);
   };
 
   const saveToDb = async () => {
     console.log('Saving timeline to DB...');
-    const tl = get(timeline);
+    const tl = get(_timeline);
 
     if (tl) {
       await saveTimelineToDb(tl);
 
-      hasChanges.set(false);
+      _hasChanges.set(false);
       console.log('Timeline successfully saved to DB.');
     } else {
       throw new Error('Failed to save timeline to DB.');
@@ -84,7 +84,7 @@ function createTimelineStore(): TimelineStore {
     end?: DateTime;
     tagIds: number[];
   }) => {
-    timeline.update((tl) => {
+    _timeline.update((tl) => {
       if (tl) {
         tl.events.push({ ...newEvent, createdOn: new Date(), lastModified: new Date() });
         tl.lastModified = new Date();
@@ -94,7 +94,7 @@ function createTimelineStore(): TimelineStore {
       }
     });
 
-    hasChanges.set(true);
+    _hasChanges.set(true);
   };
 
   const addEvents = async (
@@ -106,7 +106,7 @@ function createTimelineStore(): TimelineStore {
       tagIds: number[];
     }[]
   ) => {
-    timeline.update((tl) => {
+    _timeline.update((tl) => {
       if (tl) {
         for (const ev of newEvents) {
           tl.events.push({ ...ev, createdOn: new Date(), lastModified: new Date() });
@@ -119,17 +119,17 @@ function createTimelineStore(): TimelineStore {
       }
     });
 
-    hasChanges.set(true);
+    _hasChanges.set(true);
   };
 
   return {
     addEvent,
     addEvents,
-    hasChanges: readonly(hasChanges),
-    isLoading: readonly(isLoading),
+    hasChanges: readonly(_hasChanges),
+    isLoading: readonly(_isLoading),
     loadFromDb,
     loadFromJSON,
     saveToDb,
-    timeline: readonly(timeline),
+    timeline: readonly(_timeline),
   };
 }

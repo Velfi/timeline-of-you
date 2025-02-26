@@ -1,36 +1,30 @@
 <script lang="ts">
-  import * as stores from '$lib/stores';
-  import TimelineElement from '$lib/components/timeline/Timeline.svelte';
-  import { goto } from '$app/navigation';
-  import { browser } from '$app/environment';
-  import type { Timeline } from '$lib/db';
+  import timelineJSON from '$lib/timeline.json';
+  import TimelineViz from '$lib/components/TimelineViz.svelte';
+  import { DateTime } from '$lib/types/date';
 
-  let timeline: Timeline | undefined;
-  let isLoading = true;
-
-  stores.timeline.isLoading.subscribe((l) => {
-    isLoading = l;
-  });
-
-  stores.timeline.timeline.subscribe((t) => {
-    // When no timeline is loaded or loading, reroute to the timeline management page
-    if (!t && !isLoading && browser) {
-      goto('/manage/timelines');
-    }
-    timeline = t;
-  });
+  let width = 0;
+  let height = 0;
+  const events = timelineJSON.events.map((event) => ({
+    ...event,
+    createdOn: new Date(event.createdOn),
+    lastModified: new Date(event.lastModified),
+    start: DateTime.fromJSON(event.start),
+    end: event.end ? DateTime.fromJSON(event.end) : undefined,
+  }));
+  const startDate = DateTime.fromJSON(timelineJSON.metadata.start).toDate();
+  const endDate = DateTime.fromJSON(timelineJSON.metadata.end).toDate();
 </script>
 
-<svelte:head>
-  <title>Timeline</title>
-  <meta name="description" content="A timeline of you" />
-</svelte:head>
+<div bind:clientHeight={height} bind:clientWidth={width}>
+  <TimelineViz {height} {width} {events} {startDate} {endDate} />
+</div>
 
-{#if timeline}
-  <TimelineElement {timeline} />
-{:else}
-  <p>
-    It looks like you haven't loaded a timeline yet.
-    <a href="/manage/timelines">You can load one from the timeline management page.</a>
-  </p>
-{/if}
+<style lang="scss">
+  div {
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
+    border: 1px solid currentColor;
+    box-sizing: border-box;
+  }
+</style>
