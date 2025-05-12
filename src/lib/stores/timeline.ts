@@ -29,14 +29,14 @@ function createTimelineStore(): TimelineStore {
   const _isLoading = writable(false);
 
   function setPreferredTimezoneFromTimeline(tl: Timeline | undefined) {
-    const tz = tl?.start.timeZone;
+    const tz = tl?.metadata.start.timeZone;
     // Since many people live most of their life in the same timezone, we assume
     // defaulting to the timezone of the timeline's start date is helpful.
     if (tz) {
       console.log('Successfully loaded preferred timezone from timeline.');
       preferredEventTimezone.set(tz);
     } else {
-      console.log('Failed to load preferred timezone from timeline.', tl?.name);
+      console.log('Failed to load preferred timezone from timeline.', tl?.metadata.name);
     }
   }
 
@@ -87,7 +87,7 @@ function createTimelineStore(): TimelineStore {
     _timeline.update((tl) => {
       if (tl) {
         tl.events.push({ ...newEvent, createdOn: new Date(), lastModified: new Date() });
-        tl.lastModified = new Date();
+        tl.metadata.lastModified = new Date();
         return tl;
       } else {
         throw new Error('Tried to add event to timeline but no timeline was loaded.');
@@ -112,7 +112,7 @@ function createTimelineStore(): TimelineStore {
           tl.events.push({ ...ev, createdOn: new Date(), lastModified: new Date() });
         }
 
-        tl.lastModified = new Date();
+        tl.metadata.lastModified = new Date();
         return tl;
       } else {
         throw new Error('Tried to add event to timeline but no timeline was loaded.');

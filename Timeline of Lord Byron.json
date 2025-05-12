@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "metadata": {
+    "version": 1,
+    "eventIds": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "name": "Timeline of Lord Byron",
+    "description": "This is a chronology of events in the life of George Gordon Byron, 6th Baron Byron (22 January 1788 – 19 April 1824).",
+    "start": {
+      "year": 1788,
+      "month": 1,
+      "day": 22,
+      "timeZone": "0"
+    },
+    "end": {
+      "year": 1824,
+      "month": 4,
+      "day": 19,
+      "timeZone": "0"
+    },
+    "createdOn": "2023-03-20T00:46:01.023Z",
+    "lastModified": "2023-03-20T01:17:07.871Z",
+    "id": 3
+  },
+  "events": [
+    {
+      "name": "George Gordon Byron became 6th Baron Byron of Rochdale on death of great-uncle.",
+      "start": {
+        "year": 1798,
+        "timeZone": "0"
+      },
+      "createdOn": "2023-03-20T01:03:21.783Z",
+      "lastModified": "2023-03-20T01:03:21.783Z",
+      "tagIds": [],
+      "id": 10
+    },
+    {
+      "start": {
+        "year": 1794,
+        "timeZone": "0"
+      },
+      "end": {
+        "year": 1798,
+        "timeZone": "0"
+      },
+      "name": "At Aberdeen Grammar School.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:16:13.789Z",
+      "lastModified": "2023-03-20T01:16:13.789Z",
+      "id": 11
+    },
+    {
+      "start": {
+        "year": 1791,
+        "month": 8,
+        "day": 2,
+        "timeZone": "0"
+      },
+      "name": "Father (John \"Mad Jack\" Byron) died in France never having seen his son.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:16:13.789Z",
+      "lastModified": "2023-03-20T01:16:13.789Z",
+      "id": 12
+    },
+    {
+      "start": {
+        "year": 1791,
+        "timeZone": "0"
+      },
+      "name": "Mother moved to flat in 64 Broad Street, Aberdeen.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:16:13.789Z",
+      "lastModified": "2023-03-20T01:16:13.789Z",
+      "id": 13
+    },
+    {
+      "start": {
+        "year": 1798,
+        "month": 8,
+        "timeZone": "0"
+      },
+      "name": "With his mother took up residence at ancestral home, Newstead Abbey, near Nottingham.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:16:13.789Z",
+      "lastModified": "2023-03-20T01:16:13.789Z",
+      "id": 14
+    },
+    {
+      "start": {
+        "year": 1799,
+        "timeZone": "0"
+      },
+      "name": "Lived with Parkyns family, Nottingham. Tutored by \"Dummer\" Rogers.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:16:13.789Z",
+      "lastModified": "2023-03-20T01:16:13.789Z",
+      "id": 15
+    },
+    {
+      "start": {
+        "year": 1799,
+        "month": 7,
+        "timeZone": "0"
+      },
+      "name": "Removed to London by John Hanson, Byron’s lawyer & business agent.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:16:13.789Z",
+      "lastModified": "2023-03-20T01:16:13.789Z",
+      "id": 16
+    },
+    {
+      "start": {
+        "year": 1799,
+        "month": 9,
+        "timeZone": "0"
+      },
+      "name": "Attended Dr. Glennie's School, Dulwich Grove.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:16:13.789Z",
+      "lastModified": "2023-03-20T01:16:13.789Z",
+      "id": 17
+    },
+    {
+      "start": {
+        "year": 1799,
+        "month": 12,
+        "timeZone": "0"
+      },
+      "name": "Spent Christmas holidays with Hanson family at Earl's Court, London.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:16:13.789Z",
+      "lastModified": "2023-03-20T01:16:13.789Z",
+      "id": 18
+    },
+    {
+      "start": {
+        "year": 1799,
+        "month": 6,
+        "timeZone": "0"
+      },
+      "name": "Spent summer holiday in Newstead Abbey and fell in love with 1st cousin, Margaret Parker.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:16:13.789Z",
+      "lastModified": "2023-03-20T01:16:13.789Z",
+      "id": 19
+    },
+    {
+      "start": {
+        "year": 1801,
+        "month": 4,
+        "timeZone": "0"
+      },
+      "name": "Entered Harrow School.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:17:07.871Z",
+      "lastModified": "2023-03-20T01:17:07.871Z",
+      "id": 20
+    },
+    {
+      "start": {
+        "year": 1801,
+        "month": 6,
+        "timeZone": "0"
+      },
+      "end": {
+        "year": 1801,
+        "month": 8,
+        "timeZone": "0"
+      },
+      "name": "Spent summer with mother at Mrs Massingberd's, 16 Piccadilly, at Hanson's and in Cheltenham.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:17:07.871Z",
+      "lastModified": "2023-03-20T01:17:07.871Z",
+      "id": 21
+    },
+    {
+      "start": {
+        "year": 1801,
+        "month": 12,
+        "timeZone": "0"
+      },
+      "name": "Christmas holidays in Bath with mother.",
+      "tagIds": [],
+      "createdOn": "2023-03-20T01:17:07.871Z",
+      "lastModified": "2023-03-20T01:17:07.871Z",
+      "id": 22
+    }
+  ],
+  "tags": []
+}

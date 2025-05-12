@@ -81,10 +81,12 @@
     {#each timelineList as t}
       <li>
         <div class="timeline">
-          <a href="/timeline" data-id={t.id} on:click={handleLoadTimeline}>{t.name}</a>
+          <a href="/timeline/{t.id}" data-id={t.id} on:click={handleLoadTimeline}>{t.name}</a>
           <div class="actions">
-            <a href="/timeline/quick-add-events" data-id={t.id} on:click={handleLoadTimeline}
-              >Add Events</a
+            <a
+              href={`/timeline/${t.id}/quick-add-events`}
+              data-id={t.id}
+              on:click={handleLoadTimeline}>Add Events</a
             >
             <button data-id={t.id} data-name={t.name} on:click={handleExport} type="button"
               >Export&nbsp;<Icon icon="mdi:file-export-outline" /></button

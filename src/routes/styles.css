@@ -7,7 +7,7 @@
   --color-bg-0: #253131;
   --color-bg-1: #2c3e3e;
   --color-theme-1: #ffe8c3;
-  --color-theme-2: #736857;
+  --color-theme-2: #eed6b3;
   --color-accent-1: #85ffb5;
   --color-accent-2: #73c0a0;
   --color-text: var(--color-theme-1);
@@ -145,14 +145,6 @@ input:focus {
   position: absolute;
   width: 1px;
   white-space: nowrap;
-}
-
-.timeline-container {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
 }
 
 .indent {

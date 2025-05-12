@@ -25,6 +25,7 @@ export class TimelineDexie extends Dexie {
 }
 
 const db = new TimelineDexie();
+export { db };
 
 export async function getTimelineById(id: number): Promise<Timeline> {
   console.log(`Getting timeline with ID ${id}...`);
@@ -55,8 +56,14 @@ export async function getTimelineById(id: number): Promise<Timeline> {
   console.assert(tags.length === tagIDs.length, 'Some tags were not found!');
 
   const timeline: Timeline = {
-    ...rest,
+    version: SCHEMA_VERSION,
+    metadata: {
+      ...rest,
+      createdOn: metadata.createdOn,
+      lastModified: metadata.lastModified
+    },
     events,
+    tags
   };
 
   console.log('Timeline retrieved.');
@@ -66,12 +73,14 @@ export async function getTimelineById(id: number): Promise<Timeline> {
 export async function getTimelineMetadataList(): Promise<TimelineMetadata[]> {
   console.log('Getting timeline metadata list...');
   const metadataList = (await db.metadata.toArray()).map(
-    ({ id, name, description, start, end }) => ({
+    ({ id, name, description, start, end, createdOn, lastModified }) => ({
       id,
       name,
       description,
       start: DateTime.fromJSON(start),
       end: DateTime.fromJSON(end),
+      createdOn,
+      lastModified
     })
   );
   console.log('Timeline metadata list retrieved.');
@@ -193,16 +202,21 @@ export async function addTags(tagNames: string[]): Promise<number[]> {
 }
 
 export async function saveTimelineToDb(timeline: Timeline): Promise<void> {
-  console.log(`Saving timeline with ID ${timeline.id} to database...`);
+  console.log(`Saving timeline with ID ${timeline.metadata.id} to database...`);
 
-  if (timeline.id) {
-    const { id, events, ...rest } = timeline;
+  if (timeline.metadata.id) {
+    const { metadata, events, ...rest } = timeline;
     // Tags should already have been saved so we don't need to re-save them.
     const eventIds = (await db.events.bulkPut(events, { allKeys: true })).filter(
       (e): e is number => e !== undefined
     );
 
-    await db.metadata.update(id, { ...rest, eventIds });
+    const metadataId = metadata.id;
+    if (metadataId === undefined) {
+      throw new Error('Metadata ID is undefined');
+    }
+
+    await db.metadata.update(metadataId, { ...metadata, eventIds });
   } else {
     throw new Error('TODO: enable saving timelines with no ID');
   }
@@ -271,18 +285,10 @@ export async function deleteDatabase() {
 }
 
 export interface Timeline {
-  id?: number;
   version: number;
-
+  metadata: TimelineMetadata;
   events: TimelineEvent[];
-
-  name?: string;
-  description?: string;
-  start: DateTime;
-  end: DateTime;
-
-  createdOn: Date;
-  lastModified: Date;
+  tags: Tag[];
 }
 
 export interface TimelineMetadata {
@@ -291,17 +297,17 @@ export interface TimelineMetadata {
   description?: string;
   start: DateTime;
   end: DateTime;
+  createdOn: Date;
+  lastModified: Date;
 }
 
 export interface TimelineEvent {
   id?: number;
-
   name: string;
   description?: string;
   start: DateTime;
   end?: DateTime;
   tagIds: number[];
-
   createdOn: Date;
   lastModified: Date;
 }

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import DateTimeInput from '$lib/components/datetime/DateTimeInput.svelte';
   import TagInput from '$lib/components/TagInput.svelte';
   import TextInput from '$lib/components/TextInput.svelte';
@@ -11,8 +12,9 @@
   import ShortEvent from '$lib/components/ShortEvent.svelte';
   import { get, writable } from 'svelte/store';
 
-  let timeline: Timeline | undefined;
+  export let data: { timelineId: number };
 
+  let timeline: Timeline | undefined;
   let start: DateTime | undefined;
   let end: DateTime | undefined;
   let name = '';
@@ -37,11 +39,16 @@
   });
 
   stores.timeline.timeline.subscribe((t) => {
-    // When no timeline is loaded or loading, reroute to the timeline management page
-    if (!t && !isLoading && browser) {
-      goto('/manage/timelines');
-    }
     timeline = t;
+  });
+
+  onMount(async () => {
+    try {
+      await stores.timeline.loadFromDb(data.timelineId);
+    } catch (error) {
+      console.error('Failed to load timeline:', error);
+      notifications.add('error', 'Failed to load timeline. Please try again.');
+    }
   });
 
   async function handleSubmit(e: SubmitEvent) {
@@ -90,81 +97,97 @@
 
 <h1>Add a new event to the timeline</h1>
 
-<div class="container">
-  <form on:submit={handleSubmit}>
-    <div><DateTimeInput bind:value={start} label="Start*" required /></div>
-    <div><DateTimeInput bind:value={end} label="End" /></div>
-    <div>
-      <TextInput label="Name" placeholder="My new timeline" required bind:value={name} />
+{#if isLoading}
+  <div class="loading">
+    <p>Loading timeline...</p>
+  </div>
+{:else if !timeline}
+  <div class="error">
+    <p>No timeline found. Redirecting to timeline management...</p>
+  </div>
+{:else}
+  <div class="container">
+    <form on:submit={handleSubmit}>
+      <div><DateTimeInput bind:value={start} label="Start*" required /></div>
+      <div><DateTimeInput bind:value={end} label="End" /></div>
+      <div>
+        <TextInput label="Name" placeholder="My new timeline" required bind:value={name} />
+      </div>
+      <div>
+        <TextInput
+          textarea
+          label="Description"
+          placeholder="A timeline tracking the major events in my life."
+          bind:value={description}
+        />
+      </div>
+      <div>
+        <TagInput bind:value={tagNames} />
+      </div>
+      <button class="add">Add</button>
+    </form>
+    <div class="about">
+      <div>
+        <h2>How this works</h2>
+        <p>
+          Add events by filling out the form to the left. Once you're done, click the "Save Events"
+          button to save them to your timeline. Once you're done adding events, <a
+            href={`/timeline/${data.timelineId}`}>click here go see them in your timeline.</a
+          >
+        </p>
+        {#if timeline}
+          <h2>Current Timeline</h2>
+          <p><b>Name:</b></p>
+          <p class="indent">{timeline.metadata.name}</p>
+          <p><b>Description:</b></p>
+          <p class="indent">{timeline.metadata.description}</p>
+        {:else}
+          No timeline is loaded.
+        {/if}
+      </div>
+      <button
+        class="save-events"
+        disabled={saveButtonIsDisabled}
+        title={saveButtonTitle}
+        type="button"
+        on:click={handleSave}>Save Events</button
+      >
     </div>
-    <div>
-      <TextInput
-        textarea
-        label="Description"
-        placeholder="A timeline tracking the major events in my life."
-        bind:value={description}
-      />
-    </div>
-    <div>
-      <TagInput bind:value={tagNames} />
-    </div>
-    <button class="add">Add</button>
-  </form>
-  <div class="about">
-    <div>
-      <h2>How this works</h2>
-      <p>
-        Add events by filling out the form to the left. Once you're done, click the "Save Events"
-        button to save them to your timeline. Once you're done adding events, <a href="/timeline"
-          >click here go see them in your timeline.</a
-        >
-      </p>
-      {#if timeline}
-        <h2>Current Timeline</h2>
-        <p><b>Name:</b></p>
-        <p class="indent">{timeline.name}</p>
-        <p><b>Description:</b></p>
-        <p class="indent">{timeline.description}</p>
+    <div class="events">
+      <h2>{$newEvents.length} New Events</h2>
+      {#if $newEvents.length === 0}
+        <p><i>Start adding events using the above form and they'll show up down here.</i></p>
       {:else}
-        No timeline is loaded.
+        <ul>
+          {#each $newEvents as event}
+            <li class="event">
+              <ShortEvent {event} />
+            </li>
+          {/each}
+        </ul>
+      {/if}
+
+      {#if timeline?.events !== undefined && timeline?.events.length > 0}
+        <h2>{timeline?.events.length} Existing Events</h2>
+        <ul>
+          {#each timeline?.events as event}
+            <li class="event">
+              <ShortEvent {event} />
+            </li>
+          {/each}
+        </ul>
       {/if}
     </div>
-    <button
-      class="save-events"
-      disabled={saveButtonIsDisabled}
-      title={saveButtonTitle}
-      type="button"
-      on:click={handleSave}>Save Events</button
-    >
   </div>
-  <div class="events">
-    <h2>{$newEvents.length} New Events</h2>
-    {#if $newEvents.length === 0}
-      <p><i>Start adding events using the above form and they'll show up down here.</i></p>
-    {:else}
-      <ul>
-        {#each $newEvents as event}
-          <li class="event">
-            <ShortEvent {event} />
-          </li>
-        {/each}
-      </ul>
-    {/if}
-
-    {#if timeline?.events !== undefined && timeline?.events.length > 0}
-      <h2>{timeline?.events.length} Existing Events</h2>
-      <ul>
-        {#each timeline?.events as event}
-          <li class="event">
-            <ShortEvent {event} />
-          </li>
-        {/each}
-      </ul>
-    {/if}
-  </div>
-</div>
+{/if}
 
 <style lang="scss">
+  .loading,
+  .error {
+    text-align: center;
+    padding: 2rem;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -11,19 +11,20 @@
     }
   }
 
-  function handleImport() {
+  async function handleImport() {
     if (file !== undefined) {
       const reader = new FileReader();
-      reader.onload = (e) => {
+      reader.onload = async (e) => {
         if (typeof e.target?.result === 'string') {
           const result = e.target?.result;
           try {
-            timeline.loadFromJSON(result);
+            await timeline.loadFromJSON(result);
+            await timeline.saveToDb();
             notifications.add(
               'success',
               'Successfully imported a timeline from JSON. This timeline has been saved to your browser.'
             );
-            goto('/timeline');
+            goto('/manage/timelines');
           } catch (e) {
             console.error(e);
             notifications.add(

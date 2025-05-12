@@ -28,11 +28,11 @@
     </li>
     <li>
       <strong>Adding events</strong> - You can add events to your timeline by navigating to the
-      "quick-add events" page from the <a href="/manage/timelines">timeline management</a> page.
+      "quick-add events" page from the <a href="/timelines">timeline management</a> page.
     </li>
     <li>
       <strong>Exporting timelines</strong> - You can export your timeline as a JSON file by clicking
-      the "export timeline" link from the <a href="/manage/timelines">timeline management</a> page.
+      the "export timeline" link from the <a href="/timelines">timeline management</a> page.
     </li>
     <li>
       <strong>Importing timelines</strong> - You can import previously-exported timelines from a
@@ -41,8 +41,8 @@
     </li>
     <li>
       <strong>Viewing a timeline</strong> - Load a timeline from
-      <a href="/manage/timelines">timeline management</a> page by clicking on its name. Currently, the
-      timeline is not looking so good. I'm still working on how to present things.
+      <a href="/timelines">timeline management</a> page by clicking on its name. Currently, the timeline
+      is not looking so good. I'm still working on how to present things.
     </li>
   </ul>
 </div>
