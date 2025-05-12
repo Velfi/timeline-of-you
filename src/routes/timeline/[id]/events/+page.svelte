@@ -285,25 +285,27 @@
                       >
                         <div class="event-header">
                           <h5>{event.name}</h5>
-                          <p class="event-times">
-                            <DateTimeComponent
-                              date={event.start.toDate()}
-                              format="short"
-                              hasMonth={event.start.month !== undefined}
-                              hasDay={event.start.day !== undefined}
-                              hasTime={event.start.hour !== undefined}
-                            />
-                            {#if event.end}
-                              <span class="time-separator"> to </span>
+                          <div class="event-meta">
+                            <p class="event-times">
                               <DateTimeComponent
-                                date={event.end.toDate()}
+                                date={event.start.toDate()}
                                 format="short"
-                                hasMonth={event.end.month !== undefined}
-                                hasDay={event.end.day !== undefined}
-                                hasTime={event.end.hour !== undefined}
+                                hasMonth={event.start.month !== undefined}
+                                hasDay={event.start.day !== undefined}
+                                hasTime={event.start.hour !== undefined}
                               />
-                            {/if}
-                          </p>
+                              {#if event.end}
+                                <span class="time-separator"> to </span>
+                                <DateTimeComponent
+                                  date={event.end.toDate()}
+                                  format="short"
+                                  hasMonth={event.end.month !== undefined}
+                                  hasDay={event.end.day !== undefined}
+                                  hasTime={event.end.hour !== undefined}
+                                />
+                              {/if}
+                            </p>
+                          </div>
                         </div>
 
                         {#if event.description}
@@ -545,5 +547,15 @@
 
   .layout-text {
     font-size: 0.9em;
+  }
+
+  .event-meta {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: var(--text-color-secondary, #666);
+  }
+
+  .event-dates {
+    margin-top: 4px;
   }
 </style>

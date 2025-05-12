@@ -14,7 +14,7 @@
   export let description: string;
 
   let container: HTMLDivElement;
-  let width = 800;
+  let width = 2000;
   let height = 400;
   let margin = { top: 20, right: 20, bottom: 40, left: 20 };
 
@@ -31,16 +31,18 @@
     y: number;
     fx: number;
     r: number;
+    timelineX: number;
   }
 
   let nodes: TimelineNode[] = [];
 
   function updateDimensions() {
     if (container && browser) {
-      width = container.clientWidth;
+      width = Math.max(container.clientWidth, 2000);
       height = container.clientHeight;
       setupScales();
       drawTimeline();
+      setupZoom();
     }
   }
 
@@ -54,6 +56,9 @@
   onDestroy(() => {
     if (browser) {
       window.removeEventListener('resize', updateDimensions);
+      if (simulation) {
+        simulation.stop();
+      }
     }
   });
 
@@ -67,20 +72,36 @@
       .range([margin.left, width - margin.right]);
   }
 
+  $: if (events && events.length > 0) {
+    if (simulation) {
+      simulation.stop();
+    }
+    drawTimeline();
+  }
+
   function drawTimeline() {
     // Clear previous content
     if (svg) svg.remove();
     if (simulation) simulation.stop();
 
-    svg = select(container).append('svg').attr('width', width).attr('height', height);
+    // Setup scales first
+    setupScales();
+
+    svg = select(container)
+      .append('svg')
+      .attr('width', width)
+      .attr('height', height)
+      .style('overflow', 'visible')
+      .style('touch-action', 'none'); // Prevent default touch actions
 
     g = svg.append('g');
 
     // Draw timeline band (rectangle)
     const bandHeight = 30;
+    const timelineY = height / 2;
     g.append('rect')
       .attr('x', margin.left)
-      .attr('y', height / 2 - bandHeight / 2)
+      .attr('y', timelineY - bandHeight / 2)
       .attr('width', width - margin.left - margin.right)
       .attr('height', bandHeight)
       .attr('fill', 'var(--color-bg-1)')
@@ -94,15 +115,15 @@
       const x = xScale(date);
       g.append('line')
         .attr('x1', x)
-        .attr('y1', height / 2 - bandHeight / 2)
+        .attr('y1', timelineY - bandHeight / 2)
         .attr('x2', x)
-        .attr('y2', height / 2 + bandHeight / 2)
+        .attr('y2', timelineY + bandHeight / 2)
         .attr('stroke', 'var(--color-theme-2)')
         .attr('stroke-width', 1);
 
       g.append('text')
         .attr('x', x)
-        .attr('y', height / 2 + bandHeight / 2 + 20)
+        .attr('y', timelineY + bandHeight / 2 + 20)
         .attr('text-anchor', 'middle')
         .text(year)
         .style('font-size', '10px')
@@ -110,6 +131,10 @@
     }
 
     // Create nodes for force simulation
+    const eventY = timelineY - bandHeight / 2 - 250; // Increased from -120 to -250 for much more vertical space
+    const labelSpacing = 150; // Space between labels
+    const startX = margin.left + 50; // Start position for labels
+
     nodes = events
       .sort((a, b) => {
         // Sort by full date
@@ -122,42 +147,96 @@
         return {
           id: event.id || i,
           name: event.name,
-          x: xScale(eventDate),
-          y: height / 2,
-          fx: xScale(eventDate),
-          r: 5,
+          x: startX + i * labelSpacing,
+          y: eventY + (Math.random() * 400 - 200), // Increased vertical randomness from 200 to 400
+          fx: startX + i * labelSpacing,
+          timelineX: xScale(eventDate),
+          r: 12,
         };
       });
 
-    // Create force simulation
+    // Setup the simulation with balanced forces
     simulation = d3Force
-      .forceSimulation<TimelineNode>(nodes)
-      .force('x', d3Force.forceX<TimelineNode>((d) => d.fx).strength(1))
-      .force('y', d3Force.forceY<TimelineNode>(height / 2).strength(0.1)) // Reduced y-force strength
+      .forceSimulation(nodes)
+      .force('x', d3Force.forceX((d: TimelineNode) => d.fx).strength(0.05)) // Reduced from 0.1 to 0.05
+      .force('y', d3Force.forceY(eventY).strength(0.02)) // Reduced from 0.05 to 0.02
+      .force('charge', d3Force.forceManyBody().strength(-200)) // Increased from -150 to -200
       .force(
         'collision',
-        d3Force.forceCollide<TimelineNode>().radius((d) => d.r + 30)
-      )
-      .force('charge', d3Force.forceManyBody().strength(-100))
-      .force(
-        'vertical',
         d3Force
-          .forceY<TimelineNode>((d, i) => {
-            // Distribute nodes vertically based on their index
-            const spacing = (height - margin.top - margin.bottom) / (nodes.length + 1);
-            return margin.top + spacing * (i + 1);
-          })
-          .strength(0.5)
+          .forceCollide<TimelineNode>()
+          .radius((d: TimelineNode) => d.r + 80) // Increased from 60 to 80
+          .strength(0.9)
       )
-      .on('tick', ticked);
+      .force('horizontalRepulsion', (alpha: number) => {
+        nodes.forEach((node, i) => {
+          nodes.forEach((other, j) => {
+            if (i === j) return;
+            const dx = node.x - other.x;
+            const dy = node.y - other.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            if (distance < 200) {
+              // Increased from 150 to 200
+              const force = (200 - distance) * 0.1;
+              const angle = Math.atan2(dy, dx);
+              node.x += Math.cos(angle) * force * alpha;
+              other.x -= Math.cos(angle) * force * alpha;
+              node.y += Math.sin(angle) * force * alpha;
+              other.y -= Math.sin(angle) * force * alpha;
+            }
+          });
+        });
+      });
 
-    // Draw events
+    // Run simulation to settle positions
+    for (let i = 0; i < 1000; i++) {
+      simulation.tick();
+    }
+    simulation.stop();
+
+    // Now create the visualization groups with updated node positions
     const eventGroup = g.append('g').attr('class', 'events');
 
-    // Add a group for hover elements
-    const hoverGroup = g.append('g').attr('class', 'hover-elements');
+    // First layer: paths (bottom layer)
+    const lines = eventGroup
+      .append('g')
+      .attr('class', 'connecting-lines')
+      .selectAll('path')
+      .data(nodes)
+      .enter()
+      .append('path')
+      .attr('d', (d: TimelineNode) => {
+        const controlPoint1Y = d.y + (timelineY - d.y) * 0.2;
+        const controlPoint2Y = d.y + (timelineY - d.y) * 0.8;
+        const controlPoint1X = d.timelineX - 20;
+        const controlPoint2X = d.timelineX + 20;
+        return `M${d.x},${d.y} C${controlPoint1X},${controlPoint1Y} ${controlPoint2X},${controlPoint2Y} ${d.timelineX},${timelineY}`;
+      })
+      .attr('stroke', 'var(--color-accent-1)')
+      .attr('fill', 'none')
+      .attr('stroke-width', 1.5)
+      .attr('opacity', 0.5);
 
+    // Second layer: labels (middle layer)
+    const labels = eventGroup
+      .append('g')
+      .attr('class', 'event-labels')
+      .selectAll('text')
+      .data(nodes)
+      .enter()
+      .append('text')
+      .attr('x', (d: TimelineNode) => d.x)
+      .attr('y', (d: TimelineNode) => d.y - 20)
+      .attr('text-anchor', 'middle')
+      .text((d: TimelineNode) => d.name)
+      .style('font-size', '14px')
+      .style('fill', 'var(--color-text)')
+      .style('pointer-events', 'none');
+
+    // Third layer: circles (top layer)
     const circles = eventGroup
+      .append('g')
+      .attr('class', 'event-circles')
       .selectAll('circle')
       .data(nodes)
       .enter()
@@ -165,83 +244,115 @@
       .attr('r', (d: TimelineNode) => d.r)
       .attr('fill', 'var(--color-accent-1)')
       .attr('cursor', 'pointer')
+      .attr('cx', (d: TimelineNode) => d.x)
+      .attr('cy', (d: TimelineNode) => d.y);
+
+    // Add hover group for interactive elements
+    const hoverGroup = g.append('g').attr('class', 'hover-elements');
+
+    // Add mouseover events to circles
+    circles
       .on('mouseover', function (this: SVGCircleElement, event: MouseEvent, d: TimelineNode) {
-        // Fade other elements
         circles.style('opacity', 0.2);
         labels.style('opacity', 0.2);
+        lines.style('opacity', 0.1);
         select(this).style('opacity', 1);
-        // Find the corresponding label for this circle
+
         const circleIndex = nodes.findIndex((node) => node.id === d.id);
         if (circleIndex !== -1) {
           labels.filter((_: unknown, i: number) => i === circleIndex).style('opacity', 1);
+          lines.filter((_: unknown, i: number) => i === circleIndex).style('opacity', 0.8);
         }
 
-        // Show connecting line
-        const line = hoverGroup
-          .append('line')
-          .attr('x1', d.x)
-          .attr('y1', d.y)
-          .attr('x2', d.x)
-          .attr('y2', height / 2)
-          .attr('stroke', 'var(--color-accent-1)')
-          .attr('stroke-width', 1)
-          .attr('stroke-dasharray', '3,3');
+        // Show connecting line (highlighted)
+        hoverGroup
+          .append('path')
+          .attr('d', () => {
+            const controlPoint1Y = d.y + (timelineY - d.y) * 0.2;
+            const controlPoint2Y = d.y + (timelineY - d.y) * 0.8;
+            const controlPoint1X = d.timelineX - 20;
+            const controlPoint2X = d.timelineX + 20;
+            return `M${d.x},${d.y} C${controlPoint1X},${controlPoint1Y} ${controlPoint2X},${controlPoint2Y} ${d.timelineX},${timelineY}`;
+          })
+          .attr('stroke', 'var(--color-accent-2)')
+          .attr('fill', 'none')
+          .attr('stroke-width', 2)
+          .attr('opacity', 1);
 
         // Show date
-        const dateText = hoverGroup
+        hoverGroup
           .append('text')
           .attr('x', d.x)
-          .attr('y', height / 2 + 40)
+          .attr('y', d.y - 40)
           .attr('text-anchor', 'middle')
           .style('font-size', '12px')
           .style('fill', 'var(--color-text)')
-          .text(
-            events
-              .find((e) => e.id === d.id)
-              ?.start.toDate()
-              .toLocaleDateString()
-          );
+          .text(() => {
+            const event = events.find((e) => e.id === d.id);
+            if (!event) return '';
+
+            const startDate = event.start.toDate().toLocaleDateString();
+            if (!event.end) return startDate;
+
+            const endDate = event.end.toDate().toLocaleDateString();
+            return `${startDate} - ${endDate}`;
+          });
       })
       .on('mouseout', function () {
-        // Restore opacity
         circles.style('opacity', 1);
         labels.style('opacity', 1);
-
-        // Remove connecting line and date
+        lines.style('opacity', 0.5);
         hoverGroup.selectAll('*').remove();
       });
 
-    const labels = eventGroup
-      .selectAll('text')
-      .data(nodes)
-      .enter()
-      .append('text')
-      .attr('dy', '0.35em')
-      .text((d: TimelineNode) => d.name)
-      .style('font-size', '12px')
-      .style('fill', 'var(--color-text)')
-      .style('pointer-events', 'none');
-
-    function ticked() {
-      circles.attr('cx', (d: TimelineNode) => d.x).attr('cy', (d: TimelineNode) => d.y);
-
-      labels.attr('x', (d: TimelineNode) => d.x + 10).attr('y', (d: TimelineNode) => d.y);
-    }
+    // Setup zoom after drawing everything
+    setupZoom();
   }
 
   function setupZoom() {
+    // Initialize with identity transform
+    transform = zoomIdentity;
+
     const zoomBehavior = zoom()
       .scaleExtent([0.1, 10])
       .on('zoom', (event) => {
-        transform = event.transform;
-        g.attr('transform', transform);
+        // Constrain panning to keep content visible
+        const newTransform = event.transform;
+        const xMin = -width * 0.5;
+        const xMax = width * 0.5;
+        const yMin = -height * 0.5;
+        const yMax = height * 0.5;
+
+        newTransform.x = Math.min(Math.max(newTransform.x, xMin), xMax);
+        newTransform.y = Math.min(Math.max(newTransform.y, yMin), yMax);
+
+        transform = newTransform;
+        g.attr('transform', `translate(${transform.x},${transform.y}) scale(${transform.k})`);
       });
 
+    // Apply initial transform
+    g.attr('transform', `translate(${transform.x},${transform.y}) scale(${transform.k})`);
+
+    // Apply zoom behavior to the SVG
     svg.call(zoomBehavior);
+
+    // Add visual feedback for panning
+    svg
+      .on('mousedown', () => {
+        container.style.cursor = 'grabbing';
+      })
+      .on('mouseup', () => {
+        container.style.cursor = 'grab';
+      })
+      .on('mouseleave', () => {
+        container.style.cursor = 'grab';
+      });
   }
 
   function resetZoom() {
+    transform = zoomIdentity;
     svg.transition().duration(750).call(zoom().transform, zoomIdentity);
+    g.attr('transform', `translate(${transform.x},${transform.y}) scale(${transform.k})`);
   }
 </script>
 
@@ -285,6 +396,12 @@
     flex: 1;
     min-height: 0;
     cursor: grab;
+    overflow: hidden; /* Changed from overflow-x: auto to prevent scrollbars */
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+    border: 1px solid var(--color-theme-2);
+    user-select: none;
   }
 
   .timeline:active {

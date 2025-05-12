@@ -7,10 +7,9 @@
   import { notifications } from '$lib/stores';
   import type { DateTime } from '$lib/types/date';
   import * as stores from '$lib/stores';
-  import { browser } from '$app/environment';
-  import { goto } from '$app/navigation';
   import ShortEvent from '$lib/components/ShortEvent.svelte';
   import { get, writable } from 'svelte/store';
+  import DateTimeComponent from '$lib/components/DateTime.svelte';
 
   export let data: { timelineId: number };
 
@@ -162,6 +161,12 @@
           {#each $newEvents as event}
             <li class="event">
               <ShortEvent {event} />
+              <p class="event-meta">
+                Created: <DateTimeComponent date={event.createdOn} format="relative" /> | Modified: <DateTimeComponent
+                  date={event.lastModified}
+                  format="relative"
+                />
+              </p>
             </li>
           {/each}
         </ul>
@@ -173,6 +178,12 @@
           {#each timeline?.events as event}
             <li class="event">
               <ShortEvent {event} />
+              <p class="event-meta">
+                Created: <DateTimeComponent date={event.createdOn} format="relative" /> | Modified: <DateTimeComponent
+                  date={event.lastModified}
+                  format="relative"
+                />
+              </p>
             </li>
           {/each}
         </ul>
@@ -237,5 +248,11 @@
 
   .event {
     line-height: 1.4;
+  }
+
+  .event-meta {
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: var(--text-color-secondary, #666);
   }
 </style>

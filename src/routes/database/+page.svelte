@@ -4,6 +4,7 @@
   import { notifications } from '$lib/stores';
   import { onMount } from 'svelte';
   import type { Metadata, Event, Tag } from '$lib/db/v1';
+  import DateTime from '$lib/components/DateTime.svelte';
 
   let timelineCount = 0;
   let eventCount = 0;
@@ -164,6 +165,9 @@
     <p>Tags: {tagCount}</p>
     <p>Orphaned events: {orphanedEvents}</p>
     <p>Orphaned tags: {orphanedTags}</p>
+    {#if browser}
+      <p>Last updated: <DateTime date={new Date()} format="relative" /></p>
+    {/if}
   </div>
 
   <h2>Database Export</h2>

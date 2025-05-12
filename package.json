@@ -17,6 +17,7 @@
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/kit": "^1.5.0",
     "@types/cookie": "^0.5.1",
+    "@types/cytoscape": "^3.21.9",
     "@types/d3": "^7.4.0",
     "@types/d3-force": "^3.0.4",
     "@types/d3-time": "^3.0.0",
@@ -40,6 +41,9 @@
   "type": "module",
   "dependencies": {
     "@testing-library/svelte": "^3.2.2",
+    "@types/cytoscape-dagre": "^2.3.3",
+    "cytoscape": "^3.32.0",
+    "cytoscape-dagre": "^2.5.0",
     "d3": "^7.8.2",
     "d3-force": "^3.0.0",
     "d3-time": "^3.1.0",
