@@ -186,7 +186,10 @@
 
 <div class="events-page">
   <header>
-    <h1>Events in {timelineData?.name || 'Timeline'}</h1>
+    <div class="header-top">
+      <h1>Events in {timelineData?.name || 'Timeline'}</h1>
+      <a href="/timeline/{data.timelineId}" class="back-link">← Back to Timeline</a>
+    </div>
 
     <div class="search-controls">
       <input
@@ -557,5 +560,24 @@
 
   .event-dates {
     margin-top: 4px;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .back-link {
+    color: var(--color-theme-2);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    transition: background-color 0.2s;
+  }
+
+  .back-link:hover {
+    background: var(--color-bg-2);
   }
 </style>
