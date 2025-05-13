@@ -3,6 +3,7 @@
   import { now } from '$lib/stores';
   import FloatingNotifications from '$lib/components/FloatingNotifications.svelte';
   import DateTime from '$lib/components/DateTime.svelte';
+  import { DateTime as DateTimeType } from '$lib/types/date';
   import NavBar from '$lib/components/NavBar.svelte';
   // import FloatingMenu from '$lib/components/FloatingMenu.svelte';
 
@@ -15,6 +16,8 @@
     weekday: 'long',
     timeZoneName: 'short',
   });
+
+  $: currentDateTime = $now;
 </script>
 
 <div class="container">
@@ -27,7 +30,7 @@
   </main>
 
   <footer>
-    <p>It is currently <DateTime date={$now} format="long" hasTime={true} />.</p>
+    <p>It is currently <DateTime date={currentDateTime} format="long" />.</p>
     <p class="italic">Make sure this is correct or else your timeline might get out of whack.</p>
   </footer>
 </div>

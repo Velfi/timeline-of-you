@@ -5,6 +5,7 @@
   import { onMount } from 'svelte';
   import type { Metadata, Event, Tag } from '$lib/db/v1';
   import DateTime from '$lib/components/DateTime.svelte';
+  import { DateTime as DateTimeType } from '$lib/types/date';
 
   let timelineCount = 0;
   let eventCount = 0;
@@ -166,7 +167,17 @@
     <p>Orphaned events: {orphanedEvents}</p>
     <p>Orphaned tags: {orphanedTags}</p>
     {#if browser}
-      <p>Last updated: <DateTime date={new Date()} format="relative" /></p>
+      <p>
+        Last updated: <DateTime
+          date={new DateTimeType(
+            new Date().getFullYear(),
+            new Date().getMonth() + 1,
+            new Date().getDate(),
+            new Date().getHours(),
+            new Date().getMinutes()
+          )}
+        />
+      </p>
     {/if}
   </div>
 

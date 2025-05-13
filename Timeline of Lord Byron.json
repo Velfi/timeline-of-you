@@ -2,11 +2,21 @@
   "version": 1,
   "metadata": {
     "version": 1,
+    "name": "Timeline of Lord Byron",
+    "description": "This is a chronology of events in the life of George Gordon Byron, 6th Baron Byron (22 January 1788 – 19 April 1824).",
+    "start": {
+      "year": 1788,
+      "month": 1,
+      "day": 22,
+      "timeZone": "-00:00"
+    },
+    "end": {
+      "year": 1824,
+      "month": 4,
+      "day": 19,
+      "timeZone": "-00:00"
+    },
     "eventIds": [
-      10,
-      11,
-      12,
-      13,
       14,
       15,
       16,
@@ -15,188 +25,2110 @@
       19,
       20,
       21,
-      22
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159,
+      160,
+      161,
+      162,
+      163,
+      164
     ],
-    "name": "Timeline of Lord Byron",
-    "description": "This is a chronology of events in the life of George Gordon Byron, 6th Baron Byron (22 January 1788 – 19 April 1824).",
-    "start": {
-      "year": 1788,
-      "month": 1,
-      "day": 22,
-      "timeZone": "0"
-    },
-    "end": {
-      "year": 1824,
-      "month": 4,
-      "day": 19,
-      "timeZone": "0"
-    },
-    "createdOn": "2023-03-20T00:46:01.023Z",
-    "lastModified": "2023-03-20T01:17:07.871Z",
-    "id": 3
+    "createdOn": "2025-05-13T00:14:55.498Z",
+    "lastModified": "2025-05-13T00:37:28.914Z",
+    "id": 2
   },
   "events": [
     {
-      "name": "George Gordon Byron became 6th Baron Byron of Rochdale on death of great-uncle.",
+      "name": "Born",
+      "description": "",
       "start": {
-        "year": 1798,
-        "timeZone": "0"
+        "year": 1788,
+        "month": 1,
+        "day": 22
       },
-      "createdOn": "2023-03-20T01:03:21.783Z",
-      "lastModified": "2023-03-20T01:03:21.783Z",
       "tagIds": [],
-      "id": 10
-    },
-    {
-      "start": {
-        "year": 1794,
-        "timeZone": "0"
-      },
-      "end": {
-        "year": 1798,
-        "timeZone": "0"
-      },
-      "name": "At Aberdeen Grammar School.",
-      "tagIds": [],
-      "createdOn": "2023-03-20T01:16:13.789Z",
-      "lastModified": "2023-03-20T01:16:13.789Z",
-      "id": 11
-    },
-    {
-      "start": {
-        "year": 1791,
-        "month": 8,
-        "day": 2,
-        "timeZone": "0"
-      },
-      "name": "Father (John \"Mad Jack\" Byron) died in France never having seen his son.",
-      "tagIds": [],
-      "createdOn": "2023-03-20T01:16:13.789Z",
-      "lastModified": "2023-03-20T01:16:13.789Z",
-      "id": 12
-    },
-    {
-      "start": {
-        "year": 1791,
-        "timeZone": "0"
-      },
-      "name": "Mother moved to flat in 64 Broad Street, Aberdeen.",
-      "tagIds": [],
-      "createdOn": "2023-03-20T01:16:13.789Z",
-      "lastModified": "2023-03-20T01:16:13.789Z",
-      "id": 13
-    },
-    {
-      "start": {
-        "year": 1798,
-        "month": 8,
-        "timeZone": "0"
-      },
-      "name": "With his mother took up residence at ancestral home, Newstead Abbey, near Nottingham.",
-      "tagIds": [],
-      "createdOn": "2023-03-20T01:16:13.789Z",
-      "lastModified": "2023-03-20T01:16:13.789Z",
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
       "id": 14
     },
     {
+      "name": "Mother (Catherine Gordon) took lodgings in Queen Street",
+      "description": "",
       "start": {
-        "year": 1799,
-        "timeZone": "0"
+        "year": 1789
       },
-      "name": "Lived with Parkyns family, Nottingham. Tutored by \"Dummer\" Rogers.",
       "tagIds": [],
-      "createdOn": "2023-03-20T01:16:13.789Z",
-      "lastModified": "2023-03-20T01:16:13.789Z",
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
       "id": 15
     },
     {
+      "name": "Father (John Mad Jack Byron) died in France never having seen his son.",
+      "description": "",
       "start": {
-        "year": 1799,
-        "month": 7,
-        "timeZone": "0"
+        "year": 1791,
+        "month": 8,
+        "day": 2
       },
-      "name": "Removed to London by John Hanson, Byron’s lawyer & business agent.",
       "tagIds": [],
-      "createdOn": "2023-03-20T01:16:13.789Z",
-      "lastModified": "2023-03-20T01:16:13.789Z",
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
       "id": 16
     },
     {
+      "name": "Mother moved to flat in 64 Broad Street",
+      "description": "",
       "start": {
-        "year": 1799,
-        "month": 9,
-        "timeZone": "0"
+        "year": 1791
       },
-      "name": "Attended Dr. Glennie's School, Dulwich Grove.",
       "tagIds": [],
-      "createdOn": "2023-03-20T01:16:13.789Z",
-      "lastModified": "2023-03-20T01:16:13.789Z",
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
       "id": 17
     },
     {
+      "name": "At Aberdeen Grammar School.",
+      "description": "",
       "start": {
-        "year": 1799,
-        "month": 12,
-        "timeZone": "0"
+        "year": 1794,
+        "month": 1,
+        "day": 1
       },
-      "name": "Spent Christmas holidays with Hanson family at Earl's Court, London.",
+      "end": {
+        "year": 1798,
+        "month": 12,
+        "day": 31
+      },
       "tagIds": [],
-      "createdOn": "2023-03-20T01:16:13.789Z",
-      "lastModified": "2023-03-20T01:16:13.789Z",
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
       "id": 18
     },
     {
+      "name": "George Gordon Byron became 6th Baron Byron of Rochdale on death of great-uncle.",
+      "description": "",
       "start": {
-        "year": 1799,
-        "month": 6,
-        "timeZone": "0"
+        "year": 1798,
+        "month": 5,
+        "day": 21
       },
-      "name": "Spent summer holiday in Newstead Abbey and fell in love with 1st cousin, Margaret Parker.",
       "tagIds": [],
-      "createdOn": "2023-03-20T01:16:13.789Z",
-      "lastModified": "2023-03-20T01:16:13.789Z",
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
       "id": 19
     },
     {
+      "name": "With his mother took up residence at ancestral home",
+      "description": "",
       "start": {
-        "year": 1801,
-        "month": 4,
-        "timeZone": "0"
+        "year": 1798,
+        "month": 8
       },
-      "name": "Entered Harrow School.",
       "tagIds": [],
-      "createdOn": "2023-03-20T01:17:07.871Z",
-      "lastModified": "2023-03-20T01:17:07.871Z",
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
       "id": 20
     },
     {
+      "name": "Lived with Parkyns family",
+      "description": "",
       "start": {
-        "year": 1801,
-        "month": 6,
-        "timeZone": "0"
+        "year": 1799
       },
-      "end": {
-        "year": 1801,
-        "month": 8,
-        "timeZone": "0"
-      },
-      "name": "Spent summer with mother at Mrs Massingberd's, 16 Piccadilly, at Hanson's and in Cheltenham.",
       "tagIds": [],
-      "createdOn": "2023-03-20T01:17:07.871Z",
-      "lastModified": "2023-03-20T01:17:07.871Z",
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
       "id": 21
     },
     {
+      "name": "Removed to London by John Hanson",
+      "description": "",
+      "start": {
+        "year": 1799,
+        "month": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 22
+    },
+    {
+      "name": "Attended Dr. Glennie's School",
+      "description": "",
+      "start": {
+        "year": 1799,
+        "month": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 23
+    },
+    {
+      "name": "Spent Christmas holidays with Hanson family at Earl's Court",
+      "description": "",
+      "start": {
+        "year": 1799
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 24
+    },
+    {
+      "name": "Spent summer holiday in Newstead Abbey and fell in love with 1st cousin",
+      "description": "",
+      "start": {
+        "year": 1799
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 25
+    },
+    {
+      "name": "Entered Harrow School.",
+      "description": "",
       "start": {
         "year": 1801,
-        "month": 12,
-        "timeZone": "0"
+        "month": 4
       },
-      "name": "Christmas holidays in Bath with mother.",
       "tagIds": [],
-      "createdOn": "2023-03-20T01:17:07.871Z",
-      "lastModified": "2023-03-20T01:17:07.871Z",
-      "id": 22
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 26
+    },
+    {
+      "name": "Spent summer with mother at Mrs Massingberd's",
+      "description": "",
+      "start": {
+        "year": 1801
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 27
+    },
+    {
+      "name": "Christmas holidays in Bath with mother.",
+      "description": "",
+      "start": {
+        "year": 1801
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 28
+    },
+    {
+      "name": "Newstead Abbey leased to Henry Edward Yelverton",
+      "description": "",
+      "start": {
+        "year": 1803,
+        "month": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 29
+    },
+    {
+      "name": "Mother rented Burgage Manor",
+      "description": "",
+      "start": {
+        "year": 1803,
+        "month": 7,
+        "day": 21
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 30
+    },
+    {
+      "name": "Fell madly in love with neighbour's daughter",
+      "description": "",
+      "start": {
+        "year": 1803,
+        "month": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 31
+    },
+    {
+      "name": "Fell out with Lord Grey and returned to Harrow.",
+      "description": "",
+      "start": {
+        "year": 1804,
+        "month": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 32
+    },
+    {
+      "name": "Started holiday at Burgage Manor and met the Pigots who lived opposite.",
+      "description": "",
+      "start": {
+        "year": 1804,
+        "month": 3,
+        "day": 22
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 33
+    },
+    {
+      "name": "Played for Harrow in annual cricket match v Eton at Lord's. Scored 6 notches.",
+      "description": "",
+      "start": {
+        "year": 1805,
+        "month": 8,
+        "day": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 34
+    },
+    {
+      "name": "Went up to Trinity College",
+      "description": "",
+      "start": {
+        "year": 1805,
+        "month": 10,
+        "day": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 35
+    },
+    {
+      "name": "Friendships with E.N.Long & John Edleston began.",
+      "description": "",
+      "start": {
+        "year": 1805
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 36
+    },
+    {
+      "name": "Got heavily in debt with moneylenders; dissipation in London.",
+      "description": "",
+      "start": {
+        "year": 1806,
+        "month": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 37
+    },
+    {
+      "name": "Returned to Trinity College.",
+      "description": "",
+      "start": {
+        "year": 1806,
+        "month": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 38
+    },
+    {
+      "name": "At Burgage Manor writing poems.",
+      "description": "",
+      "start": {
+        "year": 1806,
+        "month": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 39
+    },
+    {
+      "name": "After acrimonious quarrel with mother escaped to London.",
+      "description": "",
+      "start": {
+        "year": 1806,
+        "month": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 40
+    },
+    {
+      "name": "Collection of poems",
+      "description": "",
+      "start": {
+        "year": 1806,
+        "month": 11
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 41
+    },
+    {
+      "name": "Second volume of poetry",
+      "description": "",
+      "start": {
+        "year": 1807,
+        "month": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 42
+    },
+    {
+      "name": "Hours of Idleness published. Back at Cambridge started friendships with John Cam Hobhouse and Scrope Davies",
+      "description": "",
+      "start": {
+        "year": 1807,
+        "month": 6
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 43
+    },
+    {
+      "name": "Came down from Cambridge University for good.",
+      "description": "",
+      "start": {
+        "year": 1807,
+        "month": 12
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 44
+    },
+    {
+      "name": "Hours of Idleness ridiculed in the Edinburgh Review.",
+      "description": "",
+      "start": {
+        "year": 1808,
+        "month": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 45
+    },
+    {
+      "name": "Poems Original and Translated published.",
+      "description": "",
+      "start": {
+        "year": 1808,
+        "month": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 46
+    },
+    {
+      "name": "At Brighton with John Hobhouse and Scrope Davies.",
+      "description": "",
+      "start": {
+        "year": 1808,
+        "month": 7
+      },
+      "end": {
+        "year": 1808,
+        "month": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 47
+    },
+    {
+      "name": "Took seat in the House of Lords.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 3,
+        "day": 13
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 48
+    },
+    {
+      "name": "English Bards and Scotch Reviewers published.",
+      "description": "",
+      "start": {
+        "year": 1809
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 49
+    },
+    {
+      "name": "Travelled to Falmouth with Hobhouse.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 6,
+        "day": 20
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 50
+    },
+    {
+      "name": "Set sail with Hobhouse in the Lisbon packet",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 7,
+        "day": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 51
+    },
+    {
+      "name": "Arrived in Lisbon.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 7,
+        "day": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 52
+    },
+    {
+      "name": "Explored Sintra.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 7,
+        "day": 12
+      },
+      "end": {
+        "year": 1809,
+        "month": 7,
+        "day": 16
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 53
+    },
+    {
+      "name": "Departed for Spain.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 7,
+        "day": 20
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 54
+    },
+    {
+      "name": "Arrived Cádiz.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 7,
+        "day": 29
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 55
+    },
+    {
+      "name": "Sailed in the frigate",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 8,
+        "day": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 56
+    },
+    {
+      "name": "Arrived at the Rock of Gibraltar.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 8,
+        "day": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 57
+    },
+    {
+      "name": "Sailed for Malta in packet Townshend.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 8,
+        "day": 16
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 58
+    },
+    {
+      "name": "Arrived Malta.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 8,
+        "day": 31
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 59
+    },
+    {
+      "name": "Had romantic affair with Mrs Spencer Smith.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 60
+    },
+    {
+      "name": "Left Malta aboard the brig",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 9,
+        "day": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 61
+    },
+    {
+      "name": "Aboard the Spider",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 9,
+        "day": 26
+      },
+      "end": {
+        "year": 1809,
+        "month": 9,
+        "day": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 63
+    },
+    {
+      "name": "Anchored off Preveza.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 9,
+        "day": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 64
+    },
+    {
+      "name": "Landed at Preveza.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 9,
+        "day": 29
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 65
+    },
+    {
+      "name": "Visited the ruins of Nicopolis.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 9,
+        "day": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 66
+    },
+    {
+      "name": "Left on a large boat for Salaora",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 10,
+        "day": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 67
+    },
+    {
+      "name": "Stayed for two nights in customs house at Salaora.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 10,
+        "day": 1
+      },
+      "end": {
+        "year": 1809,
+        "month": 10,
+        "day": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 68
+    },
+    {
+      "name": "Left by horse and arrived in Arta.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 10,
+        "day": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 69
+    },
+    {
+      "name": "Left for Tepelenë",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 10,
+        "day": 11
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 70
+    },
+    {
+      "name": "First encounter with Ali Pasha of Tepelenë.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 10,
+        "day": 12
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 71
+    },
+    {
+      "name": "Returned to Ioannina.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 10,
+        "day": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 72
+    },
+    {
+      "name": "At Ioannina. Started poem",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 10,
+        "day": 31
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 73
+    },
+    {
+      "name": "Slept the night at St. Dimitrios Chan",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 74
+    },
+    {
+      "name": "Arrived at Arta.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 75
+    },
+    {
+      "name": "Arrived at Salaora.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 76
+    },
+    {
+      "name": "Arrived at Preveza.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 6
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 77
+    },
+    {
+      "name": "Left Preveza at noon aboard a turkish galleote for Santa Maura.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 78
+    },
+    {
+      "name": "Due to bad weather they finished up at Porto Fanari.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 79
+    },
+    {
+      "name": "Decided to return by horse to Preveza.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 80
+    },
+    {
+      "name": "Visited the ruins of Nicopolis again.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 81
+    },
+    {
+      "name": "Sailed from Preveza to Vonitsa.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 13
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 82
+    },
+    {
+      "name": "Travelled towards Missolonghi.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 14
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 83
+    },
+    {
+      "name": "Visited Missolonghi.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 11,
+        "day": 20
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 84
+    },
+    {
+      "name": "Arrived at Athens.",
+      "description": "",
+      "start": {
+        "year": 1809,
+        "month": 12,
+        "day": 25
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 85
+    },
+    {
+      "name": "Toured Turkey",
+      "description": "",
+      "start": {
+        "year": 1810,
+        "month": 3
+      },
+      "end": {
+        "year": 1810,
+        "month": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 86
+    },
+    {
+      "name": "Arrived Smyrna aboard the brig Pylades.",
+      "description": "",
+      "start": {
+        "year": 1810,
+        "month": 3,
+        "day": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 87
+    },
+    {
+      "name": "Swam Hellespont from Sestos to Abydos.",
+      "description": "",
+      "start": {
+        "year": 1810,
+        "month": 5,
+        "day": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 88
+    },
+    {
+      "name": "Arrived Constantinople.",
+      "description": "",
+      "start": {
+        "year": 1810,
+        "month": 5,
+        "day": 13
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 89
+    },
+    {
+      "name": "Arrived Athens.",
+      "description": "",
+      "start": {
+        "year": 1810,
+        "month": 7,
+        "day": 18
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 90
+    },
+    {
+      "name": "Left for the Morea.",
+      "description": "",
+      "start": {
+        "year": 1810,
+        "month": 7,
+        "day": 21
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 91
+    },
+    {
+      "name": "Arrived Patras.",
+      "description": "",
+      "start": {
+        "year": 1810,
+        "month": 7,
+        "day": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 92
+    },
+    {
+      "name": "At Athens: stayed in Capuchin monastery.",
+      "description": "",
+      "start": {
+        "year": 1810,
+        "month": 8,
+        "day": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 93
+    },
+    {
+      "name": "Returned Athens.",
+      "description": "",
+      "start": {
+        "year": 1810,
+        "month": 10,
+        "day": 18
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 94
+    },
+    {
+      "name": "Wrote Hints from Horace & The Curse of Minerva",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 95
+    },
+    {
+      "name": "Sailed in the Hydra",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 4,
+        "day": 22
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 96
+    },
+    {
+      "name": "At Malta. Sailed for England in frigate Volage",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 4,
+        "day": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 97
+    },
+    {
+      "name": "Landed Sheerness; at Reddish's Hotel",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 7,
+        "day": 14
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 98
+    },
+    {
+      "name": "Mother died.",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 8,
+        "day": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 99
+    },
+    {
+      "name": "At Newstead Abbey; Matthews drowned at Cambridge.",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 8,
+        "day": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 100
+    },
+    {
+      "name": "Visited Cambridge University with Scrope Berdmore Davies.",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 10,
+        "day": 16
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 101
+    },
+    {
+      "name": "Took up residence at 8 St James Street's",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 10,
+        "day": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 102
+    },
+    {
+      "name": "Dinner with Samuel Rogers to meet the poet Thomas Moore.",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 11,
+        "day": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 103
+    },
+    {
+      "name": "After further visit to Cambridge left for Newstead",
+      "description": "",
+      "start": {
+        "year": 1811,
+        "month": 12,
+        "day": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 104
+    },
+    {
+      "name": "Maiden speech in House of Lords – opposing the Framework Bill 1812",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 2,
+        "day": 27
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 105
+    },
+    {
+      "name": "Childe Harold's Pilgrimage Cantos I & II published",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 3,
+        "day": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 106
+    },
+    {
+      "name": "First saw Annabella Milbanke.",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 3,
+        "day": 25
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 107
+    },
+    {
+      "name": "Affair with Lady Caroline Lamb started.",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 108
+    },
+    {
+      "name": "Second speech in the House of Lords – in favor of Catholic emancipation.",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 4,
+        "day": 21
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 109
+    },
+    {
+      "name": "Thomas Claughton offered £140",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 8,
+        "day": 15
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 110
+    },
+    {
+      "name": "Wrote Drury Lane Theatre Address at request of Lord Holland.",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 111
+    },
+    {
+      "name": "Proposal of marriage to Annabella Milbanke rejected; Wrote The Waltz.",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 112
+    },
+    {
+      "name": "Left for Eywood",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 10,
+        "day": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 113
+    },
+    {
+      "name": "Left Eywood to stay with Jerseys at Middleton.",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 11,
+        "day": 21
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 114
+    },
+    {
+      "name": "At Batt's Hotel",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 11,
+        "day": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 115
+    },
+    {
+      "name": "Back at Eywood.",
+      "description": "",
+      "start": {
+        "year": 1812,
+        "month": 12,
+        "day": 14
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 116
+    },
+    {
+      "name": "Took lodgings at 4 Bennet Street",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 1,
+        "day": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 117
+    },
+    {
+      "name": "Accompanied Moore to visit Leigh Hunt in prison.",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 5,
+        "day": 29
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 118
+    },
+    {
+      "name": "Last speech in House of Lords.",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 6,
+        "day": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 119
+    },
+    {
+      "name": "First edition of The Giaour published.",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 6,
+        "day": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 120
+    },
+    {
+      "name": "Met Madame de Stael for first time.",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 6,
+        "day": 20
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 121
+    },
+    {
+      "name": "Augusta Leigh arrives in London",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 6,
+        "day": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 122
+    },
+    {
+      "name": "Third (and final) speech in the House of Lords – Debate on Major Cartwright's Petition",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 7,
+        "day": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 123
+    },
+    {
+      "name": "Correspondence with Miss Milbanke begun.",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 124
+    },
+    {
+      "name": "Visit to James Wedderburn Webster and dallied with Lady Frances Webster.",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 125
+    },
+    {
+      "name": "Spared Lady Frances and returned to London.",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 10,
+        "day": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 126
+    },
+    {
+      "name": "Began Journal (continued to 19 April 1814).",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 11,
+        "day": 14
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 127
+    },
+    {
+      "name": "Bride of Abydos published.",
+      "description": "",
+      "start": {
+        "year": 1813,
+        "month": 12,
+        "day": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 128
+    },
+    {
+      "name": "Corsair published. 10",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 2,
+        "day": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 129
+    },
+    {
+      "name": "Sat to Phillips for portrait.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 130
+    },
+    {
+      "name": "Rented apartment in Albany",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 3,
+        "day": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 131
+    },
+    {
+      "name": "With Augusta at her home at Six Mile Bottom",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 4,
+        "day": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 132
+    },
+    {
+      "name": "Ode to Napoleon Buonaparte published anonymously.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 4,
+        "day": 16
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 133
+    },
+    {
+      "name": "At Duke of Wellington's Ball.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 7,
+        "day": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 134
+    },
+    {
+      "name": "At Hastings with Augusta.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 7,
+        "day": 22
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 135
+    },
+    {
+      "name": "Lara published with Samuel Rogers' Jacqueline.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 8,
+        "day": 6
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 136
+    },
+    {
+      "name": "Tentative proposal to Annabella Milbanke.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 9,
+        "day": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 137
+    },
+    {
+      "name": "Received Annabelle's acceptance of proposal of marriage.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 9,
+        "day": 15
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 138
+    },
+    {
+      "name": "Left for Seaham",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 10,
+        "day": 29
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 139
+    },
+    {
+      "name": "At Six-Mile-Bottom with Augusta.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 10,
+        "day": 30
+      },
+      "end": {
+        "year": 1814,
+        "month": 10,
+        "day": 31
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 140
+    },
+    {
+      "name": "Arrived Seaham.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 11,
+        "day": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 141
+    },
+    {
+      "name": "Left for London.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 11,
+        "day": 16
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 142
+    },
+    {
+      "name": "At Cambridge.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 11,
+        "day": 18
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 143
+    },
+    {
+      "name": "At Six Mile Bottom.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 11,
+        "day": 19
+      },
+      "end": {
+        "year": 1814,
+        "month": 11,
+        "day": 22
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 144
+    },
+    {
+      "name": "Applauded by undergraduates at Cambridge University.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 11,
+        "day": 23
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 145
+    },
+    {
+      "name": "London.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 11,
+        "day": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 146
+    },
+    {
+      "name": "Left with Hobhouse for Seaham.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 12,
+        "day": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 147
+    },
+    {
+      "name": "Christmas at Six Mile Bottom.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 12,
+        "day": 25
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 148
+    },
+    {
+      "name": "Arrived Seaham.",
+      "description": "",
+      "start": {
+        "year": 1814,
+        "month": 12,
+        "day": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 149
+    },
+    {
+      "name": "Married to Miss Annabella Milbanke at Seaham.",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 1,
+        "day": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 150
+    },
+    {
+      "name": "Treaclemoon at Halnaby",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 1,
+        "day": 2
+      },
+      "end": {
+        "year": 1815,
+        "month": 1,
+        "day": 21
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 151
+    },
+    {
+      "name": "At Seaham.",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 1,
+        "day": 21
+      },
+      "end": {
+        "year": 1815,
+        "month": 3,
+        "day": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 152
+    },
+    {
+      "name": "At Six Mile Bottom.",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 3,
+        "day": 12
+      },
+      "end": {
+        "year": 1815,
+        "month": 3,
+        "day": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 153
+    },
+    {
+      "name": "Settled at 13 Piccadilly Terrace",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 3,
+        "day": 29
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 154
+    },
+    {
+      "name": "Met Sir Walter Scott at John Murray",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 4,
+        "day": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 155
+    },
+    {
+      "name": "Death of Lord Wentworth; Milbankes took name of Noel.",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 4,
+        "day": 17
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 156
+    },
+    {
+      "name": "Hebrew Melodies published with musical score by Nathan.",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 157
+    },
+    {
+      "name": "Became member of Management Sub-Committee",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 158
+    },
+    {
+      "name": "Visited Leigh Hunt at Maida Vale",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 6
+      },
+      "end": {
+        "year": 1815,
+        "month": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 159
+    },
+    {
+      "name": "Signed new will leaving estate residue to Augusta Leigh.",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 7,
+        "day": 29
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 160
+    },
+    {
+      "name": "Wrote Siege of Corinth.",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 161
+    },
+    {
+      "name": "Wrote Parisina.",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 11
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 162
+    },
+    {
+      "name": "Birth of Ada Lovelace",
+      "description": "",
+      "start": {
+        "year": 1815,
+        "month": 12,
+        "day": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 163
+    },
+    {
+      "name": "Died of Malaria in Missolonghi",
+      "description": "",
+      "start": {
+        "year": 1824,
+        "month": 4,
+        "day": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T00:24:56.092Z",
+      "lastModified": "2025-05-13T00:24:56.092Z",
+      "id": 164
     }
   ],
   "tags": []

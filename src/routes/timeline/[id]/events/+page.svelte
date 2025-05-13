@@ -161,6 +161,15 @@
     isNewEvent = false;
   }
 
+  function handleEventDeleted() {
+    // Refresh events from the store
+    if (timelineData) {
+      events = timelineData.events;
+      filterEvents();
+    }
+    showEventEditor = false;
+  }
+
   function handleCsvImport() {
     try {
       const lines = csvInput.trim().split('\n');
@@ -314,6 +323,16 @@
     'November',
     'December',
   ];
+
+  function convertToDateTime(date: Date): DateTime {
+    return new DateTime(
+      date.getFullYear(),
+      date.getMonth() + 1,
+      date.getDate(),
+      date.getHours(),
+      date.getMinutes()
+    );
+  }
 </script>
 
 <div class="events-page">
@@ -378,22 +397,10 @@
                 <li>
                   <strong>{event.name}</strong>
                   <br />
-                  <DateTimeComponent
-                    date={event.start.toDate()}
-                    format="short"
-                    hasMonth={event.start.month !== undefined}
-                    hasDay={event.start.day !== undefined}
-                    hasTime={event.start.hour !== undefined}
-                  />
+                  <DateTimeComponent date={event.start} />
                   {#if event.end}
                     <span class="time-separator"> to </span>
-                    <DateTimeComponent
-                      date={event.end.toDate()}
-                      format="short"
-                      hasMonth={event.end.month !== undefined}
-                      hasDay={event.end.day !== undefined}
-                      hasTime={event.end.hour !== undefined}
-                    />
+                    <DateTimeComponent date={event.end} />
                   {/if}
                 </li>
               {/each}
@@ -492,22 +499,10 @@
                           <h5>{event.name}</h5>
                           <div class="event-meta">
                             <p class="event-times">
-                              <DateTimeComponent
-                                date={event.start.toDate()}
-                                format="short"
-                                hasMonth={event.start.month !== undefined}
-                                hasDay={event.start.day !== undefined}
-                                hasTime={event.start.hour !== undefined}
-                              />
+                              <DateTimeComponent date={event.start} />
                               {#if event.end}
                                 <span class="time-separator"> to </span>
-                                <DateTimeComponent
-                                  date={event.end.toDate()}
-                                  format="short"
-                                  hasMonth={event.end.month !== undefined}
-                                  hasDay={event.end.day !== undefined}
-                                  hasTime={event.end.hour !== undefined}
-                                />
+                                <DateTimeComponent date={event.end} />
                               {/if}
                             </p>
                           </div>
@@ -537,6 +532,7 @@
         isNewEvent = false;
       }}
       on:save={handleEventUpdated}
+      on:delete={handleEventDeleted}
     />
   {/if}
 </div>

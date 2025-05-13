@@ -5,7 +5,7 @@
   import TextInput from '$lib/components/TextInput.svelte';
   import { addTags, type Timeline, type TimelineEvent } from '$lib/db';
   import { notifications } from '$lib/stores';
-  import type { DateTime } from '$lib/types/date';
+  import { DateTime } from '$lib/types/date';
   import * as stores from '$lib/stores';
   import ShortEvent from '$lib/components/ShortEvent.svelte';
   import { get, writable } from 'svelte/store';
@@ -162,10 +162,8 @@
             <li class="event">
               <ShortEvent {event} />
               <p class="event-meta">
-                Created: <DateTimeComponent date={event.createdOn} format="relative" /> | Modified: <DateTimeComponent
-                  date={event.lastModified}
-                  format="relative"
-                />
+                Created: <DateTimeComponent date={DateTime.fromJSON(event.createdOn)} /> | Modified:
+                <DateTimeComponent date={DateTime.fromJSON(event.lastModified)} />
               </p>
             </li>
           {/each}
@@ -181,10 +179,8 @@
             <li class="event">
               <ShortEvent {event} />
               <p class="event-meta">
-                Created: <DateTimeComponent date={event.createdOn} format="relative" /> | Modified: <DateTimeComponent
-                  date={event.lastModified}
-                  format="relative"
-                />
+                Created: <DateTimeComponent date={DateTime.fromJSON(event.createdOn)} /> | Modified:
+                <DateTimeComponent date={DateTime.fromJSON(event.lastModified)} />
               </p>
             </li>
           {/each}

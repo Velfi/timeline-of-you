@@ -1,7 +1,7 @@
 import { TZ_REGEX } from '$lib/regex';
 import { isObject } from 'lodash-es';
 
-const MONTHS = [
+export const MONTHS = [
   'January',
   'February',
   'March',

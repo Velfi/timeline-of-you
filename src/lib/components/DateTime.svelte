@@ -1,56 +1,49 @@
 <script lang="ts">
-  export let date: Date | string;
-  export let format: 'short' | 'long' | 'relative' = 'short';
-  export let hasMonth: boolean = true;
-  export let hasDay: boolean = true;
-  export let hasTime: boolean = false;
+  import { DateTime, MONTHS } from '$lib/types/date';
 
-  $: dateObj = typeof date === 'string' ? new Date(date) : date;
-
-  $: formattedDate = (() => {
-    if (format === 'relative') {
-      const now = new Date();
-      const diff = now.getTime() - dateObj.getTime();
-      const seconds = Math.floor(diff / 1000);
-      const minutes = Math.floor(seconds / 60);
-      const hours = Math.floor(minutes / 60);
-      const days = Math.floor(hours / 24);
-
-      if (days > 7) {
-        return dateObj.toLocaleDateString();
-      } else if (days > 0) {
-        return `${days}d ago`;
-      } else if (hours > 0) {
-        return `${hours}h ago`;
-      } else if (minutes > 0) {
-        return `${minutes}m ago`;
-      } else {
-        return 'just now';
-      }
-    }
-
-    const options: Intl.DateTimeFormatOptions = {
-      year: 'numeric',
-      ...(hasMonth && { month: format === 'long' ? 'long' : 'short' }),
-      ...(hasDay && { day: 'numeric' }),
-      ...(hasTime && {
-        hour: '2-digit',
-        minute: '2-digit',
-      }),
-    };
-
-    return dateObj.toLocaleDateString(undefined, options);
-  })();
+  export let date: DateTime;
 </script>
 
-<span class="datetime" title={dateObj.toISOString()}>
-  {formattedDate}
-</span>
+<div class="datetime">
+  <span class="year">{date.year}</span>
+  {#if date.month !== undefined && date.month > 0}
+    <span class="month">{MONTHS[date.month - 1]}</span>
+  {/if}
+  {#if date.day !== undefined}
+    <span class="day">{date.day}</span>
+  {/if}
+  {#if date.hour !== undefined}
+    <span class="time">
+      {date.hour.toString().padStart(2, '0')}
+      {#if date.minute !== undefined}
+        :{date.minute.toString().padStart(2, '0')}
+      {/if}
+    </span>
+  {/if}
+</div>
 
 <style>
   .datetime {
-    display: inline;
-    white-space: nowrap;
-    color: var(--text-color, inherit);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 1rem;
+  }
+
+  .year {
+    font-weight: 500;
+  }
+
+  .month {
+    color: var(--text-secondary);
+  }
+
+  .day {
+    color: var(--text-secondary);
+  }
+
+  .time {
+    margin-left: 0.5rem;
+    color: var(--text-secondary);
   }
 </style>

@@ -3,6 +3,7 @@
   import type { TimelineEvent } from '$lib/db';
   import { timeline } from '$lib/stores/timeline';
   import DateTimeInput from './datetime/DateTimeInput.svelte';
+  import { notifications } from '$lib/stores';
 
   export let event: TimelineEvent;
   export let isOpen = false;
@@ -18,6 +19,7 @@
   const dispatch = createEventDispatcher<{
     close: void;
     save: { event: TimelineEvent };
+    delete: void;
   }>();
 
   function saveChanges() {
@@ -46,6 +48,21 @@
 
     dispatch('close');
     isOpen = false;
+  }
+
+  async function handleDelete() {
+    if (!event.id) {
+      notifications.add('error', 'Cannot delete an unsaved event');
+      return;
+    }
+
+    if (confirm('Are you sure you want to delete this event? This action cannot be undone.')) {
+      await timeline.deleteEvent(event.id);
+      await timeline.saveToDb();
+      dispatch('delete');
+      isOpen = false;
+      notifications.add('success', 'Event deleted successfully');
+    }
   }
 </script>
 
@@ -90,6 +107,7 @@
       </div>
 
       <footer>
+        <button class="delete-button" on:click={handleDelete}>Delete</button>
         <button class="cancel-button" on:click={cancel}>Cancel</button>
         <button class="save-button" on:click={saveChanges}>Save Changes</button>
       </footer>
@@ -191,6 +209,16 @@
     border-radius: var(--border-radius);
     font-size: inherit;
     cursor: pointer;
+  }
+
+  .delete-button {
+    background-color: var(--color-error, #ff4444);
+    border: none;
+    color: var(--color-bg-0);
+  }
+
+  .delete-button:hover {
+    background-color: var(--color-error-hover, #ff6666);
   }
 
   .cancel-button {

@@ -13,7 +13,16 @@
   export let start: DateTime | undefined;
   export let end: DateTime | undefined;
   export let required = false;
-  const localTimeZone = dateFns.format(new Date(), 'XXX');
+
+  // Get timezone from current DateTime
+  const currentDateTime = new DateTime(
+    new Date().getFullYear(),
+    new Date().getMonth() + 1,
+    new Date().getDate(),
+    new Date().getHours(),
+    new Date().getMinutes()
+  );
+  const localTimeZone = dateFns.format(currentDateTime.toDate(), 'XXX');
 
   let startYear = '';
   let startMonth = '';
