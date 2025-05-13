@@ -33,7 +33,7 @@
       date.getMonth() + 1,
       date.getDate(),
       date.getHours(),
-      date.getMinutes()
+      date.getMinutes(),
     );
 
     const parts: string[] = [];
@@ -77,7 +77,7 @@
         end: event.end?.toDate(),
         title: event.name,
         original: event,
-      }))
+      })),
     );
 
     // Configuration for the Timeline
@@ -97,15 +97,15 @@
         startEvent && endEvent
           ? Math.max(
               endEvent.start.toDate().getTime() - startEvent.start.toDate().getTime(),
-              1000 * 60 * 60 * 24 * 365
+              1000 * 60 * 60 * 24 * 365,
             ) // At least 1 year
           : 1000 * 60 * 60 * 24 * 365 * 10, // Default to 10 years if no events
       template: (item: DataItem & { original: TimelineEvent }) => {
         return `
           <p>${item.title}</p>
           <p>${item.original.start.toString()}${
-          item.original.end ? ` - ${item.original.end.toString()}` : ''
-        }</p>`;
+            item.original.end ? ` - ${item.original.end.toString()}` : ''
+          }</p>`;
       },
     };
 
@@ -218,7 +218,7 @@
       role="button"
       tabindex="0"
     >
-      <div class="modal" on:click|stopPropagation on:keydown|stopPropagation>
+      <div class="modal">
         <header>
           <h2>Timeline Controls</h2>
           <button class="close-button" on:click={() => (showHelpModal = false)}>&times;</button>
@@ -240,7 +240,7 @@
       </div>
     </div>
   {/if}
-  <div class="timeline" bind:this={container} />
+  <div class="timeline" bind:this={container}></div>
   {#if selectedEvent}
     <div class="event-navigation">
       <div class="nav-button-wrapper">
