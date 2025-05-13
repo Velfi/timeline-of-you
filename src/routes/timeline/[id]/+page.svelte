@@ -23,7 +23,7 @@
   <div class="error-message">
     <h1>Error</h1>
     <p>We couldn't find that timeline.</p>
-    <button on:click={() => goto('/manage/timelines')}>Go to the timeline management page</button>
+    <button on:click={() => goto('/timelines')}>Go to the timeline management page</button>
   </div>
 {:else if timeline}
   <ChronologicalTimeline

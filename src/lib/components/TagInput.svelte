@@ -93,6 +93,7 @@
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    white-space: nowrap;
   }
 
   .tags {

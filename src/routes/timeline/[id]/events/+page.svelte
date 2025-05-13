@@ -19,6 +19,11 @@
   let showEventEditor = false;
   let isNewEvent = false;
   let gridLayout = 1; // 1, 2, or 3 columns
+  let csvInput = '';
+  let showCsvInput = false;
+  let parsedEvents: TimelineEvent[] = [];
+  let showImportConfirmation = false;
+  let failedImports: { line: number; description: string; reason: string }[] = [];
 
   // Group events by year, month, day
   let groupedEvents: Map<number, Map<number, Map<number, TimelineEvent[]>>> = new Map();
@@ -156,6 +161,133 @@
     isNewEvent = false;
   }
 
+  function handleCsvImport() {
+    try {
+      const lines = csvInput.trim().split('\n');
+      const headers = lines[0].toLowerCase().split(',');
+
+      // Validate headers
+      if (!headers.includes('start datetime') || !headers.includes('event description')) {
+        throw new Error('CSV must include "start datetime" and "event description" columns');
+      }
+
+      parsedEvents = [];
+      failedImports = [];
+
+      for (let i = 1; i < lines.length; i++) {
+        const line = lines[i].trim();
+        if (!line) continue;
+
+        try {
+          const values = line.split(',').map((v) => v.trim());
+          const startDateStr = values[headers.indexOf('start datetime')];
+          const endDateStr = values[headers.indexOf('end datetime')];
+          const description = values[headers.indexOf('event description')];
+
+          // Parse start date components
+          const startParts = startDateStr.split('-').map(Number);
+          if (startParts.length < 1 || startParts[0] < 1) {
+            failedImports.push({
+              line: i + 1,
+              description: description || 'Unknown',
+              reason: 'Invalid start date format',
+            });
+            continue;
+          }
+
+          // Parse end date components if present
+          let endParts: number[] | undefined;
+          if (endDateStr) {
+            endParts = endDateStr.split('-').map(Number);
+            if (endParts.length < 1 || endParts[0] < 1) {
+              failedImports.push({
+                line: i + 1,
+                description: description || 'Unknown',
+                reason: 'Invalid end date format',
+              });
+              continue;
+            }
+          }
+
+          // Create DateTime objects with only the components that were provided
+          const start = new DateTime(
+            startParts[0], // year
+            startParts.length > 1 ? startParts[1] : undefined, // month
+            startParts.length > 2 ? startParts[2] : undefined, // day
+            startParts.length > 3 ? startParts[3] : undefined, // hour
+            startParts.length > 4 ? startParts[4] : undefined // minute
+          );
+
+          const end = endParts
+            ? new DateTime(
+                endParts[0], // year
+                endParts.length > 1 ? endParts[1] : undefined, // month
+                endParts.length > 2 ? endParts[2] : undefined, // day
+                endParts.length > 3 ? endParts[3] : undefined, // hour
+                endParts.length > 4 ? endParts[4] : undefined // minute
+              )
+            : undefined;
+
+          const event: TimelineEvent = {
+            name: description,
+            description: '',
+            start,
+            end,
+            tagIds: [],
+            createdOn: new Date(),
+            lastModified: new Date(),
+          };
+
+          parsedEvents.push(event);
+        } catch (lineError) {
+          failedImports.push({
+            line: i + 1,
+            description: 'Unknown',
+            reason: 'Failed to parse line',
+          });
+        }
+      }
+
+      // Show confirmation dialog
+      showImportConfirmation = true;
+    } catch (error: unknown) {
+      console.error('Failed to import CSV:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      notifications.add('error', `Failed to import CSV: ${errorMessage}`);
+    }
+  }
+
+  async function confirmImport() {
+    // Add new events using the timeline store
+    await timeline.addEvents(parsedEvents);
+    await timeline.saveToDb();
+    filterEvents();
+
+    // Clear the input and close dialogs
+    csvInput = '';
+    showCsvInput = false;
+    showImportConfirmation = false;
+
+    // Show success message with failed imports if any
+    if (failedImports.length > 0) {
+      const failedMessage = failedImports
+        .map((f) => `Line ${f.line} (${f.description}): ${f.reason}`)
+        .join('\n');
+      notifications.add(
+        'error',
+        `Imported ${parsedEvents.length} events. Failed to import ${failedImports.length} events:\n${failedMessage}`
+      );
+    } else {
+      notifications.add('success', `Successfully imported ${parsedEvents.length} events`);
+    }
+  }
+
+  function cancelImport() {
+    showImportConfirmation = false;
+    parsedEvents = [];
+    failedImports = [];
+  }
+
   // Update filtered events when search term changes
   $: {
     console.log('Reactive statement triggered');
@@ -204,6 +336,76 @@
         Add Event
       </button>
 
+      <button
+        class="csv-import-button"
+        on:click={() => (showCsvInput = !showCsvInput)}
+        aria-label="Toggle CSV import"
+      >
+        Import CSV
+      </button>
+
+      {#if showCsvInput}
+        <div class="csv-import-container">
+          <textarea
+            bind:value={csvInput}
+            placeholder="Paste CSV data here (start datetime,end datetime,event description)"
+            rows="5"
+          />
+          <button class="import-button" on:click={handleCsvImport} disabled={!csvInput.trim()}>
+            Import
+          </button>
+        </div>
+      {/if}
+
+      {#if showImportConfirmation}
+        <div class="csv-import-container">
+          <h3>Review Import</h3>
+          <p>Found {parsedEvents.length} valid events to import.</p>
+          {#if failedImports.length > 0}
+            <div class="failed-imports">
+              <h4>Failed to parse {failedImports.length} events:</h4>
+              <ul>
+                {#each failedImports as failed}
+                  <li>Line {failed.line} ({failed.description}): {failed.reason}</li>
+                {/each}
+              </ul>
+            </div>
+          {/if}
+          <div class="parsed-events">
+            <h4>Events to be imported:</h4>
+            <ul>
+              {#each parsedEvents as event}
+                <li>
+                  <strong>{event.name}</strong>
+                  <br />
+                  <DateTimeComponent
+                    date={event.start.toDate()}
+                    format="short"
+                    hasMonth={event.start.month !== undefined}
+                    hasDay={event.start.day !== undefined}
+                    hasTime={event.start.hour !== undefined}
+                  />
+                  {#if event.end}
+                    <span class="time-separator"> to </span>
+                    <DateTimeComponent
+                      date={event.end.toDate()}
+                      format="short"
+                      hasMonth={event.end.month !== undefined}
+                      hasDay={event.end.day !== undefined}
+                      hasTime={event.end.hour !== undefined}
+                    />
+                  {/if}
+                </li>
+              {/each}
+            </ul>
+          </div>
+          <div class="import-actions">
+            <button class="confirm-button" on:click={confirmImport}>Confirm Import</button>
+            <button class="cancel-button" on:click={cancelImport}>Cancel</button>
+          </div>
+        </div>
+      {/if}
+
       <a
         href="/timeline/{data.timelineId}/quick-add-events"
         class="quick-add-button"
@@ -234,7 +436,7 @@
   {:else if !timelineData}
     <div class="error-message">
       <p>No timeline data available. Please select a timeline from the management page.</p>
-      <a href="/manage/timelines">Go to Timelines</a>
+      <a href="/timelines">Go to Timelines</a>
     </div>
   {:else if filteredEvents.length === 0}
     <div class="empty-state">
@@ -579,5 +781,142 @@
 
   .back-link:hover {
     background: var(--color-bg-2);
+  }
+
+  .csv-import-button {
+    flex: 1;
+    min-width: 0;
+    background: var(--color-bg-1);
+    color: var(--color-theme-2);
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    font-size: inherit;
+    transition: background-color 0.2s;
+    border: var(--border);
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .csv-import-button:hover {
+    background: var(--color-bg-2);
+  }
+
+  .csv-import-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--color-bg-0);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+  }
+
+  .csv-import-container textarea {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: var(--input-padding);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    font-size: inherit;
+    font-family: monospace;
+    background: var(--color-bg-1);
+    resize: vertical;
+  }
+
+  .import-button {
+    background: var(--color-accent-1);
+    color: var(--color-bg-0);
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    font-size: inherit;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .import-button:hover:not(:disabled) {
+    background: var(--color-accent-2);
+  }
+
+  .import-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .failed-imports {
+    margin: 16px 0;
+    padding: 12px;
+    background: var(--color-bg-2);
+    border-radius: var(--border-radius);
+  }
+
+  .failed-imports h4 {
+    color: var(--color-error);
+    margin: 0 0 8px;
+  }
+
+  .failed-imports ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .parsed-events {
+    margin: 16px 0;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+
+  .parsed-events ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .parsed-events li {
+    padding: 8px;
+    border-bottom: 1px solid var(--color-bg-2);
+  }
+
+  .parsed-events li:last-child {
+    border-bottom: none;
+  }
+
+  .import-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+  }
+
+  .confirm-button,
+  .cancel-button {
+    flex: 1;
+    padding: var(--input-padding);
+    border-radius: var(--border-radius);
+    font-size: inherit;
+    cursor: pointer;
+    border: none;
+  }
+
+  .confirm-button {
+    background: var(--color-accent-1);
+    color: var(--color-bg-0);
+  }
+
+  .confirm-button:hover {
+    background: var(--color-accent-2);
+  }
+
+  .cancel-button {
+    background: var(--color-bg-2);
+    color: var(--color-theme-2);
+  }
+
+  .cancel-button:hover {
+    background: var(--color-bg-3);
   }
 </style>

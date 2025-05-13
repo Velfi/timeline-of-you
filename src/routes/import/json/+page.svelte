@@ -24,7 +24,7 @@
               'success',
               'Successfully imported a timeline from JSON. This timeline has been saved to your browser.'
             );
-            goto('/manage/timelines');
+            goto('/timelines');
           } catch (e) {
             console.error(e);
             notifications.add(

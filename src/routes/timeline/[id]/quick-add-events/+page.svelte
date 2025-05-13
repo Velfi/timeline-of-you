@@ -175,7 +175,9 @@
       {#if timeline?.events !== undefined && timeline?.events.length > 0}
         <h2>{timeline?.events.length} Existing Events</h2>
         <ul>
-          {#each timeline?.events as event}
+          {#each [...(timeline?.events ?? [])].sort((a, b) => b.start.toDate().getTime() - a.start
+                .toDate()
+                .getTime()) as event}
             <li class="event">
               <ShortEvent {event} />
               <p class="event-meta">

@@ -102,7 +102,7 @@
           >
         {/if}
         <ul>
-          <li><a href="/manage/timelines">Manage Timelines</a></li>
+          <li><a href="/timelines">Manage Timelines</a></li>
 
           {#if timelineId}
             <li><a href="/timeline">View Current Timeline</a></li>
