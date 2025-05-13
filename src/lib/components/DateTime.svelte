@@ -4,7 +4,7 @@
   export let date: DateTime;
 </script>
 
-<div class="datetime">
+<span class="datetime">
   <span class="year">{date.year}</span>
   {#if date.month !== undefined && date.month > 0}
     <span class="month">{MONTHS[date.month - 1]}</span>
@@ -20,7 +20,7 @@
       {/if}
     </span>
   {/if}
-</div>
+</span>
 
 <style>
   .datetime {
