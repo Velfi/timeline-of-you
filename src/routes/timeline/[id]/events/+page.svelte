@@ -188,10 +188,22 @@
         if (!line) continue;
 
         try {
-          const values = line.split(',').map((v) => v.trim());
-          const startDateStr = values[headers.indexOf('start datetime')];
-          const endDateStr = values[headers.indexOf('end datetime')];
-          const description = values[headers.indexOf('event description')];
+          // Split only on the first two commas to handle descriptions with commas
+          const firstComma = line.indexOf(',');
+          const secondComma = line.indexOf(',', firstComma + 1);
+
+          if (firstComma === -1 || secondComma === -1) {
+            failedImports.push({
+              line: i + 1,
+              description: 'Unknown',
+              reason: 'Invalid CSV format - missing required commas',
+            });
+            continue;
+          }
+
+          const startDateStr = line.substring(0, firstComma).trim();
+          const endDateStr = line.substring(firstComma + 1, secondComma).trim();
+          const description = line.substring(secondComma + 1).trim();
 
           // Parse start date components
           const startParts = startDateStr.split('-').map(Number);
@@ -323,16 +335,6 @@
     'November',
     'December',
   ];
-
-  function convertToDateTime(date: Date): DateTime {
-    return new DateTime(
-      date.getFullYear(),
-      date.getMonth() + 1,
-      date.getDate(),
-      date.getHours(),
-      date.getMinutes()
-    );
-  }
 </script>
 
 <div class="events-page">

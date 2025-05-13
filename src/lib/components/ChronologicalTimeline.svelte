@@ -72,11 +72,10 @@
     const items = new DataSet<DataItem & { original: TimelineEvent }>(
       events.map((event) => ({
         id: event.id || String(Math.random()),
-        content: event.name,
+        content: event.description || '',
         start: event.start.toDate(),
         end: event.end?.toDate(),
-        title: event.description,
-        className: 'timeline-event',
+        title: event.name,
         original: event,
       }))
     );
@@ -102,13 +101,11 @@
             ) // At least 1 year
           : 1000 * 60 * 60 * 24 * 365 * 10, // Default to 10 years if no events
       template: (item: DataItem & { original: TimelineEvent }) => {
-        return `<div class="timeline-event-content">
-          <div class="event-title">${item.content}</div>
-          <div class="event-date">${item.original.start.toString()}${
+        return `
+          <p>${item.title}</p>
+          <p>${item.original.start.toString()}${
           item.original.end ? ` - ${item.original.end.toString()}` : ''
-        }</div>
-          ${item.title ? `<div class="event-description">${item.title}</div>` : ''}
-        </div>`;
+        }</p>`;
       },
     };
 

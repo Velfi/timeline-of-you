@@ -86,7 +86,10 @@
             <a
               href={`/timeline/${t.id}/quick-add-events`}
               data-id={t.id}
-              on:click={handleLoadTimeline}>Add Events</a
+              on:click={handleLoadTimeline}>Quick Add Events</a
+            >
+            <a href="/timeline/{t.id}/events" data-id={t.id} on:click={handleLoadTimeline}
+              >Events List</a
             >
             <button data-id={t.id} data-name={t.name} on:click={handleExport} type="button"
               >Export&nbsp;<Icon icon="mdi:file-export-outline" /></button
@@ -119,7 +122,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    max-width: 40rem;
+    max-width: 50rem;
     text-align: justify;
   }
 
@@ -132,7 +135,7 @@
   .actions {
     display: flex;
     align-items: center;
-
+    gap: 1rem;
     button {
       display: flex;
       align-items: center;

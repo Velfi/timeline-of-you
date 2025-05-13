@@ -15,6 +15,15 @@
   opacity: 0.7;
 }
 
+.vis-item-content > p {
+  margin-bottom: 0;
+  &:first-child {
+    text-overflow: ellipsis;
+    max-width: 300px;
+    overflow: auto;
+  }
+}
+
 .vis-item:hover {
   opacity: 1;
   transform: scale(1.05);
