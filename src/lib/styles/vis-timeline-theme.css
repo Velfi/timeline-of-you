@@ -1,0 +1,77 @@
+/* Import the base vis-timeline styles */
+@import 'vis-timeline/styles/vis-timeline-graph2d.css';
+
+/* Override vis-timeline styles with theme variables */
+.vis-timeline {
+  border: none;
+  background: var(--color-bg-0);
+}
+
+.vis-item {
+  border-color: var(--color-accent-1);
+  background-color: var(--color-bg-1);
+  color: var(--color-text);
+  transition: all 0.2s ease;
+  opacity: 0.7;
+}
+
+.vis-item:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vis-item.vis-selected {
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 1001;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: var(--color-accent-2);
+  background-color: var(--color-bg-0);
+}
+
+.vis-item.vis-selected {
+  border-width: 3px;
+  border-color: var(--color-theme-1);
+}
+
+.vis-time-axis {
+  background-color: var(--color-bg-1);
+  color: var(--color-text);
+}
+
+.vis-time-axis .vis-text {
+  color: var(--color-text);
+}
+
+.vis-panel.vis-center,
+.vis-panel.vis-top,
+.vis-panel.vis-bottom {
+  border-color: var(--color-theme-2);
+}
+
+.timeline-event-content {
+  padding: 8px;
+  background: var(--color-bg-1);
+  border: 1px solid var(--color-theme-2);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  transition: all 0.2s ease;
+}
+
+.timeline-event-content .event-title {
+  font-weight: bold;
+  color: var(--color-accent-1);
+  margin-bottom: 4px;
+}
+
+.timeline-event-content .event-date {
+  font-size: 0.9em;
+  color: var(--color-theme-1);
+}
+
+.timeline-event-content .event-description {
+  font-size: 0.9em;
+  margin-top: 4px;
+} 

@@ -30,7 +30,7 @@
   </main>
 
   <footer>
-    <p>It is currently <DateTime date={currentDateTime} format="long" />.</p>
+    <p>It is currently <DateTime date={currentDateTime} />.</p>
     <p class="italic">Make sure this is correct or else your timeline might get out of whack.</p>
   </footer>
 </div>
