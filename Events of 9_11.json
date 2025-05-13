@@ -1,0 +1,4089 @@
+{
+  "version": 1,
+  "metadata": {
+    "version": 1,
+    "name": "Events of 9/11",
+    "description": "",
+    "start": {
+      "year": 2001,
+      "month": 9,
+      "day": 11,
+      "hour": 5,
+      "minute": 1,
+      "timeZone": "-04:00"
+    },
+    "end": {
+      "year": 2001,
+      "month": 9,
+      "day": 11,
+      "hour": 23,
+      "minute": 50,
+      "timeZone": "-04:00"
+    },
+    "eventIds": [
+      246,
+      247,
+      248,
+      249,
+      250,
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284,
+      285,
+      286,
+      287,
+      288,
+      289,
+      290,
+      291,
+      292,
+      293,
+      294,
+      295,
+      296,
+      297,
+      298,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      313,
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341,
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      368,
+      369,
+      370,
+      371,
+      372,
+      373,
+      374,
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383,
+      384,
+      385,
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394,
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420,
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429,
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      451,
+      452,
+      453,
+      454,
+      455,
+      456,
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468,
+      469,
+      470,
+      471,
+      472,
+      473,
+      474,
+      475,
+      476,
+      477,
+      478,
+      479,
+      480,
+      481,
+      482,
+      483,
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492
+    ],
+    "createdOn": "2025-05-13T18:04:43.607Z",
+    "lastModified": "2025-05-13T18:05:03.143Z",
+    "id": 4
+  },
+  "events": [
+    {
+      "name": "Ziad Jarrah in Newark calls Marwan al-Shehhi in Boston to confirm hijackers were ready",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 5,
+        "minute": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 246
+    },
+    {
+      "name": "Mohamed Atta and Abdulaziz al-Omari travel on Colgan Air Flight 5930 from Portland to Boston",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 6,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 247
+    },
+    {
+      "name": "Polls open for primaries for the New York City mayoral elections",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 6,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 248
+    },
+    {
+      "name": "President George W. Bush goes for an early-morning jog around the Colony Beach and Tennis Resort",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 6,
+        "minute": 31
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 249
+    },
+    {
+      "name": "Atta and al-Omari arrive at Logan International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 6,
+        "minute": 45
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 250
+    },
+    {
+      "name": "Al-Shehhi calls Atta from another terminal at Logan to confirm attack plans",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 6,
+        "minute": 52
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 251
+    },
+    {
+      "name": "Jarrah and his hijacking team arrive at Newark International Airport and check in for United Airlines Flight 93",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 4
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 40
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 252
+    },
+    {
+      "name": "Khalid al-Mihdhar and Majed Moqed arrive at Washington Dulles International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 15
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 253
+    },
+    {
+      "name": "al-Mihdhar and Moqed arrive at security checkpoint at Washington Dulles International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 18
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 254
+    },
+    {
+      "name": "Al-Shehhi and his hijacking team board Flight 175",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 23
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 255
+    },
+    {
+      "name": "Atta and his hijacking team board Flight 11",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 35
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 40
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 256
+    },
+    {
+      "name": "Hani Hanjour arrives at security checkpoint at Washington Dulles International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 35
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 257
+    },
+    {
+      "name": "Jarrah and his hijacking team board Flight 93",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 39
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 48
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 258
+    },
+    {
+      "name": "Flight 11 is pushed back from Gate B32 at Logan International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 40
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 259
+    },
+    {
+      "name": "Hanjour and his four fellow hijackers board Flight 77",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 260
+    },
+    {
+      "name": "United Airlines Flight 175 is pushed back from Gate C19 at Logan International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 58
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 261
+    },
+    {
+      "name": "Flight 11 departs 14 minutes late from Logan International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 7,
+        "minute": 59
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 262
+    },
+    {
+      "name": "President Bush has his daily intelligence briefing",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 263
+    },
+    {
+      "name": "United Airlines Flight 93 is pushed back from Gate A17 at Newark International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 264
+    },
+    {
+      "name": "Flight 77 is pushed back from Gate D26 at Dulles International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 265
+    },
+    {
+      "name": "Flight 11 is hijacked",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 13
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 20
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 266
+    },
+    {
+      "name": "Flight 11 has its last routine communication with Boston Center",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 13
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 267
+    },
+    {
+      "name": "Flight 175 departs from Logan International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 14
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 268
+    },
+    {
+      "name": "Betty Ong alerts American Airlines reservations center about the hijacking",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 269
+    },
+    {
+      "name": "Boston Center flight controllers decide Flight 11 has probably been hijacked",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 20
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 270
+    },
+    {
+      "name": "Flight 77 departs from Washington Dulles International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 20
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 271
+    },
+    {
+      "name": "Flight 11's transponder signal is turned off",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 21
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 272
+    },
+    {
+      "name": "Radio transmission from Flight 11: \"We have some planes. Just stay quiet, and you'll be okay.\"",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 273
+    },
+    {
+      "name": "Flight 11 makes a 100-degree turn to the south",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 274
+    },
+    {
+      "name": "Boston Center alerts neighboring ARTCCs regarding Flight 11",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 29
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 275
+    },
+    {
+      "name": "Flight 175 reaches its assigned cruising altitude of 31,000 feet",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 33
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 276
+    },
+    {
+      "name": "Third transmission from Atta onboard Flight 11",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 33
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 277
+    },
+    {
+      "name": "Boston Center traffic manager notifies tower controller at Otis Air National Guard Base",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 34
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 278
+    },
+    {
+      "name": "Flight 175 confirms sighting of hijacked Flight 11",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 37
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 279
+    },
+    {
+      "name": "Flight 11 begins a rapid descent",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 37
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 280
+    },
+    {
+      "name": "Boston Center control notifies NEADS of the hijacking of Flight 11",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 37
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 281
+    },
+    {
+      "name": "FAA's New York Center requests information about Flight 11",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 41
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 282
+    },
+    {
+      "name": "NEADS drives two fighter pilots at Otis Air National Guard Base to battle stations",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 41
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 283
+    },
+    {
+      "name": "Flight 93 takes off from Newark International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 42
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 284
+    },
+    {
+      "name": "Flight 175 is hijacked",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 42
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 46
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 285
+    },
+    {
+      "name": "Flight 11 makes final turn towards New York City",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 43
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 286
+    },
+    {
+      "name": "Flight attendant Amy Sweeney reports rapid descent",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 44
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 46
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 287
+    },
+    {
+      "name": "Flight 11 crashes into the North Tower of the World Trade Center",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 46
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 288
+    },
+    {
+      "name": "Chief Pfeifer makes first fire department radio message about the crash",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 46
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 289
+    },
+    {
+      "name": "Two F-15 fighter jets are ordered to scramble from Otis Air National Guard Base",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 46
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 290
+    },
+    {
+      "name": "WNYW makes first broadcast report of incident at World Trade Center",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 48
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 291
+    },
+    {
+      "name": "First radio report of the incident on WCBS-AM",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 48
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 292
+    },
+    {
+      "name": "First report of incident crosses Associated Press newswire",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 49
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 293
+    },
+    {
+      "name": "WNYC host Mark Hilan broadcasts first report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 49
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 294
+    },
+    {
+      "name": "CNN breaks news of plane crash at World Trade Center",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 49
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 295
+    },
+    {
+      "name": "NEADS is notified that a plane has struck the World Trade Center",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 296
+    },
+    {
+      "name": "FDNY 1st Battalion chief Joseph Pfeifer enters World Trade Center",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 297
+    },
+    {
+      "name": "Local New York radio station WOR makes first on-air report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 298
+    },
+    {
+      "name": "WCBS-TV breaks away from CBS network to cover attack",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 299
+    },
+    {
+      "name": "CNBC's Squawk Box reports on the burning North Tower",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 300
+    },
+    {
+      "name": "NY1 anchor Pat Kiernan begins coverage",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 301
+    },
+    {
+      "name": "WABC news anchor George Weber broadcasts first report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 302
+    },
+    {
+      "name": "Flight 77 is hijacked",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 54
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 303
+    },
+    {
+      "name": "Traffic management units report losing primary target",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 304
+    },
+    {
+      "name": "WNBC breaks away from NBC network to begin coverage",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 305
+    },
+    {
+      "name": "People begin jumping from the North Tower",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 51
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 306
+    },
+    {
+      "name": "ABC News broadcasts first report of the attack",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 51
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 307
+    },
+    {
+      "name": "NBC News' Today show interrupts for coverage",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 51
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 308
+    },
+    {
+      "name": "GloboNews makes first Brazilian television report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 51
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 309
+    },
+    {
+      "name": "New York City's Amateur Radio Emergency Service net is activated",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 51
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 310
+    },
+    {
+      "name": "WINS-AM interrupts traffic report with news of crash",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 51
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 311
+    },
+    {
+      "name": "Lee Hanson receives phone call from his son Peter on Flight 175",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 52
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 312
+    },
+    {
+      "name": "F-15s at Otis Air National Guard Base become airborne",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 52
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 313
+    },
+    {
+      "name": "CNN's Carol Lin breaks news of plane crash",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 52
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 314
+    },
+    {
+      "name": "CBS interrupts The Early Show to report the attack",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 52
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 315
+    },
+    {
+      "name": "CBC Newsworld makes first Canadian television report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 52
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 316
+    },
+    {
+      "name": "Sky News breaks news to the UK",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 52
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 317
+    },
+    {
+      "name": "Fox News reports plane crash into North Tower",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 52
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 318
+    },
+    {
+      "name": "Network Ten makes first Australian television report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 53
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 319
+    },
+    {
+      "name": "BBC News 24 makes first report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 53
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 320
+    },
+    {
+      "name": "Flight 77 deviates from course",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 54
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 321
+    },
+    {
+      "name": "BBC World makes first report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 54
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 322
+    },
+    {
+      "name": "Rede Globo makes first Brazilian terrestrial television report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 54
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 323
+    },
+    {
+      "name": "Announcement made in South Tower to return to desks",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 55
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 324
+    },
+    {
+      "name": "President Bush arrives at Emma E. Booker Elementary School",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 55
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 325
+    },
+    {
+      "name": "Flight 77's transponder is turned off",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 56
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 326
+    },
+    {
+      "name": "TV Azteca Hechos makes first Mexican television report",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 57
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 327
+    },
+    {
+      "name": "Flight 175 makes final turn toward New York City",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 58
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 328
+    },
+    {
+      "name": "Flight 175 passenger Brian Sweeney leaves message for his wife",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 8,
+        "minute": 59
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 329
+    },
+    {
+      "name": "First French television report broadcast",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 330
+    },
+    {
+      "name": "First Spanish television report broadcast",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 331
+    },
+    {
+      "name": "Lee Hanson receives second call from his son Peter on Flight 175",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 332
+    },
+    {
+      "name": "FAA's New York Center reports escalating situation",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 1
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 333
+    },
+    {
+      "name": "FAA's New York Center contacts New York terminal approach control",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 334
+    },
+    {
+      "name": "WPIX begins coverage",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 335
+    },
+    {
+      "name": "First Japanese television report made",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 336
+    },
+    {
+      "name": "Evacuation of both World Trade Center towers is ordered",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 337
+    },
+    {
+      "name": "Flight 175 crashes into the South Tower",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 338
+    },
+    {
+      "name": "FAA's New York TRACON stops all departures",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 339
+    },
+    {
+      "name": "President Bush enters classroom",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 340
+    },
+    {
+      "name": "FAA's New York Center notifies NORAD of Flight 175 hijacking",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 341
+    },
+    {
+      "name": "Fox News mentions Osama bin Laden as possible suspect",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 342
+    },
+    {
+      "name": "FAA's Boston Center stops all departures",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 343
+    },
+    {
+      "name": "President Bush is informed of second plane crash",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 344
+    },
+    {
+      "name": "FAA begins imposing blanket temporary flight restrictions",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 6
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 345
+    },
+    {
+      "name": "CNBC reports evacuation of New York Stock Exchange",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 6
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 346
+    },
+    {
+      "name": "FAA bans all takeoffs nationwide for flights going to or through New York Center airspace",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 347
+    },
+    {
+      "name": "Last PATH train leaves World Trade Center",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 11
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 348
+    },
+    {
+      "name": "ABC News anchor Peter Jennings begins reporting",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 11
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 349
+    },
+    {
+      "name": "F-15 fighters leave military airspace near Long Island",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 13
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 350
+    },
+    {
+      "name": "President Bush returns to adjacent classroom",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 14
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 351
+    },
+    {
+      "name": "NBC News reports unconfirmed statements about hijacked aircraft",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 15
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 352
+    },
+    {
+      "name": "FAA closes down all New York City-area airports",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 17
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 353
+    },
+    {
+      "name": "CBS News mentions Osama bin Laden as probable suspect",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 17
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 354
+    },
+    {
+      "name": "CNN makes first reference to foul play",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 18
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 355
+    },
+    {
+      "name": "United Airlines flight dispatcher begins sending warning messages",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 356
+    },
+    {
+      "name": "All bridges and tunnels into Manhattan are closed",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 21
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 357
+    },
+    {
+      "name": "Transport Canada activates Situation Centre",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 21
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 358
+    },
+    {
+      "name": "Ballinger's warning message is sent to Flight 93",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 23
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 359
+    },
+    {
+      "name": "Three people fall from South Tower's east face",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 24
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 38
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 360
+    },
+    {
+      "name": "FAA notifies NORAD about suspected hijacking of Flight 77",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 361
+    },
+    {
+      "name": "ABC News correspondent mentions possible Boeing 767",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 25
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 362
+    },
+    {
+      "name": "Otis-based F-15s establish air patrol over Manhattan",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 25
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 363
+    },
+    {
+      "name": "White House Situation Room video teleconference begins",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 25
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 364
+    },
+    {
+      "name": "Associated Press informs CNN of possible terrorism",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 25
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 365
+    },
+    {
+      "name": "FAA bans takeoffs of all civilian aircraft",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 366
+    },
+    {
+      "name": "White House counterterrorism chief raises force protection condition",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 367
+    },
+    {
+      "name": "Flight 93's pilot replies to Ballinger's message",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 368
+    },
+    {
+      "name": "NBC News reports hijacked American Airlines plane",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 369
+    },
+    {
+      "name": "Flight 93 begins to descend as hijackers take over",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 370
+    },
+    {
+      "name": "FDNY issues total recall of Department",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 29
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 371
+    },
+    {
+      "name": "President Bush makes first public statements about attacks",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 29
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 372
+    },
+    {
+      "name": "Reuters reports plane hijacked from Boston",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 373
+    },
+    {
+      "name": "Six men escape express elevator in North Tower",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 374
+    },
+    {
+      "name": "C-SPAN begins coverage",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 31
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 375
+    },
+    {
+      "name": "Radio transmission from Flight 93 about bomb on board",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 32
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 376
+    },
+    {
+      "name": "Dulles Terminal Radar Approach Control observes high-speed target",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 32
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 377
+    },
+    {
+      "name": "Reagan National Airport tower reports aircraft approaching White House",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 33
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 34
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 378
+    },
+    {
+      "name": "FAA Command Center relays Flight 93 information",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 34
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 379
+    },
+    {
+      "name": "President's motorcade departs elementary school",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 35
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 380
+    },
+    {
+      "name": "Flight 93 reverses direction",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 35
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 381
+    },
+    {
+      "name": "Secret Service orders evacuation of Vice President",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 35
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 382
+    },
+    {
+      "name": "Cleveland advises FAA Command Center about Flight 93",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 36
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 383
+    },
+    {
+      "name": "Vice President Cheney enters Presidential Emergency Operations Center",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 37
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 384
+    },
+    {
+      "name": "Flight 77 crashes into the Pentagon",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 37
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 385
+    },
+    {
+      "name": "Another radio transmission from Flight 93",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 39
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 386
+    },
+    {
+      "name": "NBC News reports explosion at Pentagon",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 39
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 387
+    },
+    {
+      "name": "White House Situation Room video teleconference begins",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 40
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 388
+    },
+    {
+      "name": "CNN reports fire at Pentagon",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 40
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 389
+    },
+    {
+      "name": "WUSA breaks away from CBS network",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 41
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 390
+    },
+    {
+      "name": "The Falling Man photograph is taken",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 41
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 391
+    },
+    {
+      "name": "ABC News broadcasts first pictures from Washington",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 42
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 392
+    },
+    {
+      "name": "CBS reports explosion at Pentagon",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 42
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 393
+    },
+    {
+      "name": "FAA issues SCATANA grounding all air traffic",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 42
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 394
+    },
+    {
+      "name": "Fox News reports another explosion",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 43
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 395
+    },
+    {
+      "name": "Abu Dhabi TV reports DFLP claim of responsibility",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 43
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 396
+    },
+    {
+      "name": "White House and Capitol are evacuated",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 43
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 397
+    },
+    {
+      "name": "United States airspace is shut down",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 45
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 398
+    },
+    {
+      "name": "CNN receives reports of fire at National Mall",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 45
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 399
+    },
+    {
+      "name": "Message sent to Flight 93 from San Francisco",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 46
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 400
+    },
+    {
+      "name": "ARD news magazine broadcasts news to Germany",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 46
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 401
+    },
+    {
+      "name": "FAA Command Center suggests military assistance for Flight 93",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 49
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 402
+    },
+    {
+      "name": "Associated Press reports Flight 11 hijacking",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 403
+    },
+    {
+      "name": "FDNY's 7th Battalion reaches 78th Floor Sky Lobby",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 51
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 404
+    },
+    {
+      "name": "NSA intercepts phone call about bin Laden",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 52
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 405
+    },
+    {
+      "name": "CNN confirms plane crash at Pentagon",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 53
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 406
+    },
+    {
+      "name": "CNN correspondent mentions Osama bin Laden",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 55
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 407
+    },
+    {
+      "name": "Air Force One leaves Sarasota-Bradenton International Airport",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 55
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 408
+    },
+    {
+      "name": "Passenger revolt begins on Flight 93",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 57
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 409
+    },
+    {
+      "name": "President Bush leaves Sarasota on Air Force One",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 57
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 410
+    },
+    {
+      "name": "South Tower of World Trade Center collapses",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 59
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 411
+    },
+    {
+      "name": "Father Mychal Judge dies from falling debris",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 9,
+        "minute": 59
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 412
+    },
+    {
+      "name": "FDNY orders all personnel to evacuate",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 413
+    },
+    {
+      "name": "FAA Command Center advises about Flight 93",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 414
+    },
+    {
+      "name": "Communicators receive reports of inbound aircraft",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 415
+    },
+    {
+      "name": "CNN announces Sears Tower evacuation",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 416
+    },
+    {
+      "name": "National Military Command Center learns of Flight 93 hijacking",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 417
+    },
+    {
+      "name": "Flight 93 crashes in Somerset County",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 418
+    },
+    {
+      "name": "Andrea Mitchell reports bin Laden involvement",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 419
+    },
+    {
+      "name": "CNN reports South Tower collapse",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 420
+    },
+    {
+      "name": "IDS Center in Minneapolis is evacuated",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 421
+    },
+    {
+      "name": "NBC reports South Tower collapse",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 422
+    },
+    {
+      "name": "NEADS learns of Flight 93 hijacking",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 423
+    },
+    {
+      "name": "Air Traffic Control System Command Center reports Flight 93 down",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 424
+    },
+    {
+      "name": "British Prime Minister Tony Blair makes first comments",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 425
+    },
+    {
+      "name": "National Military Command Center directs Threat Condition Delta",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 426
+    },
+    {
+      "name": "Part of Pentagon's west side collapses",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 427
+    },
+    {
+      "name": "NEADS tells fighter pilots not to shoot",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 428
+    },
+    {
+      "name": "Vice President Cheney authorizes fighter aircraft to engage",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 10
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 15
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 429
+    },
+    {
+      "name": "United Nations complex evacuation begins",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 13
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 430
+    },
+    {
+      "name": "Estimated arrival time of Flight 93 over Washington",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 13
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 22
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 431
+    },
+    {
+      "name": "Lieutenant colonel relays shootdown authorization",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 14
+      },
+      "end": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 432
+    },
+    {
+      "name": "CNN reports explosion on Capitol Hill",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 15
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 433
+    },
+    {
+      "name": "NBC reports Yasser Arafat's denial of involvement",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 18
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 434
+    },
+    {
+      "name": "President Bush authorizes shootdown of aircraft",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 20
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 435
+    },
+    {
+      "name": "Associated Press reports car bomb at State Department",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 23
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 436
+    },
+    {
+      "name": "Two men escape through underground shopping mall",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 437
+    },
+    {
+      "name": "North Tower of World Trade Center collapses",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 438
+    },
+    {
+      "name": "NORAD communicates shootdown authority",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 31
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 439
+    },
+    {
+      "name": "Air Force One turns for Barksdale Air Force Base",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 35
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 440
+    },
+    {
+      "name": "Associated Press reports plane crash in Pennsylvania",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 37
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 441
+    },
+    {
+      "name": "Another hijacked airliner reported heading for Washington",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 39
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 442
+    },
+    {
+      "name": "NBC News confirms plane crash in Somerset County",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 41
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 443
+    },
+    {
+      "name": "CNN reports mass evacuation of Washington and New York",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 43
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 444
+    },
+    {
+      "name": "Fox News implements news ticker",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 49
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 445
+    },
+    {
+      "name": "Five stories of Pentagon collapse",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 446
+    },
+    {
+      "name": "New York City primary elections are canceled",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 53
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 447
+    },
+    {
+      "name": "Defense Secretary Rumsfeld orders DEFCON 3",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 10,
+        "minute": 53
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 448
+    },
+    {
+      "name": "Transport Canada halts all aircraft departures",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 11,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 449
+    },
+    {
+      "name": "FAA confirms several planes hijacked",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 11,
+        "minute": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 450
+    },
+    {
+      "name": "Korean Air Flight 85 includes hijack code",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 11,
+        "minute": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 451
+    },
+    {
+      "name": "American Airlines confirms loss of two aircraft",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 11,
+        "minute": 16
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 452
+    },
+    {
+      "name": "United Airlines confirms loss of Flight 93",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 11,
+        "minute": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 453
+    },
+    {
+      "name": "United Airlines confirms loss of both aircraft",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 11,
+        "minute": 53
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 454
+    },
+    {
+      "name": "US-Mexico border on highest alert",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 11,
+        "minute": 55
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 455
+    },
+    {
+      "name": "ARINC officials notify NORAD about Flight 85",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 12,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 456
+    },
+    {
+      "name": "Fourteen people escape from North Tower stairwell",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 12,
+        "minute": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 457
+    },
+    {
+      "name": "Los Angeles International Airport is shut down",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 12,
+        "minute": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 458
+    },
+    {
+      "name": "San Francisco International Airport is shut down",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 12,
+        "minute": 15
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 459
+    },
+    {
+      "name": "US airspace is clear of all commercial and private flights",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 12,
+        "minute": 15
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 460
+    },
+    {
+      "name": "Secretary of State Colin Powell boards plane in Lima",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 12,
+        "minute": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 461
+    },
+    {
+      "name": "Senator John McCain characterizes attack as act of war",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 12,
+        "minute": 39
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 462
+    },
+    {
+      "name": "Senator Orrin Hatch mentions bin Laden's signature",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 12,
+        "minute": 41
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 463
+    },
+    {
+      "name": "Fire crews continue fighting fires at Pentagon",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 13,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 464
+    },
+    {
+      "name": "Jets scrambled from Elmendorf Air Force Base",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 13,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 465
+    },
+    {
+      "name": "President Bush puts US military on high alert",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 13,
+        "minute": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 466
+    },
+    {
+      "name": "Flight 85 changes transponder code to 7500",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 13,
+        "minute": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 467
+    },
+    {
+      "name": "Washington DC declares state of emergency",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 13,
+        "minute": 27
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 468
+    },
+    {
+      "name": "New York Mayor Giuliani estimates casualties",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 14,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 469
+    },
+    {
+      "name": "Alaska Governor orders evacuation of potential targets",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 14,
+        "minute": 45
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 470
+    },
+    {
+      "name": "President Bush arrives at Offutt Air Force Base",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 14,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 471
+    },
+    {
+      "name": "Flight 85 lands safely in Whitehorse",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 14,
+        "minute": 54
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 472
+    },
+    {
+      "name": "Pasquale Buzzelli awakens on debris",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 15,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 473
+    },
+    {
+      "name": "National news outlets report bin Laden as suspect",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 16,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 474
+    },
+    {
+      "name": "New York Stock Exchange announces closure",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 16,
+        "minute": 25
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 475
+    },
+    {
+      "name": "President Bush departs Offutt Air Force Base",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 16,
+        "minute": 36
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 476
+    },
+    {
+      "name": "East penthouse on 7 World Trade Center crumbles",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 17,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 477
+    },
+    {
+      "name": "7 World Trade Center collapses",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 17,
+        "minute": 20
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 478
+    },
+    {
+      "name": "Explosions reported in Kabul",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 18,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 479
+    },
+    {
+      "name": "Last aircraft lands in Canada",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 18,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 480
+    },
+    {
+      "name": "President Bush arrives at White House",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 18,
+        "minute": 54
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 481
+    },
+    {
+      "name": "Search for survivors continues",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 19,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 482
+    },
+    {
+      "name": "Congress sings God Bless America",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 19,
+        "minute": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 483
+    },
+    {
+      "name": "US government denies responsibility for Kabul explosions",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 19,
+        "minute": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 484
+    },
+    {
+      "name": "Petronas Twin Towers evacuated",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 19,
+        "minute": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 485
+    },
+    {
+      "name": "Port Authority Police Officer Will Jimeno found alive",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 20,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 486
+    },
+    {
+      "name": "President Bush addresses the country",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 20,
+        "minute": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 487
+    },
+    {
+      "name": "President Bush meets National Security Council",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 21,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 488
+    },
+    {
+      "name": "Reports of survivors making cell phone calls",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 22,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 489
+    },
+    {
+      "name": "Will Jimeno is freed from rubble",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 23,
+        "minute": 0
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 490
+    },
+    {
+      "name": "President Bush writes in journal about Pearl Harbor",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 23,
+        "minute": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 491
+    },
+    {
+      "name": "Footage of Flight 11 impact aired for first time",
+      "description": "",
+      "start": {
+        "year": 2001,
+        "month": 9,
+        "day": 11,
+        "hour": 23,
+        "minute": 50
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T18:05:03.143Z",
+      "lastModified": "2025-05-13T18:05:03.143Z",
+      "id": 492
+    }
+  ],
+  "tags": []
+}

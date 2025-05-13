@@ -92,7 +92,7 @@
       showCurrentTime: false,
       showMajorLabels: true,
       showMinorLabels: true,
-      zoomMin: 1000 * 60 * 60 * 24, // 1 day
+      zoomMin: 1000 * 60 * 60, // 1 hour
       zoomMax:
         startEvent && endEvent
           ? Math.max(

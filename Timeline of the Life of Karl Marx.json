@@ -1,0 +1,1172 @@
+{
+  "version": 1,
+  "metadata": {
+    "version": 1,
+    "name": "Timeline of the Life of Karl Marx",
+    "description": "",
+    "start": {
+      "year": 1814,
+      "month": 2,
+      "day": 12,
+      "timeZone": "-00:00"
+    },
+    "end": {
+      "year": 1911,
+      "month": 11,
+      "day": 26,
+      "timeZone": "-00:00"
+    },
+    "eventIds": [
+      165,
+      166,
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200,
+      201,
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      212,
+      213,
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      224,
+      225,
+      226,
+      227,
+      228,
+      229,
+      230,
+      231,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      241,
+      242,
+      243,
+      244,
+      245
+    ],
+    "createdOn": "2025-05-13T17:27:32.586Z",
+    "lastModified": "2025-05-13T17:31:27.550Z",
+    "id": 3
+  },
+  "events": [
+    {
+      "name": "Marx's future wife, Jenny von Westphalen (1814–1881) is born",
+      "description": "Marx's future wife, Jenny von Westphalen (1814–1881) is born in Salzwedel, a town then part of the Kingdom of Prussia's Province of Saxony, as the daughter of Freiherr Ludwig von Westphalen (1770–1842) and his second wife Caroline, née Heubel, (1776–1856)",
+      "start": {
+        "year": 1814,
+        "month": 2,
+        "day": 12,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:41:59.907Z",
+      "id": 165
+    },
+    {
+      "name": "The Congress of Vienna redraws the European map.",
+      "description": "Reaction and conservatism dominate all of Europe. The Concert of Europe attempts to preserve this settlement, but the forces of liberalism and nationalism make for dramatic changes.",
+      "start": {
+        "year": 1815,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:42:10.149Z",
+      "id": 166
+    },
+    {
+      "name": "The von Westphalens moves to Trier",
+      "description": "Ludwig von Westphalen soon befriends Heinrich Marx and the Marx family",
+      "start": {
+        "year": 1816,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:51:33.551Z",
+      "id": 167
+    },
+    {
+      "name": "Napoleon escapes exile at Elba",
+      "description": "Napoleon escapes exile at Elba and begins the Hundred Days before finally being defeated at the Battle of Waterloo and exiled to St Helena. His defeat brings a conclusion to the Napoleonic Wars",
+      "start": {
+        "year": 1816,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:51:51.110Z",
+      "id": 168
+    },
+    {
+      "name": "Year Without a Summer",
+      "description": "",
+      "start": {
+        "year": 1816
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 169
+    },
+    {
+      "name": "Karl Marx is born",
+      "description": "Karl Marx is born as the eldest son, and second eldest child of eight, of the barrister Heinrich Marx (1777–1838) and his wife Henrietta, née Pressburg}, (1788–1863) in Trier, a town then part of the Kingdom of Prussia's Province of the Lower Rhine",
+      "start": {
+        "year": 1818,
+        "month": 5,
+        "day": 5,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:52:03.701Z",
+      "id": 170
+    },
+    {
+      "name": "Friedrich Engels (1820–1895) is born",
+      "description": "Marx's future collaborator and friend, Friedrich Engels (1820–1895) is born in Barmen, Prussia as the oldest of nine children of the cotton manufacturer Friedrich Engels and his wife Elisabeth, née van Haar",
+      "start": {
+        "year": 1820,
+        "month": 11,
+        "day": 20,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:52:20.219Z",
+      "id": 171
+    },
+    {
+      "name": "Decembrist revolt in Russia",
+      "description": "",
+      "start": {
+        "year": 1825,
+        "month": 12,
+        "day": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 172
+    },
+    {
+      "name": "After first being educated at home by his father, Marx is enrolled at the Friedrich Wilhelm Gymnasium in Trier at the age of twelve",
+      "description": "",
+      "start": {
+        "year": 1830,
+        "month": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 173
+    },
+    {
+      "name": "The Bourbon monarch, King Charles X, is overthrown in the French July Revolution",
+      "description": "",
+      "start": {
+        "year": 1830,
+        "month": 7,
+        "day": 26,
+        "timeZone": ""
+      },
+      "end": {
+        "year": 1830,
+        "month": 7,
+        "day": 29,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:52:35.663Z",
+      "id": 174
+    },
+    {
+      "name": "Outbreak of the Belgian Revolution",
+      "description": "Eventually leads to the establishment of an independent Kingdom of Belgium in 1831",
+      "start": {
+        "year": 1830,
+        "month": 8,
+        "day": 25,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:52:49.893Z",
+      "id": 175
+    },
+    {
+      "name": "The German philosopher Georg Wilhelm Friedrich Hegel (1770–1831), whose ideas on dialectics would influence much of Marx's work, dies at the age of 61",
+      "description": "",
+      "start": {
+        "year": 1831,
+        "month": 11,
+        "day": 14
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 176
+    },
+    {
+      "name": "The Hambach Festival is held",
+      "description": "The Hambach Festival, a mass political demonstration, is held in the Palatinate region demanding the unification of Germany",
+      "start": {
+        "year": 1832,
+        "month": 5,
+        "day": 27,
+        "timeZone": ""
+      },
+      "end": {
+        "year": 1832,
+        "month": 5,
+        "day": 30,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:53:08.992Z",
+      "id": 177
+    },
+    {
+      "name": "Marx graduates Friedrich Wilhelm Gymnasium with good grades in Latin and Greek, decent in French and Mathematics, and a low grade in History",
+      "description": "",
+      "start": {
+        "year": 1835,
+        "month": 9,
+        "day": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 178
+    },
+    {
+      "name": "At the age of seventeen, Marx is enrolled by his father at the University of Bonn as a law student, despite his wishes to study philosophy and literature",
+      "description": "",
+      "start": {
+        "year": 1835,
+        "month": 10,
+        "day": 15
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 179
+    },
+    {
+      "name": "Marx is engaged to his childhood friend Jenny von Westphalen in Trier",
+      "description": "",
+      "start": {
+        "year": 1836,
+        "month": 6
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 180
+    },
+    {
+      "name": "Marx is enrolled at the Frederick William University in Berlin",
+      "description": "Having mismanaged his studies in Bonn, Marx is enrolled at the Frederick William University in Berlin as a law student and soon becomes a member of the Young Hegelians",
+      "start": {
+        "year": 1836,
+        "month": 10,
+        "day": 22,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:53:35.788Z",
+      "id": 181
+    },
+    {
+      "name": "Marx's father, Heinrich, dies in Trier",
+      "description": "",
+      "start": {
+        "year": 1838,
+        "month": 5,
+        "day": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 182
+    },
+    {
+      "name": "Chartism, the first mass revolutionary workers' movement, emerges in England",
+      "description": "",
+      "start": {
+        "year": 1838
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 183
+    },
+    {
+      "name": "Following his father's death Frederick William IV (1795–1861) is crowned King of Prussia",
+      "description": "",
+      "start": {
+        "year": 1840,
+        "month": 6,
+        "day": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 184
+    },
+    {
+      "name": "Engels performs one year of compulsory military service with the Prussian Army",
+      "description": "Engels performs one year of compulsory military service with the Prussian Army in Berlin. While in the city he befriends the Zionist philosopher and socialist Moses Hess (1812–1875), attends lectures at the Frederick William University and, like Marx before him, comes in contact with the Young Hegelians",
+      "start": {
+        "year": 1841,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:53:55.397Z",
+      "id": 185
+    },
+    {
+      "name": "Two poems by Marx, \"Der Spielmann\" and \"Nachtliebe\", are published in the periodical Athenäum in Berlin",
+      "description": "",
+      "start": {
+        "year": 1841,
+        "month": 1,
+        "day": 23
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 186
+    },
+    {
+      "name": "Marx is conferred on him the degree of Doctor of Philosophy",
+      "description": "Marx is conferred on him the degree of Doctor of Philosophy by the University of Jena, where he submitted his doctoral thesis, The Difference Between the Democritean and Epicurean Philosophy of Nature, in absentia, as it was deemed too controversial for the Frederick William University",
+      "start": {
+        "year": 1841,
+        "month": 4,
+        "day": 15,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:54:13.593Z",
+      "id": 187
+    },
+    {
+      "name": "Publication of Ludwig Feuerbach's (1804–1872) The Essence of Christianity, an important work for the Young Hegelians",
+      "description": "",
+      "start": {
+        "year": 1841
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 188
+    },
+    {
+      "name": "Marx begins writing for the Rheinische Zeitung in Cologne, where he becomes editor-in-chief on 15 October and publishes increasingly more radical articles",
+      "description": "",
+      "start": {
+        "year": 1842,
+        "month": 5,
+        "day": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 189
+    },
+    {
+      "name": "Engels anonymously contributes a total of seventeen articles to the Rheinische Zeitung",
+      "description": "",
+      "start": {
+        "year": 1842,
+        "month": 4,
+        "day": 12
+      },
+      "end": {
+        "year": 1842,
+        "month": 12,
+        "day": 22
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 190
+    },
+    {
+      "name": "Freiherr Ludwig von Westphalen, the father of Marx's fiancée Jenny, dies in Trier",
+      "description": "",
+      "start": {
+        "year": 1842,
+        "month": 3,
+        "day": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 191
+    },
+    {
+      "name": "Marx first encounters Engels, who visits the office of the Rheinische Zeitung on his way to England",
+      "description": "",
+      "start": {
+        "year": 1842,
+        "month": 11,
+        "day": 16
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 192
+    },
+    {
+      "name": "In Manchester, Engels met Mary Burns (1823–1863), a young working woman with radical opinions. They begin a relationship that lasts until her death two decades later, although they never marry",
+      "description": "",
+      "start": {
+        "year": 1843
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 193
+    },
+    {
+      "name": "Under censorship and heavy pressure from the Prussian government, Marx resigns as editor-in-chief of the Rheinische Zeitung",
+      "description": "",
+      "start": {
+        "year": 1843,
+        "month": 3,
+        "day": 17
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 194
+    },
+    {
+      "name": "The last issue of the Rheinische Zeitung is published before it is completely banned the following day",
+      "description": "",
+      "start": {
+        "year": 1843,
+        "month": 3,
+        "day": 31
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 195
+    },
+    {
+      "name": "Marx marries Jenny von Westphalen in Bad Kreuznach",
+      "description": "",
+      "start": {
+        "year": 1843,
+        "month": 6,
+        "day": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 196
+    },
+    {
+      "name": "Seeing that further political activity in Germany is impossible, Marx moves to Paris",
+      "description": "",
+      "start": {
+        "year": 1843,
+        "month": 10
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 197
+    },
+    {
+      "name": "In Paris Marx meets the expatriate German poet Heinrich Heine (1797–1856), his third cousin once removed",
+      "description": "",
+      "start": {
+        "year": 1843,
+        "month": 12
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 198
+    },
+    {
+      "name": "Marx befriends the anarchists Mikhail Bakunin (1814–1876) and Pierre-Joseph Proudhon (1809–1865) in Paris",
+      "description": "",
+      "start": {
+        "year": 1844
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 199
+    },
+    {
+      "name": "Together with Arnold Ruge (1802–1880), Marx publishes the first, and only, issue of Deutsch–Französische Jahrbücher",
+      "description": "",
+      "start": {
+        "year": 1844,
+        "month": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 200
+    },
+    {
+      "name": "In a letter Marx formally breaks off any future relationship with Ruge, after quarrelling repeatedly over money and other matters during the publication of Deutsch–Französische Jahrbücher",
+      "description": "",
+      "start": {
+        "year": 1844,
+        "month": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 201
+    },
+    {
+      "name": "Karl and Jenny Marx's eldest daughter Jenny Caroline (1844–1883) is born in Paris",
+      "description": "",
+      "start": {
+        "year": 1844,
+        "month": 5,
+        "day": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 202
+    },
+    {
+      "name": "Meets Friedrich Engels at the Café de la Régence in Paris, this second encounter becomes the start of their lifelong friendship and intellectual collaboration",
+      "description": "",
+      "start": {
+        "year": 1844,
+        "month": 8,
+        "day": 28
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 203
+    },
+    {
+      "name": "Works on the Economic and Philosophic Manuscripts, also known as the Paris Manuscripts, first published in 1932",
+      "description": "",
+      "start": {
+        "year": 1844,
+        "month": 12
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 204
+    },
+    {
+      "name": "Under pressure of the Prussian government Marx is expelled from Paris and moves to Brussels",
+      "description": "",
+      "start": {
+        "year": 1845,
+        "month": 2,
+        "day": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 205
+    },
+    {
+      "name": "Publishes The Holy Family, written together with Engels the year before",
+      "description": "",
+      "start": {
+        "year": 1845,
+        "month": 2,
+        "day": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 206
+    },
+    {
+      "name": "Writes the \"Theses on Feuerbach\", first published by Engels in 1888",
+      "description": "",
+      "start": {
+        "year": 1845,
+        "month": 3
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 207
+    },
+    {
+      "name": "Birth of Jenny and Karl Marx's second daughter Laura",
+      "description": "",
+      "start": {
+        "year": 1845,
+        "month": 9,
+        "day": 6
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 208
+    },
+    {
+      "name": "Finishes work on The German Ideology together with Engels, however they find no publisher and the work is not published until 1932",
+      "description": "",
+      "start": {
+        "year": 1846,
+        "month": 6
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 209
+    },
+    {
+      "name": "The Poverty of Philosophy is published",
+      "description": "The Poverty of Philosophy, written in French, is published in Paris and Brussels as an answer to the economic and philosophical arguments of French anarchist Pierre-Joseph Proudhon set forth in his 1846 book The System of Economic Contradictions, or The Philosophy of Poverty.",
+      "start": {
+        "year": 1847,
+        "month": 7,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:54:42.284Z",
+      "id": 210
+    },
+    {
+      "name": "Foundation of the German Workers' Society in Brussels",
+      "description": "",
+      "start": {
+        "year": 1847,
+        "month": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 211
+    },
+    {
+      "name": "Participates in the first congress of the Communist League in London and is tasked, together with Engels, to write a manifesto on behalf of the group",
+      "description": "",
+      "start": {
+        "year": 1847,
+        "month": 11,
+        "day": 29
+      },
+      "end": {
+        "year": 1847,
+        "month": 12,
+        "day": 8
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 212
+    },
+    {
+      "name": "Birth of Jenny and Karl Marx's eldest son Edgar (1847–1855) in Brussels",
+      "description": "",
+      "start": {
+        "year": 1847,
+        "month": 12,
+        "day": 17
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 213
+    },
+    {
+      "name": "Publication of the Communist Manifesto in German",
+      "description": "",
+      "start": {
+        "year": 1848,
+        "month": 2,
+        "day": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 214
+    },
+    {
+      "name": "Arrested in Brussels and expelled to Paris",
+      "description": "",
+      "start": {
+        "year": 1848,
+        "month": 3,
+        "day": 4
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 215
+    },
+    {
+      "name": "Editor-in-chief of the Neue Rheinische Zeitung, writes approximately 80 articles until 19 May 1849",
+      "description": "",
+      "start": {
+        "year": 1848,
+        "month": 6,
+        "day": 1
+      },
+      "end": {
+        "year": 1849,
+        "month": 5,
+        "day": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 216
+    },
+    {
+      "name": "Several revolutions take place  before reactionary forces regain control",
+      "description": "In what remains the most widespread revolutionary wave in European history, several revolutions takes place throughout 1848 and the beginning of the following year, before reactionary forces regains control and the revolutions collapse",
+      "start": {
+        "year": 1848,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:55:28.450Z",
+      "id": 217
+    },
+    {
+      "name": "The Marx's youngest child Eleanor (1855–1898) is born in London",
+      "description": "",
+      "start": {
+        "year": 1855,
+        "month": 1,
+        "day": 16
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 218
+    },
+    {
+      "name": "The son Edgar dies in London at the age of 8 from gastric fever",
+      "description": "",
+      "start": {
+        "year": 1855,
+        "month": 4,
+        "day": 6
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 219
+    },
+    {
+      "name": "Publication of Charles Darwin's (1809–1882) On the Origin of Species",
+      "description": "",
+      "start": {
+        "year": 1859,
+        "month": 11,
+        "day": 24
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 220
+    },
+    {
+      "name": "Marx's mother, Henriette, dies in Trier",
+      "description": "",
+      "start": {
+        "year": 1863,
+        "month": 11,
+        "day": 30
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 221
+    },
+    {
+      "name": "Publication of the first volume of Das Kapital, Marx's influential analysis of political economy and criticism of the capitalist mode of production",
+      "description": "",
+      "start": {
+        "year": 1867,
+        "month": 9,
+        "day": 14
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 222
+    },
+    {
+      "name": "Engels moves from Manchester to London",
+      "description": "",
+      "start": {
+        "year": 1870,
+        "month": 9
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 223
+    },
+    {
+      "name": "Birth of Vladimir Lenin",
+      "description": "",
+      "start": {
+        "year": 1870,
+        "month": 4,
+        "day": 22
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 224
+    },
+    {
+      "name": "Outbreak of the Franco-Prussian War",
+      "description": "",
+      "start": {
+        "year": 1870,
+        "month": 7,
+        "day": 19
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 225
+    },
+    {
+      "name": "Formation of the German Empire",
+      "description": "",
+      "start": {
+        "year": 1871,
+        "month": 1,
+        "day": 1
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 226
+    },
+    {
+      "name": "Otto von Bismarck becomes Chancellor of Germany",
+      "description": "",
+      "start": {
+        "year": 1871,
+        "month": 3,
+        "day": 21
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 227
+    },
+    {
+      "name": "The Socialist Workers' Party of Germany is founded",
+      "description": "The Socialist Workers' Party of Germany is founded at the unity congress in Gotha. At the congress the party adopts the Gotha Program, calling for universal suffrage, freedom of association, limits on the working day, and for other laws protecting the rights and health of workers",
+      "start": {
+        "year": 1875,
+        "month": 5,
+        "day": 22,
+        "timeZone": ""
+      },
+      "end": {
+        "year": 1875,
+        "month": 5,
+        "day": 27,
+        "timeZone": ""
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:55:41.970Z",
+      "id": 228
+    },
+    {
+      "name": "Birth of Joseph Stalin",
+      "description": "",
+      "start": {
+        "year": 1878,
+        "month": 12,
+        "day": 18
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 229
+    },
+    {
+      "name": "Birth of Leon Trotsky",
+      "description": "",
+      "start": {
+        "year": 1879,
+        "month": 11,
+        "day": 7
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 230
+    },
+    {
+      "name": "Marx's wife Jenny dies in London after a long illness",
+      "description": "",
+      "start": {
+        "year": 1881,
+        "month": 12,
+        "day": 2
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 231
+    },
+    {
+      "name": "At the age of 38, Marx's eldest daughter Jenny dies at Argenteuil near Paris, probably from cancer of the bladder, a condition which had afflicted her for some time",
+      "description": "",
+      "start": {
+        "year": 1883,
+        "month": 1,
+        "day": 11
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 232
+    },
+    {
+      "name": "Marx dies in his home in London",
+      "description": "",
+      "start": {
+        "year": 1883,
+        "month": 3,
+        "day": 14
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 233
+    },
+    {
+      "name": "Marx is buried at Highgate Cemetery",
+      "description": "",
+      "start": {
+        "year": 1883,
+        "month": 3,
+        "day": 17
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 234
+    },
+    {
+      "name": "Engels publishes the second volume of Das Kapital",
+      "description": "",
+      "start": {
+        "year": 1885
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 235
+    },
+    {
+      "name": "Birth of Dong Biwu",
+      "description": "",
+      "start": {
+        "year": 1886,
+        "month": 3,
+        "day": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 236
+    },
+    {
+      "name": "Birth of Antonio Gramsci",
+      "description": "",
+      "start": {
+        "year": 1891,
+        "month": 1,
+        "day": 22
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 237
+    },
+    {
+      "name": "Birth of Mao Zedong",
+      "description": "",
+      "start": {
+        "year": 1893,
+        "month": 12,
+        "day": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 238
+    },
+    {
+      "name": "After nine years of work Engels publishes the third volume of Das Kapital",
+      "description": "",
+      "start": {
+        "year": 1894
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 239
+    },
+    {
+      "name": "At the age of 74, Engels dies in London of throat cancer",
+      "description": "",
+      "start": {
+        "year": 1895,
+        "month": 8,
+        "day": 5
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 240
+    },
+    {
+      "name": "At the age of 43, Eleanor Marx commits suicide after discovering that her partner, Edward Aveling, had secretly married a young actress in June the previous year",
+      "description": "",
+      "start": {
+        "year": 1898,
+        "month": 3,
+        "day": 31
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 241
+    },
+    {
+      "name": "Birth of Deng Xiaoping",
+      "description": "",
+      "start": {
+        "year": 1904,
+        "month": 8,
+        "day": 22
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 242
+    },
+    {
+      "name": "Karl Kautsky publishes Marx's manuscript Theories of Surplus Value, often referred to as the \"fourth volume of Das Kapital\", in three volumes between 1905 and 1910",
+      "description": "",
+      "start": {
+        "year": 1905
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 243
+    },
+    {
+      "name": "Birth of Li Xiannian",
+      "description": "",
+      "start": {
+        "year": 1909,
+        "month": 6,
+        "day": 23
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 244
+    },
+    {
+      "name": "At the age of 66, Marx's second daughter Laura commits suicide together with her husband Paul Lafargue, 69, in Draveil outside of Paris",
+      "description": "",
+      "start": {
+        "year": 1911,
+        "month": 11,
+        "day": 26
+      },
+      "tagIds": [],
+      "createdOn": "2025-05-13T17:31:27.550Z",
+      "lastModified": "2025-05-13T17:31:27.550Z",
+      "id": 245
+    }
+  ],
+  "tags": []
+}
