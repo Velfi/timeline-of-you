@@ -22,7 +22,7 @@
 
       if (id === undefined) {
         throw new Error(
-          'handleExport was called but event target had no ID. If you encounter this error, please report it.'
+          'handleExport was called but event target had no ID. If you encounter this error, please report it.',
         );
       }
 
@@ -39,7 +39,7 @@
 
       if (id === undefined) {
         throw new Error(
-          'handleDelete was called but event target had no ID. If you encounter this error, please report it.'
+          'handleDelete was called but event target had no ID. If you encounter this error, please report it.',
         );
       }
 
@@ -60,7 +60,7 @@
   }
 
   function handleLoadTimeline(
-    event: MouseEvent & { currentTarget: EventTarget & HTMLAnchorElement }
+    event: MouseEvent & { currentTarget: EventTarget & HTMLAnchorElement },
   ) {
     const { id } = event.currentTarget.dataset;
     if (id) {

@@ -2,21 +2,7 @@
   "version": 1,
   "metadata": {
     "version": 1,
-    "eventIds": [
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
-      21,
-      22
-    ],
+    "eventIds": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22],
     "name": "Timeline of Lord Byron",
     "description": "This is a chronology of events in the life of George Gordon Byron, 6th Baron Byron (22 January 1788 – 19 April 1824).",
     "start": {

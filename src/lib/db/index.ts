@@ -60,10 +60,10 @@ export async function getTimelineById(id: number): Promise<Timeline> {
     metadata: {
       ...rest,
       createdOn: metadata.createdOn,
-      lastModified: metadata.lastModified
+      lastModified: metadata.lastModified,
     },
     events,
-    tags
+    tags,
   };
 
   console.log('Timeline retrieved.');
@@ -80,8 +80,8 @@ export async function getTimelineMetadataList(): Promise<TimelineMetadata[]> {
       start: DateTime.fromJSON(start),
       end: DateTime.fromJSON(end),
       createdOn,
-      lastModified
-    })
+      lastModified,
+    }),
   );
   console.log('Timeline metadata list retrieved.');
 
@@ -116,7 +116,7 @@ export async function createTimeline(
   start: DateTime,
   end: DateTime,
   name?: string,
-  description?: string
+  description?: string,
 ): Promise<number> {
   console.log('Creating timeline...');
   const createdOn = new Date();
@@ -144,7 +144,7 @@ export async function createTimeline(
 
 export async function addEventToTimelineWithId(
   event: TimelineEvent,
-  timelineID: number
+  timelineID: number,
 ): Promise<void> {
   console.log(`Adding event to timeline with ID ${timelineID}...`);
   const metadata = await db.metadata.get(timelineID);
@@ -205,10 +205,10 @@ export async function saveTimelineToDb(timeline: Timeline): Promise<void> {
   console.log(`Saving timeline with ID ${timeline.metadata.id} to database...`);
 
   if (timeline.metadata.id) {
-    const { metadata, events, ...rest } = timeline;
+    const { metadata, events } = timeline;
     // Tags should already have been saved so we don't need to re-save them.
     const eventIds = (await db.events.bulkPut(events, { allKeys: true })).filter(
-      (e): e is number => e !== undefined
+      (e): e is number => e !== undefined,
     );
 
     const metadataId = metadata.id;
@@ -253,7 +253,7 @@ export async function importTags(tags: Tag[]): Promise<Map<number, number>> {
 
 export async function importEvents(
   events: Event[],
-  tagIdMap: Map<number, number>
+  tagIdMap: Map<number, number>,
 ): Promise<number[]> {
   // We don't need a map for events since they're all going into the same metadata object.
   const eventIds = [];

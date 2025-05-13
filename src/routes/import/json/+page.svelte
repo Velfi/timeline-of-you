@@ -22,14 +22,14 @@
             await timeline.saveToDb();
             notifications.add(
               'success',
-              'Successfully imported a timeline from JSON. This timeline has been saved to your browser.'
+              'Successfully imported a timeline from JSON. This timeline has been saved to your browser.',
             );
             goto('/timelines');
           } catch (e) {
             console.error(e);
             notifications.add(
               'error',
-              "Failed to import that timeline. Are you sure it's a valid timeline file?"
+              "Failed to import that timeline. Are you sure it's a valid timeline file?",
             );
           }
         }

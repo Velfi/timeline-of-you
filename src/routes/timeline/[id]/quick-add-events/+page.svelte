@@ -9,7 +9,7 @@
   import * as stores from '$lib/stores';
   import ShortEvent from '$lib/components/ShortEvent.svelte';
   import { get, writable } from 'svelte/store';
-  import DateTimeDisplay from '$lib/components/DateTimeDisplay.svelte';
+  import DateTimeDisplay from '$lib/components/datetime/DateTimeDisplay.svelte';
 
   export let data: { timelineId: number };
 

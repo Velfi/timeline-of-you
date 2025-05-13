@@ -20,7 +20,7 @@
     new Date().getMonth() + 1,
     new Date().getDate(),
     new Date().getHours(),
-    new Date().getMinutes()
+    new Date().getMinutes(),
   );
   const localTimeZone = dateFns.format(currentDateTime.toDate(), 'XXX');
 
@@ -38,7 +38,7 @@
       startDay,
       startHour,
       startMinute,
-      startTimeZone
+      startTimeZone,
     );
   }
 
@@ -56,7 +56,7 @@
       endDay,
       endHour,
       endMinute,
-      endTimeZone
+      endTimeZone,
     );
   }
 </script>
@@ -67,32 +67,32 @@
     <div class="input-wrapper">
       <label class="visually-hidden" for="startYear">Year</label>
       <input name="startYear" {required} {...YEAR_INPUT_PROPS} bind:value={startYear} />
-      <span aria-hidden class="visual-only-label">Year</span>
+      <span aria-hidden="true" class="visual-only-label">Year</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startMonth">Month</label>
       <input name="startMonth" {...MONTH_INPUT_PROPS} bind:value={startMonth} />
-      <span aria-hidden class="visual-only-label">Mo.</span>
+      <span aria-hidden="true" class="visual-only-label">Mo.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startDay">Day</label>
       <input name="startDay" {...DAY_INPUT_PROPS} bind:value={startDay} />
-      <span aria-hidden class="visual-only-label">Day</span>
+      <span aria-hidden="true" class="visual-only-label">Day</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startHour">Hour</label>
       <input name="startHour" {...HOUR_INPUT_PROPS} bind:value={startHour} />
-      <span aria-hidden class="visual-only-label">Hr.</span>
+      <span aria-hidden="true" class="visual-only-label">Hr.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startMinute">Minute</label>
       <input name="startMinute" {...MINUTE_INPUT_PROPS} bind:value={startMinute} />
-      <span aria-hidden class="visual-only-label">Min.</span>
+      <span aria-hidden="true" class="visual-only-label">Min.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="startTimeZone">Time Zone</label>
       <input name="startTimeZone" {...TZ_INPUT_PROPS} bind:value={startTimeZone} />
-      <span aria-hidden class="visual-only-label">TZ</span>
+      <span aria-hidden="true" class="visual-only-label">TZ</span>
     </div>
   </div>
   &mdash;
@@ -100,32 +100,32 @@
     <div class="input-wrapper">
       <label class="visually-hidden" for="endYear">Year</label>
       <input name="endYear" {required} {...YEAR_INPUT_PROPS} bind:value={endYear} />
-      <span aria-hidden class="visual-only-label">Year</span>
+      <span aria-hidden="true" class="visual-only-label">Year</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endMonth">Month</label>
       <input name="endMonth" {...MONTH_INPUT_PROPS} bind:value={endMonth} />
-      <span aria-hidden class="visual-only-label">Mo.</span>
+      <span aria-hidden="true" class="visual-only-label">Mo.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endDay">Day</label>
       <input name="endDay" {...DAY_INPUT_PROPS} bind:value={endDay} />
-      <span aria-hidden class="visual-only-label">Day</span>
+      <span aria-hidden="true" class="visual-only-label">Day</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endHour">Hour</label>
       <input name="endHour" {...HOUR_INPUT_PROPS} bind:value={endHour} />
-      <span aria-hidden class="visual-only-label">Hr.</span>
+      <span aria-hidden="true" class="visual-only-label">Hr.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endMinute">Minute</label>
       <input name="endMinute" {...MINUTE_INPUT_PROPS} bind:value={endMinute} />
-      <span aria-hidden class="visual-only-label">Min.</span>
+      <span aria-hidden="true" class="visual-only-label">Min.</span>
     </div>
     <div class="input-wrapper">
       <label class="visually-hidden" for="endTimeZone">Time Zone</label>
       <input name="endTimeZone" {...TZ_INPUT_PROPS} bind:value={endTimeZone} />
-      <span aria-hidden class="visual-only-label">TZ</span>
+      <span aria-hidden="true" class="visual-only-label">TZ</span>
     </div>
     <p class="end">The End</p>
   </div>

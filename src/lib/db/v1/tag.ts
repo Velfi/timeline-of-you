@@ -18,7 +18,7 @@ export function isProbablyTag(json: unknown): json is Tag {
 export function fromJSON(json: unknown): Tag {
   if (!isProbablyTag(json)) {
     throw new Error(
-      "The value passed to Event.fromJSON doesn't appear to be a valid TimelineEvent"
+      "The value passed to Event.fromJSON doesn't appear to be a valid TimelineEvent",
     );
   }
 
@@ -49,7 +49,7 @@ export function toJSON(tag: Tag): string {
       lastModified: dateFns.formatRFC7231(tag.lastModified),
     },
     null,
-    2
+    2,
   );
 }
 

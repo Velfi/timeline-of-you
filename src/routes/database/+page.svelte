@@ -4,7 +4,7 @@
   import { notifications } from '$lib/stores';
   import { onMount } from 'svelte';
   import type { Metadata, Event, Tag } from '$lib/db/v1';
-  import DateTimeDisplay from '$lib/components/DateTimeDisplay.svelte';
+  import DateTimeDisplay from '$lib/components/datetime/DateTimeDisplay.svelte';
   import { DateTime as DateTimeType } from '$lib/types/date';
 
   let timelineCount = 0;
@@ -52,7 +52,7 @@
         await deleteDatabase();
         notifications.add('success', 'Successfully deleted database');
         await updateDatabaseState();
-      } catch (e) {
+      } catch {
         notifications.add('error', 'Failed to delete database');
       }
     }
@@ -80,7 +80,7 @@
         `Successfully deleted ${orphanedEventIds.length} orphaned events`,
       );
       await updateDatabaseState();
-    } catch (e) {
+    } catch {
       notifications.add('error', 'Failed to clean up orphaned events');
     }
   }
@@ -104,7 +104,7 @@
       await db.tags.bulkDelete(orphanedTagIds);
       notifications.add('success', `Successfully deleted ${orphanedTagIds.length} orphaned tags`);
       await updateDatabaseState();
-    } catch (e) {
+    } catch {
       notifications.add('error', 'Failed to clean up orphaned tags');
     }
   }

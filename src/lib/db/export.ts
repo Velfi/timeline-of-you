@@ -11,17 +11,17 @@ export async function exportJSON(id: number, db: TimelineDexie, pretty = true): 
 
   if (metadata === undefined) {
     throw new Error(
-      'exportTimelineById was called with an ID that does not exist in the database.'
+      'exportTimelineById was called with an ID that does not exist in the database.',
     );
   }
 
   const events = (await db.events.bulkGet(metadata.eventIds)).filter(
-    (e): e is Event => e !== undefined
+    (e): e is Event => e !== undefined,
   );
 
   if (events.length !== metadata.eventIds.length) {
     throw new Error(
-      `Timeline with ID ${metadata.id} has ${metadata.eventIds.length} events but only ${events.length} were found in the database.`
+      `Timeline with ID ${metadata.id} has ${metadata.eventIds.length} events but only ${events.length} were found in the database.`,
     );
   }
 
@@ -30,7 +30,7 @@ export async function exportJSON(id: number, db: TimelineDexie, pretty = true): 
 
   if (tags.length !== tagIds.length) {
     throw new Error(
-      `Timeline with ID ${metadata.id} has events referencing ${tagIds.length} unique tags but only ${tags.length} were found in the database.`
+      `Timeline with ID ${metadata.id} has events referencing ${tagIds.length} unique tags but only ${tags.length} were found in the database.`,
     );
   }
 
@@ -42,6 +42,6 @@ export async function exportJSON(id: number, db: TimelineDexie, pretty = true): 
       tags,
     },
     null,
-    pretty ? 2 : undefined
+    pretty ? 2 : undefined,
   );
 }

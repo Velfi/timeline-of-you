@@ -4,8 +4,7 @@
   import { browser } from '$app/environment';
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
-  import DateTimeDisplay from './DateTimeDisplay.svelte';
-  import { DateTime as DateTimeType, MONTHS } from '$lib/types/date';
+  import DateTimeDisplay from './datetime/DateTimeDisplay.svelte';
   import { DataSet } from 'vis-data';
   import { Timeline } from 'vis-timeline';
   import type { DataItem, TimelineOptions } from 'vis-timeline';
@@ -26,44 +25,6 @@
 
   $: startEvent = events.length > 0 ? events[0] : null;
   $: endEvent = events.length > 0 ? events[events.length - 1] : null;
-
-  function formatDate(date: Date): string {
-    const dateTime = new DateTimeType(
-      date.getFullYear(),
-      date.getMonth() + 1,
-      date.getDate(),
-      date.getHours(),
-      date.getMinutes(),
-    );
-
-    const parts: string[] = [];
-
-    // Always show year
-    parts.push(dateTime.year.toString());
-
-    // Only add month if it's not January
-    if (dateTime.month !== undefined && dateTime.month !== 1) {
-      parts.push(MONTHS[dateTime.month - 1]);
-    }
-
-    // Only add day if it's not the 1st
-    if (dateTime.day !== undefined && dateTime.day !== 1) {
-      parts.push(dateTime.day.toString());
-    }
-
-    // Only add time if it's not midnight
-    if (
-      (dateTime.hour !== undefined && dateTime.hour !== 0) ||
-      (dateTime.minute !== undefined && dateTime.minute !== 0)
-    ) {
-      const timeStr = `${(dateTime.hour || 0).toString().padStart(2, '0')}:${(dateTime.minute || 0)
-        .toString()
-        .padStart(2, '0')}`;
-      parts.push(timeStr);
-    }
-
-    return parts.join(' ');
-  }
 
   function initializeTimeline() {
     if (!browser || !container) return;

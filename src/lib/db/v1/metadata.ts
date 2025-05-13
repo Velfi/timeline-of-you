@@ -64,6 +64,6 @@ export function toJSON(metadata: Metadata): string {
       lastModified: dateFns.formatRFC7231(metadata.lastModified),
     },
     null,
-    2
+    2,
   );
 }

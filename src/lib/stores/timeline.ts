@@ -14,7 +14,7 @@ const currentDateTime = new DateTime(
   new Date().getMonth() + 1,
   new Date().getDate(),
   new Date().getHours(),
-  new Date().getMinutes()
+  new Date().getMinutes(),
 );
 export const preferredEventTimezone = writable(dateFns.format(currentDateTime.toDate(), 'XXX'));
 export const timeline = createTimelineStore();
@@ -112,7 +112,7 @@ function createTimelineStore(): TimelineStore {
       start: DateTime;
       end?: DateTime;
       tagIds: number[];
-    }[]
+    }[],
   ) => {
     _timeline.update((tl) => {
       if (tl) {
@@ -162,11 +162,11 @@ export const defaultEvent: TimelineEvent = {
   name: '',
   description: '',
   start: new DateTime(
-    new Date().getFullYear(), 
+    new Date().getFullYear(),
     new Date().getMonth() + 1,
     new Date().getDate(),
     new Date().getHours(),
-    new Date().getMinutes()
+    new Date().getMinutes(),
   ),
   createdOn: new Date(),
   lastModified: new Date(),

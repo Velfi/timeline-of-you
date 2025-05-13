@@ -1,16 +1,16 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { timeline } from '$lib/stores/timeline';
-  import { type TimelineEvent } from '$lib/db';
+  import { type TimelineEvent, type Timeline } from '$lib/db';
   import EventEditor from '$lib/components/EventEditor.svelte';
   import Loading from '$lib/components/Loading.svelte';
   import { notifications } from '$lib/stores/notifications';
   import { DateTime } from '$lib/types/date';
-  import DateTimeDisplay from '$lib/components/DateTimeDisplay.svelte';
+  import DateTimeDisplay from '$lib/components/datetime/DateTimeDisplay.svelte';
 
   export let data: { timelineId: number };
 
-  let timelineData: any = null;
+  let timelineData: Timeline | null = null;
   let isLoading = true;
   let events: TimelineEvent[] = [];
   let filteredEvents: TimelineEvent[] = [];
@@ -267,7 +267,7 @@
           };
 
           parsedEvents.push(event);
-        } catch (lineError) {
+        } catch {
           failedImports.push({
             line: i + 1,
             description: 'Unknown',
@@ -764,10 +764,6 @@
     margin-top: 8px;
     font-size: 0.9em;
     color: var(--text-color-secondary, #666);
-  }
-
-  .event-dates {
-    margin-top: 4px;
   }
 
   .header-top {

@@ -10,7 +10,7 @@ export const load: PageServerLoad = async ({ params }) => {
 
     // Just pass the ID to the client, which will load the timeline from IndexedDB
     return {
-      timelineId
+      timelineId,
     };
   } catch (err) {
     if (err instanceof Error) {
@@ -18,4 +18,4 @@ export const load: PageServerLoad = async ({ params }) => {
     }
     throw error(500, 'An unexpected error occurred');
   }
-}; 
+};

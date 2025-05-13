@@ -24,7 +24,7 @@
 
     notifications.add(
       'success',
-      `Timeline "${name === '' ? '(unnamed)' : name}" created successfully`
+      `Timeline "${name === '' ? '(unnamed)' : name}" created successfully`,
     );
     // After successfully saving the timeline, redirect to the manage page.
     goto(`/timelines`);

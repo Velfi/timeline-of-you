@@ -2,20 +2,8 @@
   import './styles.css';
   import { now } from '$lib/stores';
   import FloatingNotifications from '$lib/components/FloatingNotifications.svelte';
-  import DateTimeDisplay from '$lib/components/DateTimeDisplay.svelte';
-  import { DateTime as DateTimeType } from '$lib/types/date';
+  import DateTimeDisplay from '$lib/components/datetime/DateTimeDisplay.svelte';
   import NavBar from '$lib/components/NavBar.svelte';
-  // import FloatingMenu from '$lib/components/FloatingMenu.svelte';
-
-  const intlDateTimeFormat = new Intl.DateTimeFormat(undefined, {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    weekday: 'long',
-    timeZoneName: 'short',
-  });
 
   $: currentDateTime = $now;
 </script>

@@ -31,7 +31,7 @@ export class DateTime {
       createdOn.getMonth() + 1,
       createdOn.getDate(),
       createdOn.getHours(),
-      createdOn.getMinutes()
+      createdOn.getMinutes(),
     );
   }
   year: number;
@@ -48,7 +48,7 @@ export class DateTime {
     day?: number,
     hour?: number,
     minute?: number,
-    timeZone?: string
+    timeZone?: string,
   ) {
     this.year = year;
     this.month = month;
@@ -96,7 +96,7 @@ export class DateTime {
   static fromJSON(json: unknown): DateTime {
     if (!isProbablyTimelineDateTime(json)) {
       throw new Error(
-        "The value passed to DateTime.fromJSON doesn't appear to be a valid TimelineDateTime"
+        "The value passed to DateTime.fromJSON doesn't appear to be a valid TimelineDateTime",
       );
     }
 
@@ -118,7 +118,7 @@ export class DateTime {
         timeZone: dateTime.timeZone,
       },
       null,
-      2
+      2,
     );
   }
 
@@ -128,7 +128,7 @@ export class DateTime {
       this.month ? this.month - 1 : 0,
       this.day ? this.day : 1,
       this.hour ? this.hour : 0,
-      this.minute ? this.minute : 0
+      this.minute ? this.minute : 0,
     );
   }
 }
@@ -143,7 +143,7 @@ export function isPossibleToConstructValidDateTime(
   day?: number,
   hour?: number,
   minute?: number,
-  timeZone = ''
+  timeZone = '',
 ): boolean {
   return year >= 0 &&
     // month is optional, but if it's present, it must be between 1 and 12
@@ -166,7 +166,7 @@ export function tryToConstructDateTimeFromStrings(
   day: string,
   hour: string,
   minute: string,
-  timeZone: string
+  timeZone: string,
 ): DateTime | undefined {
   const yearNumber = parseInt(year, 10);
 
@@ -202,7 +202,7 @@ export function tryToConstructDateTimeFromStrings(
       dayNumber,
       hourNumber,
       minuteNumber,
-      timeZone
+      timeZone,
     )
   ) {
     return new DateTime(yearNumber, monthNumber, dayNumber, hourNumber, minuteNumber, timeZone);
@@ -222,7 +222,7 @@ export class DateTimeRange {
   static fromJSON(json: unknown): DateTimeRange {
     if (!isProbablyTimelineDateTimeRange(json)) {
       throw new Error(
-        "The value passed to DateTimeRange.fromJSON doesn't appear to be a valid TimelineDateTimeRange"
+        "The value passed to DateTimeRange.fromJSON doesn't appear to be a valid TimelineDateTimeRange",
       );
     }
 
@@ -240,7 +240,7 @@ export class DateTimeRange {
         end: dateTimeRange.end ? DateTime.toJSON(dateTimeRange.end) : undefined,
       },
       null,
-      2
+      2,
     );
   }
 }

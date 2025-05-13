@@ -118,7 +118,13 @@
   {/if}
 </div>
 {#if open}
-  <div class="overlay" on:click={toggle} on:keypress={keyboardToggle} />
+  <div
+    class="overlay"
+    tabindex="0"
+    role="button"
+    on:click={toggle}
+    on:keypress={keyboardToggle}
+  ></div>
 {/if}
 
 <style lang="scss">

@@ -31,7 +31,7 @@ export function isProbablyEvent(json: unknown): json is Event {
 export function fromJSON(json: unknown): Event {
   if (!isProbablyEvent(json)) {
     throw new Error(
-      "The value passed to Event.fromJSON doesn't appear to be a valid TimelineEvent"
+      "The value passed to Event.fromJSON doesn't appear to be a valid TimelineEvent",
     );
   }
 
@@ -74,6 +74,6 @@ export function toJSON(event: Event): string {
       lastModified: dateFns.formatRFC7231(event.lastModified),
     },
     null,
-    2
+    2,
   );
 }
