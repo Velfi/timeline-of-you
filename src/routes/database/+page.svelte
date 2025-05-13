@@ -4,7 +4,7 @@
   import { notifications } from '$lib/stores';
   import { onMount } from 'svelte';
   import type { Metadata, Event, Tag } from '$lib/db/v1';
-  import DateTime from '$lib/components/DateTime.svelte';
+  import DateTimeDisplay from '$lib/components/DateTimeDisplay.svelte';
   import { DateTime as DateTimeType } from '$lib/types/date';
 
   let timelineCount = 0;
@@ -26,14 +26,14 @@
     const allTimelines = await db.metadata.toArray();
     const referencedEventIds = new Set(allTimelines.flatMap((t: Metadata) => t.eventIds || []));
     orphanedEvents = allEvents.filter(
-      (e: Event) => e.id !== undefined && !referencedEventIds.has(e.id)
+      (e: Event) => e.id !== undefined && !referencedEventIds.has(e.id),
     ).length;
 
     // Find orphaned tags (tags not referenced by any event)
     const allTags = await db.tags.toArray();
     const referencedTagIds = new Set(allEvents.flatMap((e: Event) => e.tagIds || []));
     orphanedTags = allTags.filter(
-      (t: Tag) => t.id !== undefined && !referencedTagIds.has(t.id)
+      (t: Tag) => t.id !== undefined && !referencedTagIds.has(t.id),
     ).length;
   }
 
@@ -45,7 +45,7 @@
     if (
       browser &&
       confirm(
-        'Are you absolutely sure you want to delete your database? This action is irreversible.'
+        'Are you absolutely sure you want to delete your database? This action is irreversible.',
       )
     ) {
       try {
@@ -77,7 +77,7 @@
       await db.events.bulkDelete(orphanedEventIds);
       notifications.add(
         'success',
-        `Successfully deleted ${orphanedEventIds.length} orphaned events`
+        `Successfully deleted ${orphanedEventIds.length} orphaned events`,
       );
       await updateDatabaseState();
     } catch (e) {
@@ -116,7 +116,7 @@
       isExporting = true;
       const timelines = await getTimelineMetadataList();
       const exports = await Promise.all(
-        timelines.map((timeline) => exportTimelineToJSON(timeline.id as number))
+        timelines.map((timeline) => exportTimelineToJSON(timeline.id as number)),
       );
 
       const exportData = {
@@ -168,13 +168,13 @@
     <p>Orphaned tags: {orphanedTags}</p>
     {#if browser}
       <p>
-        Last updated: <DateTime
+        Last updated: <DateTimeDisplay
           date={new DateTimeType(
             new Date().getFullYear(),
             new Date().getMonth() + 1,
             new Date().getDate(),
             new Date().getHours(),
-            new Date().getMinutes()
+            new Date().getMinutes(),
           )}
         />
       </p>

@@ -25,6 +25,15 @@ export const MONTHS = [
 // }
 
 export class DateTime {
+  static fromJsDate(createdOn: Date): DateTime {
+    return new DateTime(
+      createdOn.getFullYear(),
+      createdOn.getMonth() + 1,
+      createdOn.getDate(),
+      createdOn.getHours(),
+      createdOn.getMinutes()
+    );
+  }
   year: number;
   /** January = 1, December = 12 */
   month?: number;

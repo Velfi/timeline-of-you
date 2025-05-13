@@ -4,7 +4,7 @@
   import { browser } from '$app/environment';
   import { page } from '$app/stores';
   import { goto } from '$app/navigation';
-  import DateTime from './DateTime.svelte';
+  import DateTimeDisplay from './DateTimeDisplay.svelte';
   import { DateTime as DateTimeType, MONTHS } from '$lib/types/date';
   import { DataSet } from 'vis-data';
   import { Timeline } from 'vis-timeline';
@@ -259,11 +259,11 @@
             <div class="subtitle-title">{prevEvent.name}</div>
             <div class="subtitle-date">
               {#if selectedEvent.start}
-                <DateTime date={selectedEvent.start} />
+                <DateTimeDisplay date={selectedEvent.start} />
               {/if}
               {#if selectedEvent.end}
                 &nbsp;&mdash;&nbsp;
-                <DateTime date={selectedEvent.end} />
+                <DateTimeDisplay date={selectedEvent.end} />
               {/if}
             </div>
           </div>
@@ -272,11 +272,11 @@
           <div class="subtitle-title">{selectedEvent.name}</div>
           <div class="subtitle-date">
             {#if selectedEvent.start}
-              <DateTime date={selectedEvent.start} />
+              <DateTimeDisplay date={selectedEvent.start} />
             {/if}
             {#if selectedEvent.end}
               &nbsp;&mdash;&nbsp;
-              <DateTime date={selectedEvent.end} />
+              <DateTimeDisplay date={selectedEvent.end} />
             {/if}
           </div>
           {#if selectedEvent.description}
@@ -289,11 +289,11 @@
             <div class="subtitle-title">{nextEvent.name}</div>
             <div class="subtitle-date">
               {#if selectedEvent.start}
-                <DateTime date={selectedEvent.start} />
+                <DateTimeDisplay date={selectedEvent.start} />
               {/if}
               {#if selectedEvent.end}
                 &nbsp;&mdash;&nbsp;
-                <DateTime date={selectedEvent.end} />
+                <DateTimeDisplay date={selectedEvent.end} />
               {/if}
             </div>
           </div>

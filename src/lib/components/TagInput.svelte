@@ -47,7 +47,9 @@
   <div class="input-wrapper">
     <input type="text" name="tag-input" {required} bind:value={newTag} on:keydown={onKeydown} />
     <div class="buttons">
-      <button type="button" on:click={addTag} disabled={value.length === 0}>Add Tag</button>
+      <button type="button" on:click={addTag} disabled={!isValid || newTag.length === 0}
+        >Add Tag</button
+      >
       <button type="button" on:click={clearTags} disabled={value.length === 0}>Clear Tags</button>
     </div>
   </div>
@@ -125,5 +127,10 @@
     margin-left: 0.2rem;
     height: 1rem;
     width: 1rem;
+  }
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 </style>

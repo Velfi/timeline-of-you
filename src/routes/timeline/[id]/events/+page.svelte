@@ -6,7 +6,7 @@
   import Loading from '$lib/components/Loading.svelte';
   import { notifications } from '$lib/stores/notifications';
   import { DateTime } from '$lib/types/date';
-  import DateTimeComponent from '$lib/components/DateTime.svelte';
+  import DateTimeDisplay from '$lib/components/DateTimeDisplay.svelte';
 
   export let data: { timelineId: number };
 
@@ -28,30 +28,37 @@
   // Group events by year, month, day
   let groupedEvents: Map<number, Map<number, Map<number, TimelineEvent[]>>> = new Map();
 
-  onMount(async () => {
-    try {
-      // Load timeline from store
-      await timeline.loadFromDb(data.timelineId);
+  let unsubscribe: (() => void) | undefined;
 
-      // Subscribe to timeline changes
-      const unsubscribe = timeline.timeline.subscribe((loadedTimeline) => {
-        if (loadedTimeline) {
-          timelineData = loadedTimeline;
-          events = loadedTimeline.events;
-          filterEvents();
-        }
-      });
+  onMount(() => {
+    const loadTimeline = async () => {
+      try {
+        // Load timeline from store
+        await timeline.loadFromDb(data.timelineId);
 
-      // Cleanup subscription on component destroy
-      return () => {
+        // Subscribe to timeline changes
+        unsubscribe = timeline.timeline.subscribe((loadedTimeline) => {
+          if (loadedTimeline) {
+            timelineData = loadedTimeline;
+            events = loadedTimeline.events;
+            filterEvents();
+          }
+        });
+      } catch (error) {
+        console.error('Failed to load timeline:', error);
+        notifications.add('error', 'Failed to load timeline. Please try again.');
+      } finally {
+        isLoading = false;
+      }
+    };
+
+    loadTimeline();
+
+    return () => {
+      if (unsubscribe) {
         unsubscribe();
-      };
-    } catch (error) {
-      console.error('Failed to load timeline:', error);
-      notifications.add('error', 'Failed to load timeline. Please try again.');
-    } finally {
-      isLoading = false;
-    }
+      }
+    };
   });
 
   function filterEvents() {
@@ -63,7 +70,7 @@
       filteredEvents = events.filter(
         (event) =>
           event.name.toLowerCase().includes(term) ||
-          (event.description && event.description.toLowerCase().includes(term))
+          (event.description && event.description.toLowerCase().includes(term)),
       );
     }
 
@@ -236,7 +243,7 @@
             startParts.length > 1 ? startParts[1] : undefined, // month
             startParts.length > 2 ? startParts[2] : undefined, // day
             startParts.length > 3 ? startParts[3] : undefined, // hour
-            startParts.length > 4 ? startParts[4] : undefined // minute
+            startParts.length > 4 ? startParts[4] : undefined, // minute
           );
 
           const end = endParts
@@ -245,7 +252,7 @@
                 endParts.length > 1 ? endParts[1] : undefined, // month
                 endParts.length > 2 ? endParts[2] : undefined, // day
                 endParts.length > 3 ? endParts[3] : undefined, // hour
-                endParts.length > 4 ? endParts[4] : undefined // minute
+                endParts.length > 4 ? endParts[4] : undefined, // minute
               )
             : undefined;
 
@@ -296,7 +303,7 @@
         .join('\n');
       notifications.add(
         'error',
-        `Imported ${parsedEvents.length} events. Failed to import ${failedImports.length} events:\n${failedMessage}`
+        `Imported ${parsedEvents.length} events. Failed to import ${failedImports.length} events:\n${failedMessage}`,
       );
     } else {
       notifications.add('success', `Successfully imported ${parsedEvents.length} events`);
@@ -311,7 +318,6 @@
 
   // Update filtered events when search term changes
   $: {
-    console.log('Reactive statement triggered');
     if (events.length > 0) {
       filterEvents();
     }
@@ -371,7 +377,7 @@
             bind:value={csvInput}
             placeholder="Paste CSV data here (start datetime,end datetime,event description)"
             rows="5"
-          />
+          ></textarea>
           <button class="import-button" on:click={handleCsvImport} disabled={!csvInput.trim()}>
             Import
           </button>
@@ -399,10 +405,10 @@
                 <li>
                   <strong>{event.name}</strong>
                   <br />
-                  <DateTimeComponent date={event.start} />
+                  <DateTimeDisplay date={event.start} />
                   {#if event.end}
                     <span class="time-separator"> to </span>
-                    <DateTimeComponent date={event.end} />
+                    <DateTimeDisplay date={event.end} />
                   {/if}
                 </li>
               {/each}
@@ -480,8 +486,8 @@
                     class="event-cards {gridLayout === 1
                       ? 'grid-1'
                       : gridLayout === 2
-                      ? 'grid-2'
-                      : 'grid-3'}"
+                        ? 'grid-2'
+                        : 'grid-3'}"
                   >
                     {#each dayEvents as event}
                       <div
@@ -501,10 +507,10 @@
                           <h5>{event.name}</h5>
                           <div class="event-meta">
                             <p class="event-times">
-                              <DateTimeComponent date={event.start} />
+                              <DateTimeDisplay date={event.start} />
                               {#if event.end}
                                 <span class="time-separator"> to </span>
-                                <DateTimeComponent date={event.end} />
+                                <DateTimeDisplay date={event.end} />
                               {/if}
                             </p>
                           </div>
@@ -631,7 +637,9 @@
     padding: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
   }
 
   .event-card:hover,

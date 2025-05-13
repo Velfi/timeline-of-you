@@ -92,17 +92,17 @@
             bind:value={editedEvent.description}
             placeholder="Brief description"
             rows="2"
-          />
+          ></textarea>
         </div>
 
         <div class="form-group">
-          <label>Start Date/Time</label>
-          <DateTimeInput bind:value={editedEvent.start} required={true} />
+          <label for="event-start">Start Date/Time</label>
+          <DateTimeInput id="event-start" bind:value={editedEvent.start} required={true} />
         </div>
 
         <div class="form-group">
-          <label>End Date/Time (Optional)</label>
-          <DateTimeInput bind:value={editedEvent.end} />
+          <label for="event-end">End Date/Time (Optional)</label>
+          <DateTimeInput id="event-end" bind:value={editedEvent.end} />
         </div>
       </div>
 

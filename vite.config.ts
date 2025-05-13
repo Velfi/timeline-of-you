@@ -8,4 +8,11 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+      },
+    },
+  },
 });

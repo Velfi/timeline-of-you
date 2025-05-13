@@ -47,12 +47,6 @@
     padding: 2rem;
   }
 
-  .timeline-actions {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-  }
-
   button {
     padding: 0.5rem 1rem;
     background-color: #4caf50;

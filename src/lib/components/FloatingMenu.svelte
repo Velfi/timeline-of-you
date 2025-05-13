@@ -27,11 +27,9 @@
   }
 
   async function saveTimeline() {
-    console.log('Saving timeline');
     isSaving = true;
     await timeline.saveToDb();
     isSaving = false;
-    console.log('Saved timeline');
   }
 </script>
 

@@ -15,7 +15,7 @@
   >{label}{#if required}*{:else}<span>&nbsp;(optional)</span>{/if}</label
 >
 {#if textarea}
-  <textarea {name} {required} {placeholder} bind:value />
+  <textarea {name} {required} {placeholder} bind:value></textarea>
 {:else}
   <input type="text" {name} {required} {placeholder} bind:value />
 {/if}

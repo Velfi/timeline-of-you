@@ -2,7 +2,7 @@
   import './styles.css';
   import { now } from '$lib/stores';
   import FloatingNotifications from '$lib/components/FloatingNotifications.svelte';
-  import DateTime from '$lib/components/DateTime.svelte';
+  import DateTimeDisplay from '$lib/components/DateTimeDisplay.svelte';
   import { DateTime as DateTimeType } from '$lib/types/date';
   import NavBar from '$lib/components/NavBar.svelte';
   // import FloatingMenu from '$lib/components/FloatingMenu.svelte';
@@ -30,7 +30,7 @@
   </main>
 
   <footer>
-    <p>It is currently <DateTime date={currentDateTime} />.</p>
+    <p>It is currently <DateTimeDisplay date={currentDateTime} />.</p>
     <p class="italic">Make sure this is correct or else your timeline might get out of whack.</p>
   </footer>
 </div>

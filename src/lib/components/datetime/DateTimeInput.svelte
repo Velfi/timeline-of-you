@@ -10,7 +10,7 @@
     YEAR_INPUT_PROPS,
     TZ_INPUT_PROPS,
   } from './inputProps';
-  import { onMount } from 'svelte/internal';
+  import { onMount } from 'svelte';
 
   export let value: DateTime | undefined;
   export let label = '';
@@ -51,32 +51,32 @@
   <div class="input-wrapper">
     <label class="visually-hidden" for="year">Year</label>
     <input name="year" {required} {...YEAR_INPUT_PROPS} bind:value={year} />
-    <span aria-hidden>Year</span>
+    <span aria-hidden="true">Year</span>
   </div>
   <div class="input-wrapper">
     <label class="visually-hidden" for="month">Month</label>
     <input name="month" {...MONTH_INPUT_PROPS} bind:value={month} />
-    <span aria-hidden>Mo.</span>
+    <span aria-hidden="true">Mo.</span>
   </div>
   <div class="input-wrapper">
     <label class="visually-hidden" for="day">Day</label>
     <input name="day" {...DAY_INPUT_PROPS} bind:value={day} />
-    <span aria-hidden>Day</span>
+    <span aria-hidden="true">Day</span>
   </div>
   <div class="input-wrapper">
     <label class="visually-hidden" for="hour">Hour</label>
     <input name="hour" {...HOUR_INPUT_PROPS} bind:value={hour} />
-    <span aria-hidden>Hr.</span>
+    <span aria-hidden="true">Hr.</span>
   </div>
   <div class="input-wrapper">
     <label class="visually-hidden" for="minute">Minute</label>
     <input name="minute" {...MINUTE_INPUT_PROPS} bind:value={minute} />
-    <span aria-hidden>Min.</span>
+    <span aria-hidden="true">Min.</span>
   </div>
   <div class="input-wrapper">
     <label class="visually-hidden" for="timeZone">Time Zone</label>
     <input name="timeZone" {...TZ_INPUT_PROPS} bind:value={timeZone} />
-    <span aria-hidden>TZ</span>
+    <span aria-hidden="true">TZ</span>
   </div>
 </div>
 

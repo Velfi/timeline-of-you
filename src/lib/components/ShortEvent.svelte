@@ -2,8 +2,6 @@
   import type { TimelineEvent } from '$lib/db';
 
   export let event: TimelineEvent;
-
-  console.log('event', event);
 </script>
 
 <i>

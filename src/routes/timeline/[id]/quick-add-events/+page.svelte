@@ -9,7 +9,7 @@
   import * as stores from '$lib/stores';
   import ShortEvent from '$lib/components/ShortEvent.svelte';
   import { get, writable } from 'svelte/store';
-  import DateTimeComponent from '$lib/components/DateTime.svelte';
+  import DateTimeDisplay from '$lib/components/DateTimeDisplay.svelte';
 
   export let data: { timelineId: number };
 
@@ -73,7 +73,6 @@
           createdOn: new Date(),
           lastModified: new Date(),
         };
-        console.log('Adding event to newEvents: ', e);
 
         it.push(e);
       }
@@ -110,13 +109,13 @@
       <div><DateTimeInput bind:value={start} label="Start*" required /></div>
       <div><DateTimeInput bind:value={end} label="End" /></div>
       <div>
-        <TextInput label="Name" placeholder="My new timeline" required bind:value={name} />
+        <TextInput label="Name" placeholder="A new event" required bind:value={name} />
       </div>
       <div>
         <TextInput
           textarea
           label="Description"
-          placeholder="A timeline tracking the major events in my life."
+          placeholder="An event in this timeline."
           bind:value={description}
         />
       </div>
@@ -147,7 +146,7 @@
       <button
         class="save-events"
         disabled={saveButtonIsDisabled}
-        title={saveButtonTitle}
+        title={saveButtonIsDisabled ? 'No events to save - add some events first' : saveButtonTitle}
         type="button"
         on:click={handleSave}>Save Events</button
       >
@@ -162,8 +161,8 @@
             <li class="event">
               <ShortEvent {event} />
               <p class="event-meta">
-                Created: <DateTimeComponent date={DateTime.fromJSON(event.createdOn)} /> | Modified:
-                <DateTimeComponent date={DateTime.fromJSON(event.lastModified)} />
+                Created: <DateTimeDisplay date={DateTime.fromJSON(event.createdOn)} /> | Modified:
+                <DateTimeDisplay date={DateTime.fromJSON(event.lastModified)} />
               </p>
             </li>
           {/each}
@@ -179,8 +178,8 @@
             <li class="event">
               <ShortEvent {event} />
               <p class="event-meta">
-                Created: <DateTimeComponent date={DateTime.fromJSON(event.createdOn)} /> | Modified:
-                <DateTimeComponent date={DateTime.fromJSON(event.lastModified)} />
+                Created: <DateTimeDisplay date={DateTime.fromJsDate(event.createdOn)} /> | Modified:
+                <DateTimeDisplay date={DateTime.fromJsDate(event.lastModified)} />
               </p>
             </li>
           {/each}
@@ -238,6 +237,11 @@
   .add {
     width: 100%;
     height: 3rem;
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
   }
 
   .events {
